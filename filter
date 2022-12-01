@@ -1,0 +1,109 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU
+! Expires: 300 days
+! Version: 1
+! 네이버
+naver.com##.service_area
+naver.com##.btn_keyboard
+naver.com##.setkr_area
+naver.com##.btn_arw
+naver.com##._btn_arw
+naver.com###NM_THEMECAST_CONTENTS_CONTAINER
+naver.com###footer
+
+m.naver.com##.id_comp_napp_banner
+m.naver.com##.id_comp_anniversary_banner
+m.naver.com##.id_comp_promotion_tablet
+m.naver.com###MM_SEARCH_NOW
+m.naver.com###MM_SEARCH_SHOP_LIVE
+m.naver.com###MM_HOME_PROMOTION
+m.naver.com##.ah_ly_tooltip
+m.naver.com##.ah_ly_tooltip_wrap
+m.naver.com##.ss_service_partner
+m.naver.com##.section_notice
+m.naver.com##.section_tutorial
+m.naver.com##.main_footer
+
+m.notify.naver.com##.tooltip_benefit_wrap
+m.search.naver.com##.banner_bx
+
+! 네이버 상단 프로필
+naver.com###gnb_name1
+naver.com#$#.gnb_my_namebox {background-image: none !important;}
+naver.com#$#.gnb_my_namebox {padding: 0 !important;}
+naver.com#$#.gnb_my_li {margin-top: 2px !important;}
+naver.com#$#.gnb_my_li {background: none !important;}
+naver.com##.gnb_notice_li
+naver.com##.mail_li
+naver.com##.gnb_service_li
+
+! 네이버 메인에 추가
+naver.com##.nv-openmain
+
+cafe.naver.com##.btn_arrow
+section.cafe.naver.com##.snb_town
+section.cafe.naver.com##.MenuList
+section.cafe.naver.com##.home_editors
+section.cafe.naver.com##.cafe_banner
+section.cafe.naver.com##.AsideSmartBot
+section.cafe.naver.com##.AsideNotice
+section.cafe.naver.com##.SectionFooter
+
+m.cafe.naver.com##.ico_new
+m.cafe.naver.com##.ico-new-badge
+m.cafe.naver.com##.tab_bubble
+m.cafe.naver.com##.area_recommend
+m.cafe.naver.com##.area_theme_link
+m.cafe.naver.com##.CafeAppBanner
+
+new-m.pay.naver.com##[class^="Header_new"]
+new-m.pay.naver.com##[class^="ServiceLink_icon-new"]
+new-m.pay.naver.com##[class^="PayMoneyWidgetBanner_article"]
+new-m.pay.naver.com##[class^="PromotionB_article"]
+new-m.pay.naver.com##[class^="PayLife_article"]
+new-m.pay.naver.com##[class^="ADRewardSummary_article"]
+new-m.pay.naver.com##[class^="Notice_article"]
+new-m.pay.naver.com##[class^="Footer_article"]
+new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
+new-m.pay.naver.com##[class^="MenuList_icon-new-text"]
+new-m.pay.naver.com##[class^="MenuList_banner-point"]
+
+shopping.naver.com##[class^="liveBanner_live_banner"]
+shopping.naver.com##[class^="liveCalendar_live_calendar"]
+shopping.naver.com##[class^="banners_banner_area"]
+shopping.naver.com##[class^="footer_footer"]
+shopping.naver.com##[class^="_footer_footer"]
+
+! 커서 칩
+google.com,google.co.kr##.gb_Ue
+
+! Google 정보와 스토어
+google.com,google.co.kr##.MV3Tnb
+
+! 입력 도구 렌즈와 분리자
+google.com,google.co.kr##.Umvnrc
+google.com,google.co.kr##.nDcEnd
+google.com,google.co.kr##.ACRAdd
+
+! 검색
+google.com,google.co.kr##.Tg7LZd
+google.com,google.co.kr##.BIqFsb
+
+! Google 검색과 Feeling Lucky
+google.com,google.co.kr##.FPdoLc
+
+
+mimacstudy.com##[class^="mainPop"]
+mimacstudy.com##.top_tch_bn
+mimacstudy.com##.top_keywrord_bn
+mimacstudy.com##.deviceinfo
+mimacstudy.com##.main_etc_service
+mimacstudy.com##.main_notic_store
+mimacstudy.com##.main_preview_zone
+mimacstudy.com##.
+mimacstudy.com##.
+mimacstudy.com##.setupzone
+mimacstudy.com##.top_anchor
+mimacstudy.com###footer
