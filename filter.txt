@@ -3,7 +3,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU
 ! Expires: 300 days
-! Version: 2
+! Version: 3
 
 
 ! 네이버
@@ -60,6 +60,8 @@ m.cafe.naver.com##.area_recommend
 m.cafe.naver.com##.area_theme_link
 m.cafe.naver.com##.CafeAppBanner
 
+! 네이버 페이 및 쇼핑
+
 new-m.pay.naver.com##[class^="Header_new"]
 new-m.pay.naver.com##[class^="ServiceLink_icon-new"]
 new-m.pay.naver.com##[class^="PayMoneyWidgetBanner_article"]
@@ -80,7 +82,7 @@ shopping.naver.com##[class^="_footer_footer"]
 
 ! 커서 칩
 google.com,google.co.kr##.gb_Ue
-youtube.com##.ytd-topbar-menu-button-renderer
+youtube.com##.tp-yt-paper-tooltip
 
 ! Drawer
 google.com,google.co.kr##.KojFAc
@@ -103,25 +105,46 @@ google.com,google.co.kr##.dRYYxd
 google.com,google.co.kr##.Tg7LZd
 google.com,google.co.kr##.BIqFsb
 google.com,google.co.kr##.fqb79e
+youtube.com##.gsst_b
+youtube.com###voice-search-button
+
+! YouTube 레이아웃 수정
+youtube.com#$#.ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin]) #primary.ytd-watch-flexy {padding-top: 0 !important;}
+youtube.com#$#.ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin]) #secondary.ytd-watch-flexy {padding-top: 0 !important;}
 
 ! 알림
 google.com,google.co.kr##.j4hoVe
 
 ! Google 검색과 Feeling Lucky
 google.com,google.co.kr##.FPdoLc
+google.com,google.co.kr##.lJ9FBc
+google.com,google.co.kr##.MG7lrf
 
-google.com,google.co.kr###footer
+google.com,google.co.kr##.c93Gbe
+google.com,google.co.kr###footbar
+google.com,google.co.kr###fbarcnt
 google.com,google.co.kr##.fbar
 google.com,google.co.kr##.google-footer-bar
 
 
-mimacstudy.com##[class^="mainPop"]
+mimacstudy.com##[id^="mainPop"]
+mimacstudy.com##[id^="mainSubBottomBanner"]
 mimacstudy.com##.top_tch_bn
 mimacstudy.com##.top_keywrord_bn
 mimacstudy.com##.deviceinfo
 mimacstudy.com##.main_etc_service
 mimacstudy.com##.main_notic_store
+mimacstudy.com##.main_top_promotion
 mimacstudy.com##.main_preview_zone
+mimacstudy.com##.main_youtube_wrap
+mimacstudy.com##.left_sky_bnr
+mimacstudy.com##.right_sky_bnr
 mimacstudy.com##.setupzone
 mimacstudy.com##.top_anchor
-mimacstudy.com###footer
+mimacstudy.com##.dsm_bottomarea
+
+gall.dcinside.com##.stickyunit
+gall.dcinside.com##.ad_floating
+gall.dcinside.com##.ad_bottom_list
+! 못생긴 폰트 제거
+dcinside.com#$#.gall_list .gall_num, .gall_list .gall_date, .gall_list .gall_count, .gall_list .gall_recommend, .ip{font-family: 'SF Pro Text', -apple-system !important;}
