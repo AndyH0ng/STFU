@@ -1,0 +1,35 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU DNS
+! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
+! Expires: 300 days
+! Version: 4
+
+! TODO: Unsure stability while blocking wcs.naver.*
+||wcs.naver.com^
+||wcs.naver.net^
+||webid.ad.daum.net^
+||analytics.ad.daum.net^
+||cauly.net^
+||cauly.co.kr^
+||gwx.adlibr.com^
+||sas.techhub.co.kr^
+||s.pstatic.net/dthumb.phinf/
+||s.pstatic.net/shopping.phinf/
+||img.mimacstudy.com/admin_sh/images/site/skyBanner^
+||img.mimacstudy.com/admin_sh/images/site/mainPopup^
+||fin.rainbownine.net/js/adn_tags_1.0.0.js
+||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
+||img.samsungmembers.com/default/banner^
+||img.samsungapps.com/promotion^
+||img.samsungapps.com/productNew^
+||kr-cdn-gpp.mcsvc.samsung.com^
+||kr-api.mcsvc.samsung.com^
+
+! Use system font instead of Tahoma in Dcinside
+||fonts.gstatic.com^$domain=dcinside.com
+
+
+
+!========== END OF DOMAIN RULE ==========
