@@ -4,7 +4,7 @@
 ! Title: STFU DNS
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.1
+! Version: 4.2
 
 ||ace.naver.com^
 ||wcs.naver.com^
@@ -17,10 +17,10 @@
 ||veta.naver.com^
 ||inspector-collector.m.naver.com^
 ||ntracker-collector.naver.com^
+||nelo2-col.navercorp.com^
+||nelo2-col.linecorp.com^
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
-||ad-content.moment.kakao.com^
-||ad-content.*.kakao.com^
 ||talkchannel-log.kakao.com^
 ||stat.tiara.kakao.com^
 ||stat.tiara.daum.net^
@@ -29,36 +29,43 @@
 ||track.tiara.daum.net^
 ||ad.daum.net^
 ||doubleclick.net^
+||googleoptimize.com^
+||googletagmanager.com^
+||google-analytics.com^
+||googleadservices.com^
 ||adservice.google.co.kr^
 ||adservice.google.com^
 ||adservice.google.com.tw^
 ||adservice.google.tw^
-||google-analytics.com^
 ||pagead2.googleadservices.com^
 ||pagead2.googlesyndication.com^
 ||partner.googleadservices.com^
-||cauly.net^
+||www-google-analytics.l.google.com^
+||appsflyer.com^
+||adpick.co.kr^
+||adpopcorn.com^
 ||cauly.co.kr^
+||cauly.net^
+||buzzvil.com^
 ||taboola.com^
+||adinsight.co.kr^
+||adinsight.com^
 ||gwx.adlibr.com^
+||megadata.co.kr^
 ||widerplanet.com^
 ||sas.techhub.co.kr^
 ||fin.rainbownine.net^
-||s.pstatic.net/dthumb.phinf/
-||s.pstatic.net/shopping.phinf/
-||img.mimacstudy.com/admin_sh/images/site/skyBanner^
-||img.mimacstudy.com/admin_sh/images/site/mainPopup^
-||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
-||img.samsungmembers.com/default/banner^
-||img.samsungapps.com/promotion^
-||img.samsungapps.com/productNew^
-||kr-cdn-gpp.mcsvc.samsung.com^
 ||kr-api.mcsvc.samsung.com^
+||kr-cdn-gpp.mcsvc.samsung.com^
+||adconsent.samsungrs.com^
 ||analytics.samsungknox.com^
-
-! Use system font instead of Tahoma in Dcinside
-||fonts.gstatic.com^$domain=dcinside.com
-
-
+||api.glb.samsung-gamelauncher.com^
+||sentry.io^
+||sentry-cdn.com^
+||crashlytics.com^
+||crashlyticsreports-pa.googleapis.com^
+||bugsnag.com^
+||app-measurement.com^
+||cc-api-data.adobe.io^
 
 !========== END OF DOMAIN RULE ==========
