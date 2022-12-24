@@ -2,11 +2,35 @@
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU
+! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 3
+! Version: 4
+
+! TODO: Unsure stability while blocking wcs.naver.*
+||wcs.naver.com^
+||wcs.naver.net^
+||cauly.net^
+||cauly.co.kr^
+||gwx.adlibr.com^
+||sas.techhub.co.kr^
+||s.pstatic.net/dthumb.phinf/
+||s.pstatic.net/shopping.phinf/
+||img.mimacstudy.com/admin_sh/images/site/skyBanner^
+||img.mimacstudy.com/admin_sh/images/site/mainPopup^
+||fin.rainbownine.net/js/adn_tags_1.0.0.js
+||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
+
+! Use system font instead of Tahoma in Dcinside
+||fonts.gstatic.com^$domain=dcinside.com
 
 
-! 네이버
+
+!========== END OF DOMAIN RULE ==========
+
+
+
+
+! Annoyance in Naver
 naver.com##.service_area
 naver.com##.btn_keyboard
 naver.com##.setkr_area
@@ -15,6 +39,7 @@ naver.com##._btn_arw
 naver.com###NM_THEMECAST_CONTENTS_CONTAINER
 naver.com###footer
 
+! Ad and promotion banner in Naver
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
@@ -27,11 +52,10 @@ m.naver.com##.ss_service_partner
 m.naver.com##.section_notice
 m.naver.com##.section_tutorial
 m.naver.com##.main_footer
-
 m.notify.naver.com##.tooltip_benefit_wrap
 m.search.naver.com##.banner_bx
 
-! 네이버 상단 프로필
+! Fix profile info layout in Naver
 naver.com###gnb_name1
 naver.com#$#.gnb_my_namebox {background-image: none !important;}
 naver.com#$#.gnb_my_namebox {padding: 0 !important;}
@@ -41,9 +65,10 @@ naver.com##.gnb_notice_li
 naver.com##.mail_li
 naver.com##.gnb_service_li
 
-! 네이버 메인에 추가
+! '네이버 메인에 추가'
 naver.com##.nv-openmain
 
+! Annoyance in Naver Cafe
 cafe.naver.com##.btn_arrow
 section.cafe.naver.com##.snb_town
 section.cafe.naver.com##.MenuList
@@ -53,35 +78,46 @@ section.cafe.naver.com##.AsideSmartBot
 section.cafe.naver.com##.AsideNotice
 section.cafe.naver.com##.SectionFooter
 
+! Red-dot noti icon in Naver Cafe
+cafe.naver.com##.ico_new
 m.cafe.naver.com##.ico_new
 m.cafe.naver.com##.ico-new-badge
 m.cafe.naver.com##.tab_bubble
+m.cafe.naver.com##.red_dot
+m.cafe.naver.com##.icon_new_txt
+
+
 m.cafe.naver.com##.area_recommend
 m.cafe.naver.com##.area_theme_link
 m.cafe.naver.com##.CafeAppBanner
 
-! 네이버 페이 및 쇼핑
-
+! Promotion in Naver Pay and Naver Shopping
 new-m.pay.naver.com##[class^="Header_new"]
 new-m.pay.naver.com##[class^="ServiceLink_icon-new"]
+new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
 new-m.pay.naver.com##[class^="PayMoneyWidgetBanner_article"]
 new-m.pay.naver.com##[class^="PromotionB_article"]
 new-m.pay.naver.com##[class^="PayLife_article"]
 new-m.pay.naver.com##[class^="ADRewardSummary_article"]
 new-m.pay.naver.com##[class^="Notice_article"]
+new-m.pay.naver.com##[class^="InsuranceTip_article"]
+new-m.pay.naver.com##[class^="BottomAds_article"]
 new-m.pay.naver.com##[class^="Footer_article"]
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
 new-m.pay.naver.com##[class^="MenuList_icon-new-text"]
 new-m.pay.naver.com##[class^="MenuList_banner-point"]
-
 shopping.naver.com##[class^="liveBanner_live_banner"]
 shopping.naver.com##[class^="liveCalendar_live_calendar"]
 shopping.naver.com##[class^="banners_banner_area"]
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
 
-! 커서 칩
+! Annoyance in Naver News
+media.naver.com##.phnb_tooltip
+
+! Cursor outline
 google.com,google.co.kr##.gb_Ue
+play.google.com#$#.kOqhQd {outline-style: none !important;}
 youtube.com##.tp-yt-paper-tooltip
 
 ! Drawer
@@ -94,7 +130,7 @@ google.com,google.co.kr###SBmmZd
 ! Google 정보와 스토어
 google.com,google.co.kr##.MV3Tnb
 
-! 입력 도구 렌즈 분리자 검색
+! Remove virtual keyboard icon and voice search icon etc..
 google.com,google.co.kr##.Umvnrc
 google.com,google.co.kr##.nDcEnd
 google.com,google.co.kr##.AcPRKc
@@ -107,26 +143,25 @@ google.com,google.co.kr##.BIqFsb
 google.com,google.co.kr##.fqb79e
 youtube.com##.gsst_b
 youtube.com###voice-search-button
-
-! YouTube 레이아웃 수정
-youtube.com#$#.ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin]) #primary.ytd-watch-flexy {padding-top: 0 !important;}
-youtube.com#$#.ytd-watch-flexy:not([theater]):not([fullscreen]):not([no-top-margin]) #secondary.ytd-watch-flexy {padding-top: 0 !important;}
+!TODO
 
 ! 알림
 google.com,google.co.kr##.j4hoVe
 
-! Google 검색과 Feeling Lucky
+! Google Search and Feeling Lucky
 google.com,google.co.kr##.FPdoLc
 google.com,google.co.kr##.lJ9FBc
 google.com,google.co.kr##.MG7lrf
 
+! Footbar in Google
 google.com,google.co.kr##.c93Gbe
 google.com,google.co.kr###footbar
 google.com,google.co.kr###fbarcnt
 google.com,google.co.kr##.fbar
 google.com,google.co.kr##.google-footer-bar
+youtube.com,youtube.co.kr###copyright > div
 
-
+! Promotion in Mimacstudy
 mimacstudy.com##[id^="mainPop"]
 mimacstudy.com##[id^="mainSubBottomBanner"]
 mimacstudy.com##.top_tch_bn
@@ -143,8 +178,13 @@ mimacstudy.com##.setupzone
 mimacstudy.com##.top_anchor
 mimacstudy.com##.dsm_bottomarea
 
+aca.reclass.study##.container-info
+
 gall.dcinside.com##.stickyunit
 gall.dcinside.com##.ad_floating
 gall.dcinside.com##.ad_bottom_list
-! 못생긴 폰트 제거
-dcinside.com#$#.gall_list .gall_num, .gall_list .gall_date, .gall_list .gall_count, .gall_list .gall_recommend, .ip{font-family: 'SF Pro Text', -apple-system !important;}
+gall.dcinside.com##.pop_tipbox
+
+
+
+!========== END OF COSMETIC RULE ==========
