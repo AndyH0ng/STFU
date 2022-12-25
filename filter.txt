@@ -4,28 +4,134 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4
+! Version: 4.3
 
-! TODO: Unsure stability while blocking wcs.naver.*
+||*.ad.naver.com^$important
+||ace.naver.com^
 ||wcs.naver.com^
 ||wcs.naver.net^
-||cauly.net^
-||cauly.co.kr^
-||gwx.adlibr.com^
-||sas.techhub.co.kr^
-||s.pstatic.net/dthumb.phinf/
-||s.pstatic.net/shopping.phinf/
-||img.mimacstudy.com/admin_sh/images/site/skyBanner^
-||img.mimacstudy.com/admin_sh/images/site/mainPopup^
-||fin.rainbownine.net/js/adn_tags_1.0.0.js
-||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
+||lcs.naver.com^
+||l.m.naver.com^
+||nil.naver.com^
+||adcr.naver.com^
+||tivan.naver.com^
+||tveta.naver.net^
+||veta.naver.com^
+||adcr.naver.com^
+||adcreative.naver.com^
+||inspector-collector.m.naver.com^
+||ntracker-collector.naver.com^
+||nelo2-col.navercorp.com^
+||nelo2-col.linecorp.com^
+||ad-exchange.toast.com^
+||adlc-exchange.toast.com^
 
-! Use system font instead of Tahoma in Dcinside
-||fonts.gstatic.com^$domain=dcinside.com
+
+@@||[2404:4600:4:44:203:217:229:218]:10009^
+@@||[2404:4600:6:165:211:231:98:46]:10009^
+@@||[2404:4600:9:8158:211:249:242:51]:10009^
+@@||[2404:4600:9:815a:211:249:242:111]:10009^
+@@||121.53.205.66:1009^
+@@||*.tiara.kakao.com^
+@@||*.tiara.daum.net^
+@@||kauth.kakao.com^
+@@||search1.daumcdn.net^$app=com.kakao.talk
+@@||videoads.kakao.com^
+@@||videostats.kakao.com^$app=com.kakao.talk
+@@||www.tistory.com^
+@@||aem-collector.daumkakao.io^
+||*.ad.kakao.com^
+||*.ad.kakaocorp.com^
+||*.ds.kakao.com^
+||ad-content.*.kakao.com^
+||ad.daum.net^
+||adclix.daum.net^
+||adclixad.daum.net^
+||adserver.*.kakao.com^
+||amsimg.daum-img.net^
+||amsv2.daum.net^
+||ca.adtc.daum.net^$important
+||display.ad.daum.net^
+||ka.*.daum.net/*
+||kyson.ad.daum.net^
+||t1.daumcdn.net/adfit/*
+||tr.*.daum.net/*
+||webid.ad.daum.net^
+
+||doubleclick.net^
+||googleoptimize.com^
+||googletagmanager.com^
+||google-analytics.com^
+||googleadservices.com^
+||adservice.google.co.kr^
+||adservice.google.com^
+||adservice.google.com.tw^
+||adservice.google.tw^
+||pagead2.googleadservices.com^
+||pagead2.googlesyndication.com^
+||partner.googleadservices.com^
+||www-google-analytics.l.google.com^
+||appsflyer.com^
+||adpick.co.kr^
+||adpopcorn.com^
+||baikalize.com^
+||cauly.co.kr^
+||cauly.net^
+||buzzvil.com^
+||taboola.com^
+||adinsight.co.kr^
+||adinsight.com^
+||gwx.adlibr.com^
+||megadata.co.kr^
+||widerplanet.com^
+||sas.techhub.co.kr^
+||fin.rainbownine.net^
+||kr-api.mcsvc.samsung.com^
+||kr-cdn-gpp.mcsvc.samsung.com^
+||adconsent.samsungrs.com^
+||analytics.samsungknox.com^
+||api.glb.samsung-gamelauncher.com^
+||sentry.io^
+||sentry-cdn.com^
+||crashlytics.com^
+||crashlyticsreports-pa.googleapis.com^
+||in.appcenter.ms^
+||bugsnag.com^
+||app-measurement.com^
+||cc-api-data.adobe.io^
 
 
 
 !========== END OF DOMAIN RULE ==========
+
+
+
+! Samsung Ad
+||img.samsungmembers.com/default/banner^
+||img.samsungapps.com/promotion^
+||img.samsungapps.com/productNew^
+||kr-cdn-gpp.mcsvc.samsung.com^
+||kr-api.mcsvc.samsung.com^
+
+! Use system font instead of Tahoma in Dcinside
+||fonts.gstatic.com^$domain=dcinside.com
+
+! Naver main
+||s.pstatic.net/shopping.phinf/
+||s.pstatic.net/nnow.phinf/
+||ssl.pstatic.net/melona/libs/
+
+! Naver Cafe
+||ssl.pstatic.net/static/common/gnb/banner/
+||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
+
+! Mimacstudy
+||img.mimacstudy.com/admin_sh/images/site/skyBanner^
+||img.mimacstudy.com/admin_sh/images/site/mainPopup^
+
+
+
+!========== END OF BLABLA RULE ==========
 
 
 
@@ -77,6 +183,8 @@ section.cafe.naver.com##.cafe_banner
 section.cafe.naver.com##.AsideSmartBot
 section.cafe.naver.com##.AsideNotice
 section.cafe.naver.com##.SectionFooter
+
+! Ad in Naver Cafe
 
 ! Red-dot noti icon in Naver Cafe
 cafe.naver.com##.ico_new
