@@ -1,205 +1,38 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
-! Title: STFU
+! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.3
+! Version: 4.5
 
-||*.ad.naver.com^$important
-||ace.naver.com^
-||wcs.naver.com^
-||wcs.naver.net^
-||lcs.naver.com^
-||l.m.naver.com^
-||nil.naver.com^
-||adcr.naver.com^
-||tivan.naver.com^
-||tveta.naver.net^
-||veta.naver.com^
-||adcr.naver.com^
-||adcreative.naver.com^
-||inspector-collector.m.naver.com^
+!======== 네이버 ========
+||inspector-collector.naver.com^
 ||ntracker-collector.naver.com^
 ||nelo2-col.navercorp.com^
 ||nelo2-col.linecorp.com^
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
+||lcs.naver.com^
+||l.m.naver.com^
+||l.www.naver.com^
 
-
-@@||[2404:4600:4:44:203:217:229:218]:10009^
-@@||[2404:4600:6:165:211:231:98:46]:10009^
-@@||[2404:4600:9:8158:211:249:242:51]:10009^
-@@||[2404:4600:9:815a:211:249:242:111]:10009^
-@@||121.53.205.66:1009^
-@@||*.tiara.kakao.com^
-@@||*.tiara.daum.net^
-@@||kauth.kakao.com^
-@@||search1.daumcdn.net^$app=com.kakao.talk
-@@||videoads.kakao.com^
-@@||videostats.kakao.com^$app=com.kakao.talk
-@@||www.tistory.com^
-@@||aem-collector.daumkakao.io^
-||*.ad.kakao.com^
-||*.ad.kakaocorp.com^
-||*.ds.kakao.com^
-||ad-content.*.kakao.com^
-||ad.daum.net^
-||adclix.daum.net^
-||adclixad.daum.net^
-||adserver.*.kakao.com^
-||amsimg.daum-img.net^
-||amsv2.daum.net^
-||ca.adtc.daum.net^$important
-||display.ad.daum.net^
-||ka.*.daum.net/*
-||kyson.ad.daum.net^
-||t1.daumcdn.net/adfit/*
-||tr.*.daum.net/*
-||webid.ad.daum.net^
-
-||doubleclick.net^
-||googleoptimize.com^
-||googletagmanager.com^
-||google-analytics.com^
-||googleadservices.com^
-||adservice.google.co.kr^
-||adservice.google.com^
-||adservice.google.com.tw^
-||adservice.google.tw^
-||pagead2.googleadservices.com^
-||pagead2.googlesyndication.com^
-||partner.googleadservices.com^
-||www-google-analytics.l.google.com^
-||appsflyer.com^
-||adpick.co.kr^
-||adpopcorn.com^
-||baikalize.com^
-||cauly.co.kr^
-||cauly.net^
-||buzzvil.com^
-||taboola.com^
-||adinsight.co.kr^
-||adinsight.com^
-||gwx.adlibr.com^
-||megadata.co.kr^
-||widerplanet.com^
-||sas.techhub.co.kr^
-||fin.rainbownine.net^
-||kr-api.mcsvc.samsung.com^
-||kr-cdn-gpp.mcsvc.samsung.com^
-||adconsent.samsungrs.com^
-||analytics.samsungknox.com^
-||api.glb.samsung-gamelauncher.com^
-||sentry.io^
-||sentry-cdn.com^
-||crashlytics.com^
-||crashlyticsreports-pa.googleapis.com^
-||in.appcenter.ms^
-||bugsnag.com^
-||app-measurement.com^
-||cc-api-data.adobe.io^
-
-
-
-!========== END OF DOMAIN RULE ==========
-
-
-
-! Samsung Ad
-||img.samsungmembers.com/default/banner^
-||img.samsungapps.com/promotion^
-||img.samsungapps.com/productNew^
-||kr-cdn-gpp.mcsvc.samsung.com^
-||kr-api.mcsvc.samsung.com^
-
-! Use system font instead of Tahoma in Dcinside
-||fonts.gstatic.com^$domain=dcinside.com
-
-! Naver main
-||s.pstatic.net/shopping.phinf/
-||s.pstatic.net/nnow.phinf/
+||tivan.naver.com^
+||veta.naver.com^
+||naver.com/shoppingbox/
 ||ssl.pstatic.net/melona/libs/
-
-! Naver Cafe
-||ssl.pstatic.net/static/common/gnb/banner/
-||cafeptthumb-phinf.pstatic.net/*/아사모_게시판_하단.jpg
-
-! Mimacstudy
-||img.mimacstudy.com/admin_sh/images/site/skyBanner^
-||img.mimacstudy.com/admin_sh/images/site/mainPopup^
+||ssl.pstatic.net/tveta/libs/
+||static-whale.pstatic.net/main/$image,domain=www.naver.com
 
 
-
-!========== END OF BLABLA RULE ==========
-
-
-
-
-! Annoyance in Naver
-naver.com##.service_area
-naver.com##.btn_keyboard
-naver.com##.setkr_area
-naver.com##.btn_arw
-naver.com##._btn_arw
-naver.com###NM_THEMECAST_CONTENTS_CONTAINER
-naver.com###footer
-
-! Ad and promotion banner in Naver
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
-m.naver.com###MM_SEARCH_NOW
-m.naver.com###MM_SEARCH_SHOP_LIVE
-m.naver.com###MM_HOME_PROMOTION
-m.naver.com##.ah_ly_tooltip
-m.naver.com##.ah_ly_tooltip_wrap
-m.naver.com##.ss_service_partner
-m.naver.com##.section_notice
-m.naver.com##.section_tutorial
-m.naver.com##.main_footer
-m.notify.naver.com##.tooltip_benefit_wrap
-m.search.naver.com##.banner_bx
+! Not verified
+||naverpa-phinf.pstatic.net^
+||cafefiles.pstatic.net^
 
-! Fix profile info layout in Naver
-naver.com###gnb_name1
-naver.com#$#.gnb_my_namebox {background-image: none !important;}
-naver.com#$#.gnb_my_namebox {padding: 0 !important;}
-naver.com#$#.gnb_my_li {margin-top: 2px !important;}
-naver.com#$#.gnb_my_li {background: none !important;}
-naver.com##.gnb_notice_li
-naver.com##.mail_li
-naver.com##.gnb_service_li
-
-! '네이버 메인에 추가'
-naver.com##.nv-openmain
-
-! Annoyance in Naver Cafe
-cafe.naver.com##.btn_arrow
-section.cafe.naver.com##.snb_town
-section.cafe.naver.com##.MenuList
-section.cafe.naver.com##.home_editors
-section.cafe.naver.com##.cafe_banner
-section.cafe.naver.com##.AsideSmartBot
-section.cafe.naver.com##.AsideNotice
-section.cafe.naver.com##.SectionFooter
-
-! Ad in Naver Cafe
-
-! Red-dot noti icon in Naver Cafe
-cafe.naver.com##.ico_new
-m.cafe.naver.com##.ico_new
-m.cafe.naver.com##.ico-new-badge
-m.cafe.naver.com##.tab_bubble
-m.cafe.naver.com##.red_dot
-m.cafe.naver.com##.icon_new_txt
-
-
-m.cafe.naver.com##.area_recommend
-m.cafe.naver.com##.area_theme_link
-m.cafe.naver.com##.CafeAppBanner
-
-! Promotion in Naver Pay and Naver Shopping
+! 네이버 페이
 new-m.pay.naver.com##[class^="Header_new"]
 new-m.pay.naver.com##[class^="ServiceLink_icon-new"]
 new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
@@ -214,62 +47,52 @@ new-m.pay.naver.com##[class^="Footer_article"]
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
 new-m.pay.naver.com##[class^="MenuList_icon-new-text"]
 new-m.pay.naver.com##[class^="MenuList_banner-point"]
+
+! 네이버 쇼핑
 shopping.naver.com##[class^="liveBanner_live_banner"]
 shopping.naver.com##[class^="liveCalendar_live_calendar"]
 shopping.naver.com##[class^="banners_banner_area"]
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
 
-! Annoyance in Naver News
-media.naver.com##.phnb_tooltip
+! 네이버 지도
+||map.naver.com/v5/assets/img/settings/$image
 
-! Cursor outline
-google.com,google.co.kr##.gb_Ue
-play.google.com#$#.kOqhQd {outline-style: none !important;}
-youtube.com##.tp-yt-paper-tooltip
+!======== 다음카카오 ========
+||ad.daum.net^
+||ad.kakao.com^
+||t1.daumcdn.net/adfit/
+||tiara.kakao.com^
+||tiara.daum.net^
 
-! Drawer
-google.com,google.co.kr##.KojFAc
-google.com,google.co.kr##.DGbnse
+!======== 구글 ========
+||doubleclick.net^
+||adservice.google.com^
+||adservice.google.co.kr^
+||googleadservices.com^
+||google-analytics.com^
+||googlesyndication.com^
+||www-google-analytics.l.google.com^
 
-! 전체 이미지
-google.com,google.co.kr###SBmmZd
+!======== 삼성 ========
+||kr-api.mcsvc.samsung.com^
+||kr-cdn-gpp.mcsvc.samsung.com^
+||adconsent.samsungrs.com^
+||analytics.samsungknox.com^
 
-! Google 정보와 스토어
-google.com,google.co.kr##.MV3Tnb
+!======== 디시인사이드 ========
+! 무한 스크롤 현상 수정
+gall.dcinside.com##.stickyunit
 
-! Remove virtual keyboard icon and voice search icon etc..
-google.com,google.co.kr##.Umvnrc
-google.com,google.co.kr##.nDcEnd
-google.com,google.co.kr##.AcPRKc
-google.com,google.co.kr##.eiZhDe
-google.com,google.co.kr##.ACRAdd
-google.com,google.co.kr##.GFAb4d
-google.com,google.co.kr##.dRYYxd
-google.com,google.co.kr##.Tg7LZd
-google.com,google.co.kr##.BIqFsb
-google.com,google.co.kr##.fqb79e
-youtube.com##.gsst_b
-youtube.com###voice-search-button
-!TODO
+!======== 뉴스 ========
+! 중앙일보
+joongang.co.kr##.banner_plus
+joongang.co.kr##.plotting_banner
+joongang.co.kr##.sticky_recommend_list
 
-! 알림
-google.com,google.co.kr##.j4hoVe
-
-! Google Search and Feeling Lucky
-google.com,google.co.kr##.FPdoLc
-google.com,google.co.kr##.lJ9FBc
-google.com,google.co.kr##.MG7lrf
-
-! Footbar in Google
-google.com,google.co.kr##.c93Gbe
-google.com,google.co.kr###footbar
-google.com,google.co.kr###fbarcnt
-google.com,google.co.kr##.fbar
-google.com,google.co.kr##.google-footer-bar
-youtube.com,youtube.co.kr###copyright > div
-
-! Promotion in Mimacstudy
+!======== 대성마이맥 ========
+||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
+||img.mimacstudy.com/admin_sh/images/site/skyBanner/$image
 mimacstudy.com##[id^="mainPop"]
 mimacstudy.com##[id^="mainSubBottomBanner"]
 mimacstudy.com##.top_tch_bn
@@ -282,17 +105,33 @@ mimacstudy.com##.main_preview_zone
 mimacstudy.com##.main_youtube_wrap
 mimacstudy.com##.left_sky_bnr
 mimacstudy.com##.right_sky_bnr
-mimacstudy.com##.setupzone
 mimacstudy.com##.top_anchor
 mimacstudy.com##.dsm_bottomarea
 
-aca.reclass.study##.container-info
+!======== 광고 호스팅 ========
+||adlibr.com^
+||adpick.co.kr^
+||adpopcorn.com^
+||appsflyer.com^
+||cauly.co.kr^
+||cauly.net^
+||megadata.co.kr^
+||rainbownine.net^
+||taboola.com^
+||techhub.co.kr^
+||widerplanet.com^
 
-gall.dcinside.com##.stickyunit
-gall.dcinside.com##.ad_floating
-gall.dcinside.com##.ad_bottom_list
-gall.dcinside.com##.pop_tipbox
+!======== 분석 ========
+||app-measurement.com^
+||bugsnag.com^
+||cc-api-data.adobe.io^
+||crashlytics.com^
+||sentry.io^
+||sentry-cdn.com^
 
-
-
-!========== END OF COSMETIC RULE ==========
+! 번개장터 모바일 앱 프로모션
+||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
+bunjang.co.kr###modal
+bunjang.co.kr##.sc-iqzUVk
+bunjang.co.kr##.sc-kgAjT
+bunjang.co.kr##.sc-qrIAp
