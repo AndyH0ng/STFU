@@ -1,0 +1,127 @@
+[Adblock Plus 2.0]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU Annoyance
+! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
+! Expires: 300 days
+! Version: 4.5
+
+! 가상 키보드 버튼
+##.Umvnrc
+##.BKRPef
+##.gsst_b
+##.sbib_c
+naver.com##.btn_keyboard
+search.naver.com##.setkr_area
+daum.net##.img_keyboard
+
+! 보이스 서치 버튼
+###voice-search-button
+m.naver.com##.sch_region
+m.search.naver.com##.btn_voice
+
+! 검색창 자동완성 화살표
+##.DPvwYc
+##[class^="_searchInput_button_search_auto"]
+naver.com##.btn_arw
+search.naver.com##.autocomplete
+section.cafe.naver.com##.btn_arrow
+dict.naver.com##.btn_autocomplete
+tv.naver.com##.auto_tx
+
+! 검색창 검색 버튼 or 통합검색 버튼 + I'm Feeling Lucky
+##.gNO89b
+##.RNmpXc
+search.naver.com##.bt_search
+section.blog.naver.com##.button_naver
+section.cafe.naver.com##.btn_search_all
+news.naver.com##._total_search_btn
+naver.com#$#.greenwindow {padding-right: 0px !important;}
+naver.com#$#.search_area {width: auto !important;}
+! search.naver.com#$#.type_write {border: none !important;}
+! search.naver.com#$#.type_write {box-shadow: none !important;}
+! search.naver.com#$#.type_write {-webkit-box-shadow: none !important;}
+shopping.naver.com[class^="_searchInput_voice_search_button"]
+daum.net##.btn_search
+daum.net#$#.btn_reset {right: 10px !important;}
+search.daum.net##.btn_search
+
+! Use system font instead of Tahoma in Dcinside
+||fonts.gstatic.com^$domain=dcinside.com
+
+! 네이버 -> 상단 프로필 섹션 레이아웃 수정
+naver.com#$#.gnb_my_namebox {background-image: none !important;}
+naver.com#$#.gnb_my_namebox {padding: 0 !important;}
+naver.com#$#.gnb_my_li {margin-top: 2px !important;}
+naver.com#$#.gnb_my_li {background: none !important;}
+naver.com##.gnb_name
+naver.com##.gnb_notice_li
+naver.com##.mail_li
+naver.com##.gnb_service_li
+
+! '네이버 메인에 추가' 버튼
+naver.com##.nv-openmain
+
+! '##를 시작페이지로'
+naver.com##.service_area
+daum.net##.link_launch
+
+! SNS 공유 버튼
+##.sns-link
+##.sns_link
+##.sns-list
+##.sns_list
+search.naver.com##.bt_share
+news.naver.com##.send_caption
+bunjang.co.kr##.sc-bRPJBS
+bunjang.co.kr##[class^="Productsstyle__ShareButtons"]
+imnews.imbc.com##.wrap_sns
+news.sbs.co.kr##.i_y
+news.sbs.co.kr##.i_f
+news.sbs.co.kr##.i_t
+news.sbs.co.kr##.i_insta
+
+! 최상위 이동 버튼
+naver.com##.content_top
+search.shopping.naver.com##[class^="style_wrap_top"]
+joongang.co.kr##.btn_top
+bunjang.co.kr##.sc-jbKcbu
+news.sbs.co.kr##.w_btn_top
+news.sbs.co.kr#$#.player_area {bottom:0 !important;}
+
+! red dot
+dict.naver.com##.new
+dict.naver.com##.Nnew
+cafe.naver.com##.ico_new
+cafe.naver.com##.list-i-new
+mimacstudy.com##.new_ico
+mimacstudy.com##.xi-new
+
+! 툴팁
+section.blog.naver.com##.register_tooltip
+gall.dcinside.com##.pop_tipbox
+bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
+
+! breadcrumb
+##.ZOyvub
+##.gb_Ue
+
+! 풋바
+###footer
+##.footer
+##[class^="footer"]
+##[class^="_footer"]
+##.KxwPGc
+##.SSwjIe
+##.google-footer-bar
+search.shopping.naver.com##[class^="style_footer"]
+news.naver.com##.contentinfo
+daum.net##.foot_daum
+accounts.kakao.com##.doc-footer
+bunjang.co.kr##.sc-eTuwsz
+news.sbs.co.kr##.w_footer
+mimacstudy.com##.dsm_bottomarea
+
+section.cafe.naver.com##.snb_town
+shopping.naver.com##[class^="gnb_live_area"]
+play.google.com###kO001e > header.S3WLMd:first-child > nav.oPjgQb:first-child > a.f0UV3d:first-child > span:last-child
