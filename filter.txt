@@ -2,17 +2,14 @@
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Cosmetic Ad
-! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
+! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.2
+! Version: 4.5.2.1
 
 !======== Problematic ========
 ! Broke Facebook Auth
 ! Facebook 계정을 통해 3자 앱 로그인 사용 중이라면 이 규칙을 제거하세요
 ||graph.facebook.com^$important
-
-!======== Overide ========
-||googleadservices.com$important
 
 !======== 네이버 ========
 ||inspector-collector.naver.com^
@@ -28,8 +25,11 @@
 ||lcs.naver.com^
 ||l.m.naver.com^
 ||l.www.naver.com^
+||nil.naver.com^
 ||tivan.naver.com^
 ||veta.naver.com^
+||wcs.naver.com^
+||wcs.naver.net^
 ||naver.com/shoppingbox/
 ||ssl.pstatic.net/melona/libs/
 ||ssl.pstatic.net/tveta/libs/
@@ -37,10 +37,6 @@
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
-! Not verified
-||naverpa-phinf.pstatic.net^
-||cafefiles.pstatic.net^
-
 
 ! 네이버 페이
 new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
@@ -71,7 +67,8 @@ shopping.naver.com##[class^="_footer_footer"]
 ||doubleclick.net^
 ||adservice.google.com^
 ||adservice.google.co.kr^
-||googleadservices.com^
+||googleadservices.com^$important
+||googlesyndication.com^
 ||google-analytics.com^
 ||googlesyndication.com^
 ||www-google-analytics.l.google.com^
@@ -129,6 +126,8 @@ mimacstudy.com##.top_anchor
 mimacstudy.com##.dsm_bottomarea
 
 !======== 광고 호스팅 ========
+||adinsight.com^
+||adinsight.co.kr^
 ||adison.co^
 ||adlibr.com^
 ||adpick.co.kr^
@@ -150,6 +149,7 @@ mimacstudy.com##.dsm_bottomarea
 ||sentry.io^
 ||sentry-cdn.com^
 ||sentry-fin.naver.com^
+||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 
 ! 번개장터 모바일 앱 프로모션
