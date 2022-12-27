@@ -24,8 +24,8 @@ m.search.naver.com##.btn_voice
 ##.DPvwYc
 ##[class^="_searchInput_button_search_auto"]
 naver.com##.btn_arw
+naver.com##.btn_arrow
 search.naver.com##.autocomplete
-section.cafe.naver.com##.btn_arrow
 dict.naver.com##.btn_autocomplete
 tv.naver.com##.auto_tx
 
@@ -71,8 +71,11 @@ daum.net##.link_launch
 ##.sns_link
 ##.sns-list
 ##.sns_list
-search.naver.com##.bt_share
-news.naver.com##.send_caption
+naver.com##.bt_share
+naver.com##.send_caption
+naver.com##.sns_share
+naver.com##.spi_sns_share
+naver.com##.u_btn_sns_share
 bunjang.co.kr##.sc-bRPJBS
 bunjang.co.kr##[class^="Productsstyle__ShareButtons"]
 imnews.imbc.com##.wrap_sns
@@ -80,21 +83,29 @@ news.sbs.co.kr##.i_y
 news.sbs.co.kr##.i_f
 news.sbs.co.kr##.i_t
 news.sbs.co.kr##.i_insta
+khan.co.kr##.wrap_menubox_snslink
 
 ! 최상위 이동 버튼
+naver.com##.r_pg_top
+naver.com##._go_top
 naver.com##.content_top
-search.shopping.naver.com##[class^="style_wrap_top"]
+naver.com##._MOVE_TOP
+naver.com##.MM_TO_TOP
+shopping.naver.com##[class^="style_wrap_top"]
 joongang.co.kr##.btn_top
 bunjang.co.kr##.sc-jbKcbu
 news.sbs.co.kr##.w_btn_top
 news.sbs.co.kr#$#.player_area {bottom:0 !important;}
+khan.co.kr##.btn_gotop_floating
 
 ! red dot
+##.ico_new
+##.ico-new
+##.new_ico
+##.new-ico
 dict.naver.com##.new
 dict.naver.com##.Nnew
-cafe.naver.com##.ico_new
-cafe.naver.com##.list-i-new
-mimacstudy.com##.new_ico
+naver.com##.list-i-new
 mimacstudy.com##.xi-new
 
 ! 툴팁
@@ -114,14 +125,24 @@ bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 ##.KxwPGc
 ##.SSwjIe
 ##.google-footer-bar
-search.shopping.naver.com##[class^="style_footer"]
+shopping.naver.com##[class^="style_footer"]
 news.naver.com##.contentinfo
+news.naver.com##._STICKY_FOOTER
+media.naver.com##.mp_footer
 daum.net##.foot_daum
 accounts.kakao.com##.doc-footer
 bunjang.co.kr##.sc-eTuwsz
 news.sbs.co.kr##.w_footer
 mimacstudy.com##.dsm_bottomarea
 
+! Google
+! 좌측 상단 드로어
+##.KojFAc
+! 우측 상단 알림
+##.j4hoVe
+
+! 네이버 뉴스 -> 내가 설정한 다른 언론사 보기
+news.naver.com##._MY_CHANNEL_OFFICE_WRAP
 section.cafe.naver.com##.snb_town
 shopping.naver.com##[class^="gnb_live_area"]
 play.google.com###kO001e > header.S3WLMd:first-child > nav.oPjgQb:first-child > a.f0UV3d:first-child > span:last-child

@@ -13,6 +13,7 @@
 ||nelo2-col.linecorp.com^
 ||ad-exchange.toast.com^
 ||adlc-exchange.toast.com^
+||impression-neo.naver.com^
 ||lcs.naver.com^
 ||l.m.naver.com^
 ||l.www.naver.com^
@@ -32,22 +33,6 @@ m.naver.com##.id_comp_promotion_tablet
 ||naverpa-phinf.pstatic.net^
 ||cafefiles.pstatic.net^
 
-! 네이버 페이
-new-m.pay.naver.com##[class^="Header_new"]
-new-m.pay.naver.com##[class^="ServiceLink_icon-new"]
-new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
-new-m.pay.naver.com##[class^="PayMoneyWidgetBanner_article"]
-new-m.pay.naver.com##[class^="PromotionB_article"]
-new-m.pay.naver.com##[class^="PayLife_article"]
-new-m.pay.naver.com##[class^="ADRewardSummary_article"]
-new-m.pay.naver.com##[class^="Notice_article"]
-new-m.pay.naver.com##[class^="InsuranceTip_article"]
-new-m.pay.naver.com##[class^="BottomAds_article"]
-new-m.pay.naver.com##[class^="Footer_article"]
-new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
-new-m.pay.naver.com##[class^="MenuList_icon-new-text"]
-new-m.pay.naver.com##[class^="MenuList_banner-point"]
-
 ! 네이버 쇼핑
 shopping.naver.com##[class^="liveBanner_live_banner"]
 shopping.naver.com##[class^="liveCalendar_live_calendar"]
@@ -61,9 +46,9 @@ shopping.naver.com##[class^="_footer_footer"]
 !======== 다음카카오 ========
 ||ad.daum.net^
 ||ad.kakao.com^
-||t1.daumcdn.net/adfit/
 ||tiara.kakao.com^
 ||tiara.daum.net^
+||t1.daumcdn.net/adfit/
 
 !======== 구글 ========
 ||doubleclick.net^
@@ -80,7 +65,14 @@ shopping.naver.com##[class^="_footer_footer"]
 ||adconsent.samsungrs.com^
 ||analytics.samsungknox.com^
 
+!======== 나무위키 ========
+! 나무위키 내 파워링크는 유저스크립트를 통해 제거할 수 있습니다.
+! https://github.com/List-KR/NamuLink
+||arca.live/static/ad/
+||w.namu.la/s/$image
+
 !======== 디시인사이드 ========
+||addc.dcinside.com^
 ! 무한 스크롤 현상 수정
 gall.dcinside.com##.stickyunit
 
