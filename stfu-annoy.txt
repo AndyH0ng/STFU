@@ -4,7 +4,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.2.1
+! Version: 4.5.2.2
 
 ! 가상 키보드 버튼
 ##.Umvnrc
@@ -32,6 +32,7 @@ tv.naver.com##.auto_tx
 ! 검색창 검색 버튼 or 통합검색 버튼 + I'm Feeling Lucky
 ##.gNO89b
 ##.RNmpXc
+##.Tg7LZd
 search.naver.com##.bt_search
 section.blog.naver.com##.button_naver
 section.cafe.naver.com##.btn_search_all
@@ -41,7 +42,7 @@ naver.com#$#.search_area {width: auto !important;}
 ! search.naver.com#$#.type_write {border: none !important;}
 ! search.naver.com#$#.type_write {box-shadow: none !important;}
 ! search.naver.com#$#.type_write {-webkit-box-shadow: none !important;}
-shopping.naver.com[class^="_searchInput_voice_search_button"]
+shopping.naver.com##[class^="_searchInput_voice_search_button"]
 daum.net##.btn_search
 daum.net#$#.btn_reset {right: 10px !important;}
 search.daum.net##.btn_search
@@ -89,6 +90,7 @@ khan.co.kr##.wrap_menubox_snslink
 naver.com##.r_pg_top
 naver.com##._go_top
 naver.com##.content_top
+naver.com#$#.btn_theme {right: 24px !important;}
 naver.com##._MOVE_TOP
 naver.com##.MM_TO_TOP
 shopping.naver.com##[class^="style_wrap_top"]
@@ -124,10 +126,12 @@ bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 ! 풋바
 ###footer
 ##.footer
+###fbar
 ##[class^="footer"]
 ##[class^="_footer"]
 ##.KxwPGc
 ##.SSwjIe
+##.c93Gbe
 ##.google-footer-bar
 new-m.pay.naver.com##[class^="Footer_article"]
 shopping.naver.com##[class^="style_footer"]

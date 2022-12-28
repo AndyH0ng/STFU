@@ -4,7 +4,7 @@
 ! Title: STFU DNS 필터
 ! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
 ! Expires: 300 days
-! Version: 4.5.2.1
+! Version: 4.5.2.2
 
 !======== Problematic ========
 ! Broke Facebook Auth
@@ -22,6 +22,7 @@
 ||searchad-phinf.pstatic.net^
 ||ad.naver.com^
 ||ace.naver.com^
+||er.search.naver.com^
 ||lcs.naver.com^
 ||l.m.naver.com^
 ||l.www.naver.com^
@@ -75,22 +76,30 @@
 ||adpick.co.kr^
 ||adpopcorn.com^
 ||appsflyer.com^
+||cdn-settings.appsflyersdk.com^
 ||cauly.co.kr^
 ||cauly.net^
+||contentsquare.net^
+||demandbase.com^
 ||megadata.co.kr^
 ||rainbownine.net^
 ||taboola.com^
 ||techhub.co.kr^
 ||widerplanet.com^
 
-!======== 분석 ========
+!======== 분석 및 추적 ========
 ||app-measurement.com^
 ||bugsnag.com^
 ||cc-api-data.adobe.io^
+||company-target.com^
 ||crashlytics.com^
+||demdex.net^
+||fbcdn.net^
+||marketo.net^
 ||sentry.io^
 ||sentry-cdn.com^
 ||sentry-fin.naver.com^
+||snap.licdn.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 

@@ -4,7 +4,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.2.1
+! Version: 4.5.2.2
 
 !======== Problematic ========
 ! Broke Facebook Auth
@@ -22,6 +22,7 @@
 ||searchad-phinf.pstatic.net^
 ||ad.naver.com^
 ||ace.naver.com^
+||er.search.naver.com^
 ||lcs.naver.com^
 ||l.m.naver.com^
 ||l.www.naver.com^
@@ -33,10 +34,12 @@
 ||naver.com/shoppingbox/
 ||ssl.pstatic.net/melona/libs/
 ||ssl.pstatic.net/tveta/libs/
+||https://s.pstatic.net/shopping.phinf/20221220_9/bcd9bee9-98b5-4f16-90e7-61729471d020.jpg
 ||static-whale.pstatic.net/main/$image,domain=www.naver.com
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
+
 
 ! 네이버 페이
 new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
@@ -94,7 +97,6 @@ shopping.naver.com##[class^="_footer_footer"]
 ! 나무위키 내 파워링크는 유저스크립트를 통해 제거할 수 있습니다.
 ! https://github.com/List-KR/NamuLink
 ||arca.live/static/ad/
-||w.namu.la/s/$image
 
 !======== 디시인사이드 ========
 ||addc.dcinside.com^
@@ -135,20 +137,27 @@ mimacstudy.com##.dsm_bottomarea
 ||appsflyer.com^
 ||cauly.co.kr^
 ||cauly.net^
+||contentsquare.net^
+||demandbase.com^
 ||megadata.co.kr^
 ||rainbownine.net^
 ||taboola.com^
 ||techhub.co.kr^
 ||widerplanet.com^
 
-!======== 분석 ========
+!======== 분석 및 추적 ========
 ||app-measurement.com^
 ||bugsnag.com^
 ||cc-api-data.adobe.io^
+||company-target.com^
 ||crashlytics.com^
+||demdex.net^
+||fbcdn.net^
+||marketo.net^
 ||sentry.io^
 ||sentry-cdn.com^
 ||sentry-fin.naver.com^
+||snap.licdn.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||firebaselogging-pa.googleapis.com^
 
