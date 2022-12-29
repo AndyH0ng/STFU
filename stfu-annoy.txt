@@ -1,6 +1,7 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
+! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/stfu-annoy.txt
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days

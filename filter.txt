@@ -1,6 +1,7 @@
 [Adblock Plus 2.0]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
+! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/filter.txt
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
