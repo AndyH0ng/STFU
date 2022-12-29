@@ -7,14 +7,15 @@
 ! Version: 4.5.2.3
 
 ! 가상 키보드 버튼
-##.gsst_b
-##.sbib_c
 google.com,google.co.kr##.Umvnrc
 google.com,google.co.kr##.BKRPef
-google.com,google.co.kr##.dRYYxd
+google.com,google.co.kr##.id-inputtools
+youtube.com##.gsst_b
+youtube.com##.sbib_c
 naver.com##.btn_keyboard
 search.naver.com##.setkr_area
 daum.net##.img_keyboard
+
 ! 보이스 서치 버튼
 ###voice-search-button
 m.naver.com##.sch_region
@@ -30,18 +31,15 @@ dict.naver.com##.btn_autocomplete
 tv.naver.com##.auto_tx
 
 ! 검색창 검색 버튼 or 통합검색 버튼 + I'm Feeling Lucky
-##.gNO89b
-##.RNmpXc
-google.com,google.co.kr##.Tg7LZd
+google.com,google.co.kr##.gNO89b
+google.com,google.co.kr##.RNmpXc
+google.com,google.co.kr##.pzfvzf
 search.naver.com##.bt_search
 section.blog.naver.com##.button_naver
 section.cafe.naver.com##.btn_search_all
 news.naver.com##._total_search_btn
 naver.com#$#.greenwindow {padding-right: 0px !important;}
 naver.com#$#.search_area {width: auto !important;}
-! search.naver.com#$#.type_write {border: none !important;}
-! search.naver.com#$#.type_write {box-shadow: none !important;}
-! search.naver.com#$#.type_write {-webkit-box-shadow: none !important;}
 shopping.naver.com##[class^="_searchInput_voice_search_button"]
 daum.net##.btn_search
 daum.net#$#.btn_reset {right: 10px !important;}
@@ -72,6 +70,7 @@ daum.net##.link_launch
 ##.sns_link
 ##.sns-list
 ##.sns_list
+google.com,google.co.kr##.rsir2d
 naver.com##.bt_share
 naver.com##.send_caption
 naver.com##.sns_share
@@ -113,29 +112,30 @@ naver.com##.list-i-new
 mimacstudy.com##.xi-new
 
 ! 툴팁
+google.com,google.co.kr##.gb_Ue
+google.com,google.co.kr##.gb_Hc
+google.com,google.co.kr##.gb_nf
+google.com,google.co.kr##.gb_of
+google.com,google.co.kr##.EI48Lc
+google.com,google.co.kr##[class$="tooltip"]
+google.com,google.co.kr##.help-panel-header__close-tooltip
 section.blog.naver.com##.register_tooltip
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
-
 youtube.com##.tp-yt-paper-tooltip
 gall.dcinside.com##.pop_tipbox
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 
-! breadcrumb
-google.com,google.co.kr##.ZOyvub
-google.com,google.co.kr###div:contains(이미지로 검색)
-google.com,google.co.kr###div:contains(입력도구)
-youtube.com##.gb_Ue
-
 ! 풋바
 ###footer
 ##.footer
-###fbar
 ##[class^="footer"]
 ##[class^="_footer"]
 ##.KxwPGc
 ##.SSwjIe
 ##.c93Gbe
 ##.google-footer-bar
+google.com,google.co.kr###sfooter
+google.com,google.co.kr###fbar
 new-m.pay.naver.com##[class^="Footer_article"]
 shopping.naver.com##[class^="style_footer"]
 news.naver.com##.contentinfo
@@ -144,6 +144,7 @@ media.naver.com##.mp_footer
 daum.net##.foot_daum
 kakao.com##.doc-footer
 bunjang.co.kr##.sc-eTuwsz
+bunjang.co.kr##.vPHvp
 news.sbs.co.kr##.w_footer
 mimacstudy.com##.dsm_bottomarea
 

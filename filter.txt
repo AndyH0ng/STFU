@@ -170,3 +170,4 @@ bunjang.co.kr###modal
 bunjang.co.kr##.sc-iqzUVk
 bunjang.co.kr##.sc-kgAjT
 bunjang.co.kr##.sc-qrIAp
+bunjang.co.kr##.fRAuHJ:last-child
