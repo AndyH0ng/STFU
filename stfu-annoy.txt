@@ -4,17 +4,17 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.2.2
+! Version: 4.5.2.3
 
 ! 가상 키보드 버튼
-##.Umvnrc
-##.BKRPef
 ##.gsst_b
 ##.sbib_c
+google.com,google.co.kr##.Umvnrc
+google.com,google.co.kr##.BKRPef
+google.com,google.co.kr##.dRYYxd
 naver.com##.btn_keyboard
 search.naver.com##.setkr_area
 daum.net##.img_keyboard
-
 ! 보이스 서치 버튼
 ###voice-search-button
 m.naver.com##.sch_region
@@ -32,7 +32,7 @@ tv.naver.com##.auto_tx
 ! 검색창 검색 버튼 or 통합검색 버튼 + I'm Feeling Lucky
 ##.gNO89b
 ##.RNmpXc
-##.Tg7LZd
+google.com,google.co.kr##.Tg7LZd
 search.naver.com##.bt_search
 section.blog.naver.com##.button_naver
 section.cafe.naver.com##.btn_search_all
@@ -115,13 +115,16 @@ mimacstudy.com##.xi-new
 ! 툴팁
 section.blog.naver.com##.register_tooltip
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
+
 youtube.com##.tp-yt-paper-tooltip
 gall.dcinside.com##.pop_tipbox
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 
 ! breadcrumb
-##.ZOyvub
-##.gb_Ue
+google.com,google.co.kr##.ZOyvub
+google.com,google.co.kr###div:contains(이미지로 검색)
+google.com,google.co.kr###div:contains(입력도구)
+youtube.com##.gb_Ue
 
 ! 풋바
 ###footer

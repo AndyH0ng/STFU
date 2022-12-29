@@ -4,7 +4,7 @@
 ! Title: STFU DNS 필터
 ! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
 ! Expires: 300 days
-! Version: 4.5.2.2
+! Version: 4.5.2.3
 
 !======== Problematic ========
 ! Broke Facebook Auth
@@ -83,11 +83,13 @@
 ||demandbase.com^
 ||megadata.co.kr^
 ||rainbownine.net^
+||rlcdn.com^
 ||taboola.com^
 ||techhub.co.kr^
 ||widerplanet.com^
 
 !======== 분석 및 추적 ========
+||omtrdc.net^
 ||app-measurement.com^
 ||bugsnag.com^
 ||cc-api-data.adobe.io^
@@ -96,6 +98,7 @@
 ||demdex.net^
 ||fbcdn.net^
 ||marketo.net^
+||omtrdc.net^
 ||sentry.io^
 ||sentry-cdn.com^
 ||sentry-fin.naver.com^
