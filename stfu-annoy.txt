@@ -118,6 +118,7 @@ google.com,google.co.kr##.gb_Hc
 google.com,google.co.kr##.gb_nf
 google.com,google.co.kr##.gb_of
 google.com,google.co.kr##.gb_ve
+google.com,google.co.kr##.gb_we
 google.com,google.co.kr##.EI48Lc
 google.com,google.co.kr##.ZOyvub
 google.com,google.co.kr##[class$="tooltip"]
