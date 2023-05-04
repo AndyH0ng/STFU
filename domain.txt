@@ -76,6 +76,7 @@
 ||adlibr.com^
 ||admaru.net^
 ||adpick.co.kr^
+||ads-partners.coupang.com^
 ||adpopcorn.com^
 ||adv.imadrep.co.kr^
 ||amazon-adsystem.com^
