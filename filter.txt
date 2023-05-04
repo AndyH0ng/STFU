@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.2.7
+! Version: 4.5.2.7-a
 
 !======== Problematic ========
 ! Broke Facebook Auth
@@ -50,6 +50,7 @@ new-m.pay.naver.com##[class^="PayService_banner"]
 new-m.pay.naver.com##[class^="PromotionB_article"]
 new-m.pay.naver.com##[class^="new_myWallet_area-promotion"]
 new-m.pay.naver.com##[class^="PayLife_article"]
+new-m.pay.naver.com##[class^="p_pay_home"]
 
 ! 네이버 쇼핑
 shopping.naver.com##[class^="liveBanner_live_banner"]
