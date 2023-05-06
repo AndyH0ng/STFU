@@ -84,6 +84,7 @@ news.sbs.co.kr##.i_y
 news.sbs.co.kr##.i_f
 news.sbs.co.kr##.i_t
 news.sbs.co.kr##.i_insta
+news.kbs.co.kr##.detail-card-share
 khan.co.kr##.wrap_menubox_snslink
 
 ! 최상위 이동 버튼
