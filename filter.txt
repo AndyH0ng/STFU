@@ -50,7 +50,7 @@ new-m.pay.naver.com##[class^="PayService_banner"]
 new-m.pay.naver.com##[class^="PromotionB_article"]
 new-m.pay.naver.com##[class^="new_myWallet_area-promotion"]
 new-m.pay.naver.com##[class^="PayLife_article"]
-new-m.pay.naver.com##[class^="p_pay_home"]
+new-m.pay.naver.com##[id^="p_pay_home"]
 
 ! 네이버 쇼핑
 shopping.naver.com##[class^="liveBanner_live_banner"]
@@ -134,7 +134,6 @@ mimacstudy.com##.dsm_bottomarea
 !======== 광고 호스팅 ========
 ||adinsight.com^
 ||adinsight.co.kr^
-||adison.co^
 ||adlibr.com^
 ||adpick.co.kr^
 ||adpopcorn.com^

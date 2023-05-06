@@ -128,6 +128,7 @@ google.com,google.co.kr##.help-panel-header__close-tooltip
 section.blog.naver.com##.register_tooltip
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
 youtube.com##.tp-yt-paper-tooltip
+youtube.com##.ytp-tooltip-text
 microsoft.com##.c-uhf-tooltip
 gall.dcinside.com##.pop_tipbox
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
