@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.2.7-b
+! Version: 4.5.2.8
 
 !======== Problematic ========
 ! Broke Facebook Auth
@@ -50,7 +50,6 @@ new-m.pay.naver.com##[class^="PayService_banner"]
 new-m.pay.naver.com##[class^="PromotionB_article"]
 new-m.pay.naver.com##[class^="new_myWallet_area-promotion"]
 new-m.pay.naver.com##[class^="PayLife_article"]
-new-m.pay.naver.com##[id^="p_pay_home"]
 
 ! 네이버 쇼핑
 shopping.naver.com##[class^="liveBanner_live_banner"]
@@ -69,6 +68,7 @@ shopping.naver.com##[class^="_footer_footer"]
 ||tiara.daum.net^
 ||aem-collector.daumkakao.io^
 ||t1.daumcdn.net/adfit/
+search.daum.net###adSenseColl
 
 !======== 구글 ========
 ||doubleclick.net^
@@ -107,11 +107,16 @@ shopping.naver.com##[class^="_footer_footer"]
 ! 무한 스크롤 현상 수정
 gall.dcinside.com##.stickyunit
 
+!======== 쿠팡 ========
+||ads-partners.coupang.com^
+
 !======== 뉴스 ========
 ! 중앙일보
 joongang.co.kr##.banner_plus
 joongang.co.kr##.plotting_banner
 joongang.co.kr##.sticky_recommend_list
+! 한겨례
+hani.co.kr##.newsLetter
 
 !======== 대성마이맥 ========
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
@@ -170,6 +175,7 @@ mimacstudy.com##.dsm_bottomarea
 ! 번개장터 모바일 앱 프로모션
 ||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
 bunjang.co.kr###modal
+bunjang.co.kr##.iXtuSd
 bunjang.co.kr##.sc-iqzUVk
 bunjang.co.kr##.sc-kgAjT
 bunjang.co.kr##.sc-qrIAp

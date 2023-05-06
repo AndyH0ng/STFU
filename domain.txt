@@ -5,7 +5,7 @@
 ! Title: STFU DNS 필터
 ! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
 ! Expires: 300 days
-! Version: 4.5.2.7-b
+! Version: 4.5.2.8
 
 !======== Problematic ========
 ! Broke Facebook Auth
