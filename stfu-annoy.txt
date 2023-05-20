@@ -58,6 +58,9 @@ naver.com##.gnb_notice_li
 naver.com##.mail_li
 naver.com##.gnb_service_li
 
+! 네이버 -> 검색결과 상단 검색창 가로 길이 연장
+search.naver.com#$#.search_area {width: auto !important;}
+
 ! '네이버 메인에 추가' 버튼
 naver.com##.nv-openmain
 
