@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.2.9
+! Version: 4.5.2.9-hotfix
 
 ! 가상 키보드 버튼
 google.com,google.co.kr##.Umvnrc
@@ -127,6 +127,7 @@ google.com,google.co.kr##.gb_nf
 google.com,google.co.kr##.gb_of
 google.com,google.co.kr##.gb_ve
 google.com,google.co.kr##.gb_we
+google.com,google.co.kr##.gb_4e
 google.com,google.co.kr##.EI48Lc
 google.com,google.co.kr##.ZOyvub
 google.com,google.co.kr##[class$="tooltip"]
@@ -168,8 +169,6 @@ mimacstudy.com##.dsm_bottomarea
 ##.j4hoVe
 ! Google -> Google 정보 + 스토어
 ##.MV3Tnb
-! Google -> Gmail + 이미지
-##.gb_k
 ! 모바일 네이버 메인 -> NOW
 ||s.pstatic.net/tvcast.phinf/*?type=m180_240
 m.naver.com##.id_comp_now_player
