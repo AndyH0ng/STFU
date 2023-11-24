@@ -7,7 +7,21 @@
 ! Expires: 300 days
 ! Version: 4.5.3.0
 
-! 가상 키보드 버튼
+! ANNOYANCE_SEARCHBTN
+google.com,google.co.kr##.gNO89b
+google.com,google.co.kr##.RNmpXc
+google.com,google.co.kr##.pzfvzf
+google.com,google.co.kr##.lJ9FBc
+search.naver.com##.bt_search
+section.blog.naver.com##.button_naver
+section.cafe.naver.com##.btn_search_all
+news.naver.com##._total_search_btn
+shopping.naver.com##[class^="_searchInput_voice_search_button"]
+daum.net##.btn_search
+daum.net#$#.btn_reset {right: 10px !important;}
+search.daum.net##.btn_search
+
+! ANNOYANCE_SEARCHKEY
 google.com,google.co.kr##.Umvnrc
 google.com,google.co.kr##.BKRPef
 google.com,google.co.kr##.id-inputtools
@@ -17,12 +31,12 @@ naver.com##.btn_keyboard
 search.naver.com##.setkr_area
 daum.net##.img_keyboard
 
-! 보이스 서치 버튼
+! ANNOYANCE_SEARCHVOICE
 ###voice-search-button
 m.naver.com##.sch_region
 m.search.naver.com##.btn_voice
 
-! 검색창 자동완성 화살표
+! ANNOYANCE_SEARCHEXT
 ##.DPvwYc
 ##[class^="_searchInput_button_search_auto"]
 naver.com##.btn_arw
@@ -31,84 +45,93 @@ search.naver.com##.autocomplete
 dict.naver.com##.btn_autocomplete
 tv.naver.com##.auto_tx
 
-! 검색창 검색 버튼 or 통합검색 버튼 + I'm Feeling Lucky
-google.com,google.co.kr##.gNO89b
-google.com,google.co.kr##.RNmpXc
-google.com,google.co.kr##.pzfvzf
-google.com,google.co.kr##.lJ9FBc
-search.naver.com##.bt_search
-section.blog.naver.com##.button_naver
-section.cafe.naver.com##.btn_search_all
-news.naver.com##._total_search_btn
-naver.com#$#.greenwindow {padding-right: 0px !important;}
-shopping.naver.com##[class^="_searchInput_voice_search_button"]
-daum.net##.btn_search
-daum.net#$#.btn_reset {right: 10px !important;}
-search.daum.net##.btn_search
-
 ! Use system font instead of Tahoma in Dcinside
 ||fonts.gstatic.com^$domain=dcinside.com
 
-! 네이버 -> 상단 프로필 섹션 레이아웃 수정
-naver.com#$#.gnb_my_namebox {background-image: none !important;}
-naver.com#$#.gnb_my_namebox {padding: 0 !important;}
-naver.com#$#.gnb_my_li {margin-top: 2px !important;}
-naver.com#$#.gnb_my_li {background: none !important;}
-naver.com##.gnb_name
-naver.com##.gnb_notice_li
-naver.com##.mail_li
-naver.com##.gnb_service_li
-
-! 네이버 -> 검색결과 상단 검색창 가로 길이 연장
-search.naver.com#$#.search_area {width: auto !important;}
-
-! '네이버 메인에 추가' 버튼
-naver.com##.nv-openmain
-
-! '##를 시작페이지로'
-naver.com##.service_area
-daum.net##.link_launch
-
-! SNS 공유 버튼
-##.sns-link
-##.sns_link
-##.sns-list
-##.sns_list
-google.com,google.co.kr##.rsir2d
-naver.com##.bt_share
-naver.com##.send_caption
-naver.com##.sns_share
-naver.com##.spi_sns_share
-naver.com##.u_btn_sns_share
-bunjang.co.kr##.sc-bRPJBS
-bunjang.co.kr##[class^="Productsstyle__ShareButtons"]
-imnews.imbc.com##.wrap_sns
+! ANNOYANCE_SOCIAL
+news.kbs.co.kr##.aside-share
+news.kbs.co.kr##.aside-copy
+news.kbs.co.kr##.sns-link
 news.sbs.co.kr##.i_y
 news.sbs.co.kr##.i_f
 news.sbs.co.kr##.i_t
 news.sbs.co.kr##.i_insta
-news.kbs.co.kr##.detail-card-share
-khan.co.kr##.wrap_menubox_snslink
+news.sbs.co.kr##.facebook
+news.sbs.co.kr##.twitter
+news.sbs.co.kr##.naver
+news.sbs.co.kr##.katalk
+news.sbs.co.kr##.band
+news.sbs.co.kr##.kas
+news.sbs.co.kr##.url
+news.sbs.co.kr##.more
+imnews.imbc.com##.sns_youtube
+imnews.imbc.com##.sns_facebook
+imnews.imbc.com##.sns_twitter
+imnews.imbc.com##.wrap_sns
+imnews.imbc.com##.share
+imnews.imbc.com##.youtube
+imnews.imbc.com##.facebook
+imnews.imbc.com##.twitter
+imnews.imbc.com##.band
+imnews.imbc.com##.post
+imnews.imbc.com##.kakaoch
+imnews.imbc.com##.corp_sns
+joongang.co.kr##.btn_share
+mnews.jtbc.co.kr##.promotion
+mnews.jtbc.co.kr##.sns
+mnews.jtbc.co.kr##.twitter
+mnews.jtbc.co.kr##.facebook
+mnews.jtbc.co.kr##.youtube
+mnews.jtbc.co.kr##.url
+mnews.jtbc.co.kr##.sns_area
+hani.co.kr##.social
 hani.co.kr##.tool-f
 hani.co.kr##.tool-t
 hani.co.kr##.tool-k
 hani.co.kr##.tool-link
+hani.co.kr##.tool-scrap
+m.khan.co.kr##.btn_share
+m.khan.co.kr##.link_sns
+yonhapnewstv.co.kr##.shareBtn
+yonhapnewstv.co.kr##.icon-snsFb
+yonhapnewstv.co.kr##.icon-snsTw
+yonhapnewstv.co.kr##.icon-snsYt
+seoul.co.kr##.snsDiv
+seoul.co.kr##.Sns
+seoul.co.kr##.S20_V_sns
+seoul.co.kr##.S20_sns_R
 
-! 최상위 이동 버튼
-naver.com##.r_pg_top
-naver.com##._go_top
-naver.com##.content_top
-naver.com#$#.btn_theme {right: 24px !important;}
-naver.com##._MOVE_TOP
-naver.com##.MM_TO_TOP
-shopping.naver.com##[class^="style_wrap_top"]
-joongang.co.kr##.btn_top
-bunjang.co.kr##.sc-jbKcbu
+! ANNOYANCE_TOTOP|FONTSIZE
+naver.com##.SettingView-module__type_top___GkN8V
+m.naver.com##.mf_btn_top
+m.naver.com##.mf_tool_font
+m.search.naver.com##.item
+news.naver.com###goTop
+news.naver.com##.media_end_head_tts
+news.naver.com##.media_end_head_fontsize
+news.naver.com##.media_end_head_print
+shopping.naver.com##[class^="_footer_top_button"]
+news.kbs.co.kr##.top-btn
+news.kbs.co.kr##.aside-txt
 news.sbs.co.kr##.w_btn_top
-news.sbs.co.kr#$#.player_area {bottom:0 !important;}
-khan.co.kr##.btn_gotop_floating
+news.sbs.co.kr##.control_area
+imnews.imbc.com##.font
+imnews.imbc.com##.voice
+imnews.imbc.com##.print
+joongang.co.kr##.btn_top
+donga.com##.font_set
+donga.com##.btn_voice
+donga.com##.btn_print
+donga.com##.news_edit
+hani.co.kr##.tool-font
+hani.co.kr##.tool-print
+m.khan.co.kr##.btn_gotop_floating
+m.khan.co.kr##.btn_fsize
+m.khan.co.kr##.tts
+yonhapnewstv.co.kr##.zoomInBtn
+yonhapnewstv.co.kr##.zoomOutBtn
 
-! red dot
+! ANNOYANCE_NOTI
 ##.ico_new
 ##.ico-new
 ##.new_ico
@@ -120,7 +143,7 @@ dict.naver.com##.Nnew
 naver.com##.list-i-new
 mimacstudy.com##.xi-new
 
-! 툴팁
+! ANNOYANCE_TOOLTIP
 google.com,google.co.kr##.gb_Be
 google.com,google.co.kr##.gb_Ue
 google.com,google.co.kr##.gb_Hc
@@ -129,40 +152,40 @@ google.com,google.co.kr##.gb_of
 google.com,google.co.kr##.gb_ve
 google.com,google.co.kr##.gb_we
 google.com,google.co.kr##.gb_4e
+google.com,google.co.kr##.gb_Xe
 google.com,google.co.kr##.EI48Lc
 google.com,google.co.kr##.ZOyvub
 google.com,google.co.kr##[class$="tooltip"]
 google.com,google.co.kr##.help-panel-header__close-tooltip
-section.blog.naver.com##.register_tooltip
-new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
 youtube.com##.tp-yt-paper-tooltip
-youtube.com##.ytp-tooltip-text
-microsoft.com##.c-uhf-tooltip
-gall.dcinside.com##.pop_tipbox
+naver.com##[class^="TooltipView-module"]
+section.blog.naver.com##.register_tooltip
+m.naver.com##.comp_tooltip
+m.naver.com##.cjs_ly_twenty
+m.naver.com##.ctn_ly_setting
+new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 
-! 풋바
-###footer
-##.footer
-##[class^="footer"]
-##[class^="_footer"]
-##.KxwPGc
-##.SSwjIe
-##.c93Gbe
-##.google-footer-bar
-google.com,google.co.kr###sfooter
-google.com,google.co.kr###fbar
-new-m.pay.naver.com##[class^="Footer_article"]
-shopping.naver.com##[class^="style_footer"]
-news.naver.com##.contentinfo
-news.naver.com##._STICKY_FOOTER
-media.naver.com##.mp_footer
-daum.net##.foot_daum
-kakao.com##.doc-footer
-bunjang.co.kr##.sc-eTuwsz
-bunjang.co.kr##.vPHvp
+! ANNOYANCE_FOOTER
+naver.com###footer
+naver.com##[class^="Footer_inner"]
+shopping.naver.com##[class^="footer_footer"]
+shopping.naver.com##[class^="_footer_footer"]
+news.kbs.co.kr###footer
 news.sbs.co.kr##.w_footer
-mimacstudy.com##.dsm_bottomarea
+imnews.imbc.com###footer
+joongang.co.kr###footer
+donga.com###footer_wrap
+yonhapnewstv.co.kr###footer
+
+! Hover 효과
+youtube.com#$#.ytp-caption-segment {background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px);}
+
+!@@ Naver 우측 로그인 창 지랄발광
+naver.com###widgetboard
+naver.com#$#.Layout-module__right_content_area___pwiOb { position: initial !important;}
+
+
 
 ! Google -> 좌측 상단 드로어
 ##.KojFAc
@@ -170,24 +193,20 @@ mimacstudy.com##.dsm_bottomarea
 ##.j4hoVe
 ! Google -> Google 정보 + 스토어
 ##.MV3Tnb
-! 모바일 네이버 메인 -> NOW
-||s.pstatic.net/tvcast.phinf/*?type=m180_240
-m.naver.com##.id_comp_now_player
-! 모바일 네이버 메인 -> 쇼핑 LIVE
-||s.pstatic.net/selected.phinf/*?type=f258_258_q90
-m.naver.com##.comp_now_player
-! 네이버 카페 -> Editor's Pick
-||cafeptthumb-phinf.pstatic.net/*/default.jpg?type=f500_500$important
-section.cafe.naver.com##.home_editors
-! 네이버 카페 -> 카페 게시글 하단 배너 광고
-||cafeptthumb-phinf.pstatic.net/*?type=f1480_240_banner$important
-cafe.naver.com##.ArticleFormBanner
-cafe.naver.com##.banner_add
-! 네이버 카페 -> 앱 프로모션
-cafe.naver.com##.CafeAppBanner
-! 네이버 뉴스 -> 내가 설정한 다른 언론사 보기
-news.naver.com##._MY_CHANNEL_OFFICE_WRAP
 
-section.cafe.naver.com##.snb_town
-shopping.naver.com##[class^="gnb_live_area"]
-play.google.com###kO001e > header.S3WLMd:first-child > nav.oPjgQb:first-child > a.f0UV3d:first-child > span:last-child
+! YouTube 좌측 바
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
+youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
+
+
+! NAVER -> Noir 검색창 투명하게 나오는 현상 수정
+search.naver.com#$#.gnb_wrap {background-color: white !important;}
+
+! NAVER -> Noir 네이버 쇼핑 검색창 하단 제거
+shopping.naver.com###lnb
+
+! NAVER -> 쇼핑 Live 제거
+shopping.naver.com##._gnbLogo_live_area_tayLB
+
+! NAVER -> 쇼핑 우측 배너 제거
+search.shopping.naver.com##.aside_aside__Dfe4q
