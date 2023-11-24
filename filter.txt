@@ -5,118 +5,71 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.2.8
-
-!======== Problematic ========
-! Broke Facebook Auth
-! Facebook 계정을 통해 3자 앱 로그인 사용 중이라면 이 규칙을 제거하세요
-||graph.facebook.com^$important
-
+! Version: 4.5.3
 !======== 네이버 ========
-||inspector-collector.naver.com^
-||ntracker-collector.naver.com^
-||nelo2-col.navercorp.com^
-||nelo2-col.linecorp.com^
-||ad-exchange.toast.com^
-||adlc-exchange.toast.com^
-||impression-neo.naver.com^
-||searchad-phinf.pstatic.net^
-||ad.naver.com^
 ||ace.naver.com^
-||er.search.naver.com^
-||lcs.naver.com^
+||ad-api.band.us^
+||adc.naver.com^
+||adcr.naver.com^
+||adcreative.naver.com^
+||ads.moot.us^
+||inspector-collector.naver.com^
 ||l.m.naver.com^
-||l.www.naver.com^
+||lcs.naver.com^
+||ma.news.naver.com^
+||nelo2-col.linecorp.com^
+||nelo2-col.navercorp.com^
 ||nil.naver.com^
-||tivan.naver.com^
+||ntracker-collector.naver.com^
+||saedu.naver.com^
+||tagmanager.toast.com^
 ||veta.naver.com^
 ||wcs.naver.com^
 ||wcs.naver.net^
-||naver.com/shoppingbox/
-||ssl.pstatic.net/melona/libs/
+||wrd.naver.com^
+||shopsquare.naver.com^
+||cologger.shopping.naver.com^
+
+||naverpa-phinf.pstatic.net^
+||searchad-phinf.pstatic.net^
+||naverwebtoon-phinf.pstatic.net^
+||tvetamovie.pstatic.net^
 ||ssl.pstatic.net/tveta/libs/
-||https://s.pstatic.net/shopping.phinf/20221220_9/bcd9bee9-98b5-4f16-90e7-61729471d020.jpg
+||ssl.pstatic.net/melona/libs/
+||ssl.pstatic.net/static/kin/*/promotion/main/
+||ssl.pstatic.net/static/kin/*/promotion/mobile/
+||ssl.pstatic.net/adimg3.search/*/nx_powerlink.css
+||image-comic.pstatic.net/webtoon/*/*/contents_banner_$image
+! 모바일 네이버 메인 -> 쇼핑 LIVE
+||s.pstatic.net/selected.phinf/*?type=f258_258_q90
+
+! Whale 홍보
 ||static-whale.pstatic.net/main/$image,domain=www.naver.com
+naver.com##[class^="TalkLink_-tip"]
+naver.com##[class^="Notice_wrap"]
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
 
-
-! 네이버 페이
-new-m.pay.naver.com##[class^="ADRewardListBanner_article"]
-new-m.pay.naver.com##[class^="PayHomeTopBanner_article"]
-new-m.pay.naver.com##[class^="PayMoneyWidgetBanner_article"]
-new-m.pay.naver.com##[class^="PayService_banner"]
-new-m.pay.naver.com##[class^="PromotionB_article"]
-new-m.pay.naver.com##[class^="new_myWallet_area-promotion"]
-new-m.pay.naver.com##[class^="PayLife_article"]
-
-! 네이버 쇼핑
-shopping.naver.com##[class^="liveBanner_live_banner"]
-shopping.naver.com##[class^="liveCalendar_live_calendar"]
-shopping.naver.com##[class^="banners_banner_area"]
-shopping.naver.com##[class^="footer_footer"]
-shopping.naver.com##[class^="_footer_footer"]
-
-! 네이버 지도
-||map.naver.com/v5/assets/img/settings/$image
-
 !======== 다음카카오 ========
+||ad-content.*.kakao.com^
 ||ad.daum.net^
-||ad.kakao.com^
-||tiara.kakao.com^
-||tiara.daum.net^
+||adclix.daum.net^
+||adclixad.daum.net^
+||adserver.*.kakao.com^
+||aem-collector-prod-ytlsojie.kgslb.com^
 ||aem-collector.daumkakao.io^
+||analytics.daum.net^
+||display.ad.daum.net^
+||kyson.ad.daum.net^
+||stat.tiara.daum.net^
+||stat.tiara.kakao.com^
+||track.tiara.daum.net^
+||track.tiara.kakao.com^
+||webid.ad.daum.net^
+
+||t1.daumcdn.net/kas/static/ba.min.js
 ||t1.daumcdn.net/adfit/
-search.daum.net###adSenseColl
-
-!======== 구글 ========
-||doubleclick.net^
-||adservice.google.com^
-||adservice.google.co.kr^
-||googleadservices.com^$important
-||googlesyndication.com^
-||google-analytics.com^
-||googlesyndication.com^
-||www-google-analytics.l.google.com^
-||google.com/pagead/
-
-!======== 삼성 ========
-||kr-api.mcsvc.samsung.com^
-||kr-cdn-gpp.mcsvc.samsung.com^
-||adconsent.samsungrs.com^
-||analytics.samsungknox.com^
-
-!======== Apple ========
-||iad.apple.com^
-||iadsdk.apple.com^
-||iadctest.qwapi.com^
-||iadworkbench.apple.com^
-||advp.apple.com^
-||metrics.apple.com^
-||securemetrics.apple.com^
-||apple.comscoreresearch.com^
-
-!======== 나무위키 ========
-! 나무위키 내 파워링크는 유저스크립트를 통해 제거할 수 있습니다.
-! https://github.com/List-KR/NamuLink
-||arca.live/static/ad/
-
-!======== 디시인사이드 ========
-||addc.dcinside.com^
-! 무한 스크롤 현상 수정
-gall.dcinside.com##.stickyunit
-
-!======== 쿠팡 ========
-||ads-partners.coupang.com^
-
-!======== 뉴스 ========
-! 중앙일보
-joongang.co.kr##.banner_plus
-joongang.co.kr##.plotting_banner
-joongang.co.kr##.sticky_recommend_list
-! 한겨례
-hani.co.kr##.newsLetter
 
 !======== 대성마이맥 ========
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
@@ -125,7 +78,6 @@ mimacstudy.com##[id^="mainPop"]
 mimacstudy.com##[id^="mainSubBottomBanner"]
 mimacstudy.com##.top_tch_bn
 mimacstudy.com##.top_keywrord_bn
-mimacstudy.com##.deviceinfo
 mimacstudy.com##.main_etc_service
 mimacstudy.com##.main_notic_store
 mimacstudy.com##.main_top_promotion
@@ -136,41 +88,21 @@ mimacstudy.com##.right_sky_bnr
 mimacstudy.com##.top_anchor
 mimacstudy.com##.dsm_bottomarea
 
-!======== 광고 호스팅 ========
-||adinsight.com^
-||adinsight.co.kr^
-||adlibr.com^
-||adpick.co.kr^
-||adpopcorn.com^
-||appsflyer.com^
-||cauly.co.kr^
-||cauly.net^
-||contentsquare.net^
-||demandbase.com^
-||megadata.co.kr^
-||rainbownine.net^
-||rlcdn.com^
-||taboola.com^
-||techhub.co.kr^
-||widerplanet.com^
+!======== 디시인사이드 ========
+||addc.dcinside.com^
+||gall.dcinside.com/_js/ad.js
+||dcinside.com/_js/ad_context_powLink.js
 
-!======== 분석 및 추적 ========
-||omtrdc.net^
-||app-measurement.com^
-||bugsnag.com^
-||cc-api-data.adobe.io^
-||company-target.com^
-||crashlytics.com^
-||demdex.net^
-||fbcdn.net^
-||marketo.net^
-||omtrdc.net^
-||sentry.io^
-||sentry-cdn.com^
-||sentry-fin.naver.com^
-||snap.licdn.com^
-||crashlyticsreports-pa.googleapis.com^
-||firebaselogging-pa.googleapis.com^
+
+!======== Common ========
+/plugins/advanced-ads/*$domain=~wordpress.org
+/advanced-ads-$domain=~wordpress.org
+
+
+
+
+
+
 
 ! 번개장터 모바일 앱 프로모션
 ||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
@@ -180,3 +112,80 @@ bunjang.co.kr##.sc-iqzUVk
 bunjang.co.kr##.sc-kgAjT
 bunjang.co.kr##.sc-qrIAp
 bunjang.co.kr##.fRAuHJ:last-child
+
+! 프로모션
+
+news.sbs.co.kr##.sn_banner_side_top
+news.sbs.co.kr##.sn_banner_side_bottom
+news.sbs.co.kr##.w_article_ad
+news.sbs.co.kr##.type_bnr_aside
+news.sbs.co.kr#$#.w_box {min-height: 0px !important;}
+joongang.co.kr##.ad_wrap
+joongang.co.kr##.sticky_recommend_list
+joongang.co.kr##.plotting_banner
+joongang.co.kr#$#.widget--v {margin-top: 0px !important;}
+donga.com###section_schedule
+donga.com##.subscribe_toast
+donga.com###alarm_msg
+mnews.jtbc.co.kr##.appguide
+hani.co.kr##.newsLetter
+m.khan.co.kr##.info-layerpopup
+m.khan.co.kr###bnNewsletter
+seoul.co.kr##.Pbanner
+yonhapnewstv.co.kr##.view-ad-center
+yonhapnewstv.co.kr##[class^="mobonDivBanner"]
+yonhapnewstv.co.kr##.view-ad-fixed
+yonhapnewstv.co.kr##.ad
+yonhapnewstv.co.kr##.view-ad-bott
+||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
+||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
+||img.seoul.co.kr/img/newsletter/banner_pc.png
+
+
+||ad-mapps.com^
+||ad4989.co.kr^
+||adinsight.co.kr^
+||adinsight.com^
+||adison.co^
+||adlibr.com^
+||admaru.com^
+||admaru.net^
+||adnmore.co.kr^
+||adpick.co.kr^
+||adpopcorn.com^
+||ads-partners.coupang.com^
+||adsrvr.org^
+||adv.imadrep.co.kr^
+||amazon-adsystem.com^
+||analytics.twitter.com^
+||appsflyer.com^
+||bidswitch.net^
+||cauly.co.kr^
+||cauly.net^
+||cdn-settings.appsflyersdk.com^
+||compass.adop.cc^
+||contentsquare.net^
+||criteo.com^
+||dable.io^
+||demandbase.com^
+||intentiq.com^
+||interworksmedia.co.kr^
+||mediago.io^
+||megadata.co.kr^
+||mfadsrvr.com^
+||mobon.net^
+||netinsight.co.kr^
+||openx.net^
+||optad360.io^
+||optad360.net^
+||pixel.rubiconproject.com^
+||pubmatic.com^
+||rainbownine.net^
+||rlcdn.com^
+||smartadserver.com^
+||socdm.com^
+||taboola.com^
+||targetpush.co.kr^
+||techhub.co.kr^
+||widerplanet.com^
+||wurfl.io^
