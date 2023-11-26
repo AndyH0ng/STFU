@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.3
+! Version: 4.5.3.2
 !======== 네이버 ========
 ||ace.naver.com^
 ||ad-api.band.us^
@@ -114,7 +114,11 @@ bunjang.co.kr##.sc-qrIAp
 bunjang.co.kr##.fRAuHJ:last-child
 
 ! 프로모션
-
+###stUuGf
+##.hww53CMqxtL__mobile-promo
+##.hww53CMqxtL__visible
+naver.com##[class^="AdBanner_wrap"]
+naver.com##[class^="TalkLink_link"]
 news.sbs.co.kr##.sn_banner_side_top
 news.sbs.co.kr##.sn_banner_side_bottom
 news.sbs.co.kr##.w_article_ad
@@ -129,6 +133,8 @@ donga.com##.subscribe_toast
 donga.com###alarm_msg
 mnews.jtbc.co.kr##.appguide
 hani.co.kr##.newsLetter
+m.hani.co.kr##.popup
+m.hani.co.kr###articleMultiMediaWrap
 m.khan.co.kr##.info-layerpopup
 m.khan.co.kr###bnNewsletter
 seoul.co.kr##.Pbanner
@@ -140,6 +146,9 @@ yonhapnewstv.co.kr##.view-ad-bott
 ||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
+! 디시인사이드 무한 스크롤 현상 수정
+gall.dcinside.com##.stickyunit
+ruliweb.com##.fixed_ad_wrapper
 
 
 ||ad-mapps.com^
