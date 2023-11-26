@@ -5,8 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.3.1
-
+! Version: 4.5.3.2
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
 google.com,google.co.kr##.RNmpXc
@@ -32,6 +31,7 @@ search.naver.com##.setkr_area
 daum.net##.img_keyboard
 
 ! ANNOYANCE_SEARCHVOICE
+##.FJoqsb
 ###voice-search-button
 m.naver.com##.sch_region
 m.search.naver.com##.btn_voice
@@ -49,6 +49,7 @@ tv.naver.com##.auto_tx
 ||fonts.gstatic.com^$domain=dcinside.com
 
 ! ANNOYANCE_SOCIAL
+search.naver.com##.bt_share
 news.kbs.co.kr##.aside-share
 news.kbs.co.kr##.aside-copy
 news.kbs.co.kr##.sns-link
@@ -90,6 +91,9 @@ hani.co.kr##.tool-t
 hani.co.kr##.tool-k
 hani.co.kr##.tool-link
 hani.co.kr##.tool-scrap
+m.hani.co.kr##.share-wrap
+m.hani.co.kr##.gudokArea
+m.hani.co.kr##[class^="support-content"]
 m.khan.co.kr##.btn_share
 m.khan.co.kr##.link_sns
 yonhapnewstv.co.kr##.shareBtn
@@ -100,6 +104,10 @@ seoul.co.kr##.snsDiv
 seoul.co.kr##.Sns
 seoul.co.kr##.S20_V_sns
 seoul.co.kr##.S20_sns_R
+ruliweb.com##.col_9
+ruliweb.com##.share_wrapper
+ruliweb.com##.margin_4
+ruliweb.com#$#.board_main_top { min-height: 0px !important; }
 
 ! ANNOYANCE_TOTOP|FONTSIZE
 naver.com##.SettingView-module__type_top___GkN8V
@@ -141,6 +149,7 @@ new-m.pay.naver.com##[class^="MenuList_icon-new-text"]
 dict.naver.com##.new
 dict.naver.com##.Nnew
 naver.com##.list-i-new
+dcinside.com##.sp-new
 mimacstudy.com##.xi-new
 
 ! ANNOYANCE_TOOLTIP
@@ -160,10 +169,12 @@ google.com,google.co.kr##.help-panel-header__close-tooltip
 youtube.com##.tp-yt-paper-tooltip
 naver.com##[class^="TooltipView-module"]
 section.blog.naver.com##.register_tooltip
+cafe.naver.com##.tooltip_layer
 m.naver.com##.comp_tooltip
 m.naver.com##.cjs_ly_twenty
 m.naver.com##.ctn_ly_setting
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
+dcinside.com##.tip_box2
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 
 ! ANNOYANCE_FOOTER
@@ -176,14 +187,27 @@ news.sbs.co.kr##.w_footer
 imnews.imbc.com###footer
 joongang.co.kr###footer
 donga.com###footer_wrap
+m.hani.co.kr##.main
 yonhapnewstv.co.kr###footer
 
 ! Hover 효과
-youtube.com#$#.ytp-caption-segment {background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px);}
+youtube.com#$#.ytp-caption-segment { background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px); }
 
 !@@ Naver 우측 로그인 창 지랄발광
 naver.com###widgetboard
 naver.com#$#.Layout-module__right_content_area___pwiOb { position: initial !important;}
+
+!@@ Naver 서비스 상단 프로필
+naver.com##.gnb_name
+naver.com##.gnb_talk_li
+naver.com##.gnb_notice_li
+naver.com##.mail_li
+naver.com##.gnb_service_li
+naver.com#$#.gnb_my_li { margin-top: 2px !important; }
+naver.com#$#.gnb_my_li { background: none !important; }
+naver.com#$#.gnb_my_namebox { background-image: none !important; }
+naver.com#$#.gnb_my_namebox { padding: 0 !important; }
+
 
 
 
@@ -200,7 +224,7 @@ youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-render
 
 
 ! NAVER -> Noir 검색창 투명하게 나오는 현상 수정
-search.naver.com#$#.gnb_wrap {background-color: white !important;}
+search.naver.com#$#.gnb_wrap { background-color: white !important; }
 
 ! NAVER -> Noir 네이버 쇼핑 검색창 하단 제거
 shopping.naver.com###lnb
