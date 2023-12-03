@@ -143,12 +143,16 @@ yonhapnewstv.co.kr##[class^="mobonDivBanner"]
 yonhapnewstv.co.kr##.view-ad-fixed
 yonhapnewstv.co.kr##.ad
 yonhapnewstv.co.kr##.view-ad-bott
+stackoverflow.com##.bg-black-100
+stackoverflow.com##.js-freemium-cta
 ||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 ! 디시인사이드 무한 스크롤 현상 수정
 gall.dcinside.com##.stickyunit
 ruliweb.com##.fixed_ad_wrapper
+jinhak.com###bn_bot_fixed
+jinhak.com###layerCoin
 
 
 ||ad-mapps.com^
