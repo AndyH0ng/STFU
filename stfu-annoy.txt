@@ -6,6 +6,7 @@
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
 ! Version: 4.5.3.2
+
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
 google.com,google.co.kr##.RNmpXc
@@ -47,6 +48,8 @@ tv.naver.com##.auto_tx
 
 ! Use system font instead of Tahoma in Dcinside
 ||fonts.gstatic.com^$domain=dcinside.com
+
+
 
 ! ANNOYANCE_SOCIAL
 search.naver.com##.bt_share
@@ -108,6 +111,7 @@ ruliweb.com##.col_9
 ruliweb.com##.share_wrapper
 ruliweb.com##.margin_4
 ruliweb.com#$#.board_main_top { min-height: 0px !important; }
+jinhak.com##.snsList
 
 ! ANNOYANCE_TOTOP|FONTSIZE
 naver.com##.SettingView-module__type_top___GkN8V
@@ -138,6 +142,7 @@ m.khan.co.kr##.btn_fsize
 m.khan.co.kr##.tts
 yonhapnewstv.co.kr##.zoomInBtn
 yonhapnewstv.co.kr##.zoomOutBtn
+jinhak.com##.btn_gotop
 
 ! ANNOYANCE_NOTI
 ##.ico_new
@@ -166,18 +171,30 @@ google.com,google.co.kr##.EI48Lc
 google.com,google.co.kr##.ZOyvub
 google.com,google.co.kr##[class$="tooltip"]
 google.com,google.co.kr##.help-panel-header__close-tooltip
+news.google.com##.VfPpkd-z59Tgd
+youtube.com##.ytp-tooltip-text
+youtube.com##.ytp-tooltip-text-no-title
 youtube.com##.tp-yt-paper-tooltip
 naver.com##[class^="TooltipView-module"]
+naver.com##[class^="Tooltip_wrap"]
 section.blog.naver.com##.register_tooltip
 cafe.naver.com##.tooltip_layer
 m.naver.com##.comp_tooltip
 m.naver.com##.cjs_ly_twenty
 m.naver.com##.ctn_ly_setting
 new-m.pay.naver.com##[class^="TooltipGradation_tooltip"]
+dcinside.com##.secret_tip
+dcinside.com##.pop_tipbox
 dcinside.com##.tip_box2
 bunjang.co.kr##[class^="ProductSummarystyle__TooltipArea"]
 
+! ANNOYANCE_COOKIE
+hoyoverse.com##.mihoyo-cookie-tips
+stackoverflow.blog###onetrust-consent-sdk
+
 ! ANNOYANCE_FOOTER
+google.com,google.co.kr##.footer
+google.com,google.co.kr##.fbar
 naver.com###footer
 naver.com##[class^="Footer_inner"]
 shopping.naver.com##[class^="footer_footer"]
@@ -189,15 +206,17 @@ joongang.co.kr###footer
 donga.com###footer_wrap
 m.hani.co.kr##.main
 yonhapnewstv.co.kr###footer
+stackoverflow.com###footer
 
 ! Hover 효과
 youtube.com#$#.ytp-caption-segment { background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px); }
+youtube.com##.ytp-hover-progress
 
-!@@ Naver 우측 로그인 창 지랄발광
+! Naver -> 우측 로그인 창 지랄발광
 naver.com###widgetboard
 naver.com#$#.Layout-module__right_content_area___pwiOb { position: initial !important;}
 
-!@@ Naver 서비스 상단 프로필
+! Naver -> 서비스 상단 프로필
 naver.com##.gnb_name
 naver.com##.gnb_talk_li
 naver.com##.gnb_notice_li
@@ -208,15 +227,17 @@ naver.com#$#.gnb_my_li { background: none !important; }
 naver.com#$#.gnb_my_namebox { background-image: none !important; }
 naver.com#$#.gnb_my_namebox { padding: 0 !important; }
 
-
-
-
 ! Google -> 좌측 상단 드로어
 ##.KojFAc
+###SBmmZd
 ! Google -> 우측 상단 알림
 ##.j4hoVe
 ! Google -> Google 정보 + 스토어
 ##.MV3Tnb
+! Google -> Gmail 이미지
+##.gb_F
+! Google -> 검색 창 옆에 자꾸 뜨는 짜증나는 거
+https://ogs.google.co.kr/widget/callout
 
 ! YouTube 좌측 바
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
