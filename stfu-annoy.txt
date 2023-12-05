@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.4.2
+! Version: 4.5.4.3
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -260,6 +260,7 @@ m.naver.com##.id_comp_npop
 m.naver.com##.comp_home_feed
 m.naver.com#$#.native_scroll_list { display: flex !important; }
 m.naver.com#$#.native_scroll_list { justify-content: center !important; }
+m.naver.com#$#.sch_logo_container { padding-top: 250px !important; }
 ! NAVER -> Noir 검색창 투명하게 나오는 현상 수정
 search.naver.com#$#.gnb_wrap { background-color: white !important; }
 ! NAVER -> Noir 네이버 쇼핑 검색창 하단 제거
