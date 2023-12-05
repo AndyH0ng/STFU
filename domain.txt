@@ -1,44 +1,58 @@
-[Adblock Plus 2.0]
+[AdGuard]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/domain.txt
 ! Title: STFU DNS 필터
 ! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
 ! Expires: 300 days
-! Version: 4.5.2.8
+! Version: 4.5.4
 
 !======== Problematic ========
-! Broke Facebook Auth
-! Facebook 계정을 통해 3자 앱 로그인 사용 중이라면 이 규칙을 제거하세요
+! Breaks Facebook Auth
+! Facebook 계정을 통한 3자 앱 로그인 사용 중이라면 이 규칙을 제거하세요
 ||graph.facebook.com^$important
 
 !======== 네이버 ========
-||inspector-collector.naver.com^
-||ntracker-collector.naver.com^
-||nelo2-col.navercorp.com^
-||nelo2-col.linecorp.com^
-||ad-exchange.toast.com^
-||adlc-exchange.toast.com^
-||impression-neo.naver.com^
-||searchad-phinf.pstatic.net^
-||ad.naver.com^
 ||ace.naver.com^
-||er.search.naver.com^
-||lcs.naver.com^
+||ad-api.band.us^
+||adc.naver.com^
+||adcr.naver.com^
+||adcreative.naver.com^
+||ads.moot.us^
+||inspector-collector.naver.com^
 ||l.m.naver.com^
-||l.www.naver.com^
+||lcs.naver.com^
+||ma.news.naver.com^
+||nelo2-col.linecorp.com^
+||nelo2-col.navercorp.com^
 ||nil.naver.com^
-||tivan.naver.com^
+||ntracker-collector.naver.com^
+||saedu.naver.com^
 ||veta.naver.com^
 ||wcs.naver.com^
 ||wcs.naver.net^
+||wrd.naver.com^
+
+||naverpa-phinf.pstatic.net^
+||searchad-phinf.pstatic.net^
+||naverwebtoon-phinf.pstatic.net^
 
 !======== 다음카카오 ========
+||ad-content.*.kakao.com^
 ||ad.daum.net^
-||ad.kakao.com^
-||tiara.kakao.com^
-||tiara.daum.net^
+||adclix.daum.net^
+||adclixad.daum.net^
+||adserver.*.kakao.com^
+||aem-collector-prod-ytlsojie.kgslb.com^
 ||aem-collector.daumkakao.io^
+||analytics.daum.net^
+||display.ad.daum.net^
+||kyson.ad.daum.net^
+||stat.tiara.daum.net^
+||stat.tiara.kakao.com^
+||track.tiara.daum.net^
+||track.tiara.kakao.com^
+||webid.ad.daum.net^
 
 !======== 구글 ========
 ||doubleclick.net^
@@ -70,47 +84,70 @@
 ||addc.dcinside.com^
 
 !======== 광고 호스팅 ========
-||adinsight.com^
+||ad-mapps.com^
+||ad4989.co.kr^
 ||adinsight.co.kr^
+||adinsight.com^
 ||adison.co^
 ||adlibr.com^
+||admaru.com^
 ||admaru.net^
+||adnmore.co.kr^
 ||adpick.co.kr^
-||ads-partners.coupang.com^
 ||adpopcorn.com^
+||ads-partners.coupang.com^
+||adsrvr.org^
 ||adv.imadrep.co.kr^
 ||amazon-adsystem.com^
+||analytics.twitter.com^
 ||appsflyer.com^
-||cdn-settings.appsflyersdk.com^
+||bidswitch.net^
 ||cauly.co.kr^
 ||cauly.net^
+||cdn-settings.appsflyersdk.com^
+||compass.adop.cc^
 ||contentsquare.net^
+||criteo.com^
 ||dable.io^
 ||demandbase.com^
+||intentiq.com^
+||interworksmedia.co.kr^
+||mediago.io^
 ||megadata.co.kr^
+||mfadsrvr.com^
+||mobon.net^
+||netinsight.co.kr^
+||openx.net^
+||optad360.io^
+||optad360.net^
+||pixel.rubiconproject.com^
+||pubmatic.com^
 ||rainbownine.net^
 ||rlcdn.com^
+||smartadserver.com^
+||socdm.com^
 ||taboola.com^
+||targetpush.co.kr^
 ||techhub.co.kr^
 ||widerplanet.com^
+||wurfl.io^
 
 !======== 분석 및 추적 ========
-||omtrdc.net^
 ||app-measurement.com^
 ||bugsnag.com^
 ||cc-api-data.adobe.io^
 ||company-target.com^
 ||crashlytics.com^
+||crashlyticsreports-pa.googleapis.com^
 ||demdex.net^
 ||fbcdn.net^
+||firebaselogging-pa.googleapis.com^
 ||marketo.net^
 ||omtrdc.net^
-||sentry.io^
 ||sentry-cdn.com^
 ||sentry-fin.naver.com^
+||sentry.io^
 ||snap.licdn.com^
-||crashlyticsreports-pa.googleapis.com^
-||firebaselogging-pa.googleapis.com^
 
 
 

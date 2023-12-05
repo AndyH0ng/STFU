@@ -1,11 +1,12 @@
-[Adblock Plus 2.0]
+[AdGuard]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/filter.txt
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.3.2
+! Version: 4.5.4
+
 !======== 네이버 ========
 ||ace.naver.com^
 ||ad-api.band.us^
@@ -42,14 +43,18 @@
 ||image-comic.pstatic.net/webtoon/*/*/contents_banner_$image
 ! 모바일 네이버 메인 -> 쇼핑 LIVE
 ||s.pstatic.net/selected.phinf/*?type=f258_258_q90
-
+! 네이버 우측 프로모션
+naver.com##.link_search_banner
 ! Whale 홍보
 ||static-whale.pstatic.net/main/$image,domain=www.naver.com
 naver.com##[class^="TalkLink_-tip"]
 naver.com##[class^="Notice_wrap"]
+game.naver.com##div[class^="styles_Banner"]
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
 m.naver.com##.id_comp_promotion_tablet
+m.naver.com###MM_aside_smartad_container
+m.naver.com##.ISSUE-BANNER-AD
 
 !======== 다음카카오 ========
 ||ad-content.*.kakao.com^
@@ -93,30 +98,22 @@ mimacstudy.com##.dsm_bottomarea
 ||gall.dcinside.com/_js/ad.js
 ||dcinside.com/_js/ad_context_powLink.js
 
-
 !======== Common ========
 /plugins/advanced-ads/*$domain=~wordpress.org
 /advanced-ads-$domain=~wordpress.org
 
 
 
-
-
-
-
-! 번개장터 모바일 앱 프로모션
-||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
+! 프로모션
+###stUuGf
+##.hww53CMqxtL__mobile-promo
+##.hww53CMqxtL__visible
 bunjang.co.kr###modal
 bunjang.co.kr##.iXtuSd
 bunjang.co.kr##.sc-iqzUVk
 bunjang.co.kr##.sc-kgAjT
 bunjang.co.kr##.sc-qrIAp
 bunjang.co.kr##.fRAuHJ:last-child
-
-! 프로모션
-###stUuGf
-##.hww53CMqxtL__mobile-promo
-##.hww53CMqxtL__visible
 naver.com##[class^="AdBanner_wrap"]
 naver.com##[class^="TalkLink_link"]
 news.sbs.co.kr##.sn_banner_side_top
@@ -145,11 +142,14 @@ yonhapnewstv.co.kr##.ad
 yonhapnewstv.co.kr##.view-ad-bott
 stackoverflow.com##.bg-black-100
 stackoverflow.com##.js-freemium-cta
+||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
 ||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
+
 ! 디시인사이드 무한 스크롤 현상 수정
 gall.dcinside.com##.stickyunit
+
 ruliweb.com##.fixed_ad_wrapper
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin

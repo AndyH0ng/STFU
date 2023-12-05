@@ -1,11 +1,11 @@
-[Adblock Plus 2.0]
+[AdGuard]
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/stfu-annoy.txt
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.3.2
+! Version: 4.5.4
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -195,6 +195,8 @@ stackoverflow.blog###onetrust-consent-sdk
 ! ANNOYANCE_FOOTER
 google.com,google.co.kr##.footer
 google.com,google.co.kr##.fbar
+google.com,google.co.kr##.uU7dJb
+google.com,google.co.kr##.KxwPGc
 naver.com###footer
 naver.com##[class^="Footer_inner"]
 shopping.naver.com##[class^="footer_footer"]
@@ -238,20 +240,19 @@ naver.com#$#.gnb_my_namebox { padding: 0 !important; }
 ##.gb_F
 ! Google -> 검색 창 옆에 자꾸 뜨는 짜증나는 거
 https://ogs.google.co.kr/widget/callout
-
 ! YouTube 좌측 바
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
 
-
+! NAVER -> 메인 간소화
+naver.com###feed
+naver.com###right-content-area > div.Layout-module__right_top___h3g3v:first-child > div.Layout-module__content_area___b_3TU:last-child
+naver.com#$#.DailyBoardView-module__daily_board_area___Q6Jmf { margin-top: 26px !important; }
 ! NAVER -> Noir 검색창 투명하게 나오는 현상 수정
 search.naver.com#$#.gnb_wrap { background-color: white !important; }
-
 ! NAVER -> Noir 네이버 쇼핑 검색창 하단 제거
 shopping.naver.com###lnb
-
 ! NAVER -> 쇼핑 Live 제거
 shopping.naver.com##._gnbLogo_live_area_tayLB
-
 ! NAVER -> 쇼핑 우측 배너 제거
 search.shopping.naver.com##.aside_aside__Dfe4q
