@@ -216,6 +216,8 @@ naver.com##[class^="Footer_inner"]
 m.naver.com##.main_footer
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
+papago.naver.com##.footerBanner
+papago.naver.com###footer
 news.kbs.co.kr###footer
 news.sbs.co.kr##.w_footer
 imnews.imbc.com###footer
@@ -244,6 +246,7 @@ naver.com#$#.gnb_my_li { margin-top: 2px !important; }
 naver.com#$#.gnb_my_li { background: none !important; }
 naver.com#$#.gnb_my_namebox { background-image: none !important; }
 naver.com#$#.gnb_my_namebox { padding: 0 !important; }
+naver.com#$#.gnb_account { margin-bottom: 5px !important; }
 
 ! Google -> 좌측 상단 드로어
 ##.KojFAc

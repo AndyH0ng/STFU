@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.4.4
+! Version: 4.5.4.5
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -80,8 +80,10 @@ m.naver.com##.ISSUE-BANNER-AD
 !======== 대성마이맥 ========
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
 ||img.mimacstudy.com/admin_sh/images/site/skyBanner/$image
+||img.mimacstudy.com/admin_sh/images/site/banner/$image
 mimacstudy.com##[id^="mainPop"]
 mimacstudy.com##[id^="mainSubBottomBanner"]
+mimacstudy.com###mainBottomBannerDiv
 mimacstudy.com##.top_tch_bn
 mimacstudy.com##.top_keywrord_bn
 mimacstudy.com##.main_top_promotion
