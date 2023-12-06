@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.4
+! Version: 4.5.4.4
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -41,6 +41,7 @@
 ||ssl.pstatic.net/static/kin/*/promotion/mobile/
 ||ssl.pstatic.net/adimg3.search/*/nx_powerlink.css
 ||image-comic.pstatic.net/webtoon/*/*/contents_banner_$image
+||comm-api.game.naver.com/nng_main/*/cpa/adList
 ! 모바일 네이버 메인 -> 쇼핑 LIVE
 ||s.pstatic.net/selected.phinf/*?type=f258_258_q90
 ! 네이버 우측 프로모션
@@ -83,20 +84,34 @@ mimacstudy.com##[id^="mainPop"]
 mimacstudy.com##[id^="mainSubBottomBanner"]
 mimacstudy.com##.top_tch_bn
 mimacstudy.com##.top_keywrord_bn
-mimacstudy.com##.main_etc_service
-mimacstudy.com##.main_notic_store
 mimacstudy.com##.main_top_promotion
 mimacstudy.com##.main_preview_zone
 mimacstudy.com##.main_youtube_wrap
 mimacstudy.com##.left_sky_bnr
 mimacstudy.com##.right_sky_bnr
 mimacstudy.com##.top_anchor
-mimacstudy.com##.dsm_bottomarea
 
 !======== 디시인사이드 ========
+dcinside.com##.power_link
+dcinside.com##.ad-group
+dcinside.com##.adv-group
+dcinside.com##.adv-inner
+dcinside.com###ad_floating
+dcinside.com#$#[class^="ad_"]
 ||addc.dcinside.com^
 ||gall.dcinside.com/_js/ad.js
+||dcinside.com/_js/ad_keyword_powLink.js
 ||dcinside.com/_js/ad_context_powLink.js
+! 디시인사이드 무한 스크롤 현상 수정
+gall.dcinside.com##.stickyunit
+
+!======== 커뮤니티 ========
+ruliweb.com##.ad_back_wrapper
+ruliweb.com##.fixed_ad_wrapper
+ruliweb.com#$#[class^="ad_"]
+||ruliweb.com/banneriframe
+||img.ruliweb.com/js/criteo.publishertag.js
+||image.ruliweb.com/view/view.js?zoneid=
 
 !======== Common ========
 /plugins/advanced-ads/*$domain=~wordpress.org
@@ -116,6 +131,7 @@ bunjang.co.kr##.sc-qrIAp
 bunjang.co.kr##.fRAuHJ:last-child
 naver.com##[class^="AdBanner_wrap"]
 naver.com##[class^="TalkLink_link"]
+dict.naver.com##.banner_area
 news.sbs.co.kr##.sn_banner_side_top
 news.sbs.co.kr##.sn_banner_side_bottom
 news.sbs.co.kr##.w_article_ad
@@ -142,15 +158,14 @@ yonhapnewstv.co.kr##.ad
 yonhapnewstv.co.kr##.view-ad-bott
 stackoverflow.com##.bg-black-100
 stackoverflow.com##.js-freemium-cta
+||imgnews.pstatic.net/image/upload/item/2021/01/14/142956425_144518244_%2525B8%2525F0%2525B9%2525D9%2525C0%2525CF%2525B8%2525DE%2525C0%2525CE.png
+||imgnews.pstatic.net/image/upload/item/2021/05/28/233112515_DA%2540PC%25B4%25BA%25BD%25BA%25C1%25C2%25C3%25F8.png
 ||bunjang.co.kr/pc-static/resource/237e17f5cbe07edc8fff.png
 ||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 
-! 디시인사이드 무한 스크롤 현상 수정
-gall.dcinside.com##.stickyunit
 
-ruliweb.com##.fixed_ad_wrapper
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin
 
