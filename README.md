@@ -5,7 +5,7 @@ iOS와 macOS의 Safari 환경에서 테스트하고 있습니다.
 
   
 
-STFU이 차단하는 규칙 예시:
+# STFU이 차단하는 규칙 예시
 
 - Google 메인 화면에 존재하는 로고, 검색창, 계정 아이콘을 제외한 모든 것
 
@@ -23,9 +23,16 @@ STFU이 차단하는 규칙 예시:
 
 - 풋바
 
-STFU 적용 전후 비교:
+# STFU 적용 전후 비교
 - Google
-
+![Google Before](./img/google.before.png)
+![Google After](./img/google.after.png)
 - NAVER
+![NAVER Before](./img/naver.before.png)
+![NAVER Before](./img/naver.after.png)
 - 중앙일보
+![Joongang Before](./img/joongang.before.png)
+![Joongang After](./img/joongang.after.png)
 - 대성마이맥
+![Mimacstudy Before](./img/mimac.before.png)
+![Mimacstudy Before](./img/mimac.after.png)
