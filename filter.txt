@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.4.5
+! Version: 4.5.4.6
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -167,7 +167,7 @@ stackoverflow.com##.js-freemium-cta
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 
-
+jinhak.com##.action_Floating
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin
 
