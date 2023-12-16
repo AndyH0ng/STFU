@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.4.7
+! Version: 4.5.4.8
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -76,6 +76,13 @@ m.naver.com##.ISSUE-BANNER-AD
 
 ||t1.daumcdn.net/kas/static/ba.min.js
 ||t1.daumcdn.net/adfit/
+search.daum.net##.adLinkColl
+search.daum.net##.content_ad
+search.daum.net##.ad_sch
+search.daum.net##[div:matches-attr("disp-attr"="0UL")
+search.daum.net##[div:matches-attr("disp-attr"="0RL")
+search.daum.net##[div:matches-attr("disp-attr"="0SC")
+search.daum.com#$#.g_comp_s {margin-top: 0px !important;}
 
 !======== 대성마이맥 ========
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
@@ -98,7 +105,7 @@ dcinside.com##.ad-group
 dcinside.com##.adv-group
 dcinside.com##.adv-inner
 dcinside.com###ad_floating
-dcinside.com#$#[class^="ad_"]
+dcinside.com##[class^="ad_"]
 ||addc.dcinside.com^
 ||gall.dcinside.com/_js/ad.js
 ||dcinside.com/_js/ad_keyword_powLink.js
@@ -109,7 +116,7 @@ gall.dcinside.com##.stickyunit
 !======== 커뮤니티 ========
 ruliweb.com##.ad_back_wrapper
 ruliweb.com##.fixed_ad_wrapper
-ruliweb.com#$#[class^="ad_"]
+ruliweb.com##[class^="ad_"]
 ||ruliweb.com/banneriframe
 ||img.ruliweb.com/js/criteo.publishertag.js
 ||image.ruliweb.com/view/view.js?zoneid=
