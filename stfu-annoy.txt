@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.4.6
+! Version: 4.5.4.7
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -174,6 +174,7 @@ google.com,google.co.kr##.gb_Hc
 google.com,google.co.kr##.gb_nf
 google.com,google.co.kr##.gb_of
 google.com,google.co.kr##.gb_ve
+google.com,google.co.kr##.gb_Ve
 google.com,google.co.kr##.gb_we
 google.com,google.co.kr##.gb_4e
 google.com,google.co.kr##.gb_Xe
@@ -208,7 +209,8 @@ stackoverflow.blog###onetrust-consent-sdk
 
 ! ANNOYANCE_FOOTER
 ##.footbar
-###footbar
+##.footer
+###footer
 google.com,google.co.kr##.fbar
 google.com,google.co.kr##.uU7dJb
 google.com,google.co.kr##.KxwPGc
