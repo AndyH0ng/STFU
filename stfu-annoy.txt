@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.4.4
+! Version: 4.5.4.5
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -207,25 +207,19 @@ hoyoverse.com##.mihoyo-cookie-tips
 stackoverflow.blog###onetrust-consent-sdk
 
 ! ANNOYANCE_FOOTER
-google.com,google.co.kr##.footer
+##.footer
+###footbar
 google.com,google.co.kr##.fbar
 google.com,google.co.kr##.uU7dJb
 google.com,google.co.kr##.KxwPGc
-naver.com###footer
 naver.com##[class^="Footer_inner"]
 m.naver.com##.main_footer
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
 papago.naver.com##.footerBanner
-papago.naver.com###footer
-news.kbs.co.kr###footer
 news.sbs.co.kr##.w_footer
-imnews.imbc.com###footer
-joongang.co.kr###footer
 donga.com###footer_wrap
 m.hani.co.kr##.main
-yonhapnewstv.co.kr###footer
-stackoverflow.com###footer
 
 ! Hover 효과
 youtube.com#$#.ytp-caption-segment { background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px); }
@@ -256,7 +250,7 @@ naver.com#$#.gnb_account { margin-bottom: 5px !important; }
 ! Google -> Google 정보 + 스토어
 ##.MV3Tnb
 ! Google -> Gmail 이미지
-##.gb_F
+##.gb_Ad
 ! Google -> 검색 창 옆에 자꾸 뜨는 짜증나는 거
 https://ogs.google.co.kr/widget/callout
 ! YouTube 좌측 바
