@@ -228,7 +228,7 @@ naver.com##[class^="Footer_inner"]
 m.naver.com##.main_footer
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
-pay.naver.com##[class^="Footer-module_article"]
+new-m.pay.naver.com##[class^="Footer-module_article"]
 papago.naver.com###footerBanner
 papago.naver.com##.footer___6450E
 daum.net###daumFoot

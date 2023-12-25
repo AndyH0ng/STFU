@@ -51,8 +51,8 @@ naver.com##.link_search_banner
 naver.com##[class^="TalkLink_-tip"]
 naver.com##[class^="Notice_wrap"]
 naver.com##.type_ad
-new-m.pay.naver.com##div[class^=PayService_banner"]
-new-m.pay.naver.com##[class^="p_pay_home"]
+new-m.pay.naver.com##[class^="PayService_banner"]
+new-m.pay.naver.com##[id^="p_pay_home"]
 game.naver.com##div[class^="styles_Banner"]
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
@@ -197,7 +197,7 @@ mediafire.com#$#.center {height: 480px !important;}
 ||ad4989.co.kr^
 ||adinsight.co.kr^
 ||adinsight.com^
-||adison.co^
+||api-ao-list.adison.co^
 ||adlibr.com^
 ||admaru.com^
 ||admaru.net^
