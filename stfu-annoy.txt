@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.4.8
+! Version: 4.5.5
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -118,6 +118,14 @@ ruliweb.com##.col_9
 ruliweb.com##.share_wrapper
 ruliweb.com##.margin_4
 ruliweb.com#$#.board_main_top { min-height: 0px !important; }
+inven.co.kr##.twitter
+inven.co.kr##.facebook
+inven.co.kr##.link
+pann.nate.com##.nateon
+pann.nate.com##.facebook
+pann.nate.com##.twitter
+pann.nate.com##.urlcopy
+pann.nate.com##.social_send
 jinhak.com##.snsList
 
 ! ANNOYANCE_TOTOP|FONTSIZE|PRINT
@@ -171,14 +179,14 @@ mimacstudy.com##.xi-new
 
 ! ANNOYANCE_TOOLTIP
 google.com,google.co.kr##.gb_Be
-google.com,google.co.kr##.gb_Ue
 google.com,google.co.kr##.gb_Hc
 google.com,google.co.kr##.gb_nf
 google.com,google.co.kr##.gb_of
 google.com,google.co.kr##.gb_ve
-google.com,google.co.kr##.gb_Ve
-google.com,google.co.kr##.gb_we
 google.com,google.co.kr##.gb_4e
+google.com,google.co.kr##.gb_Ue
+google.com,google.co.kr##.gb_Ve
+google.com,google.co.kr##.gb_We
 google.com,google.co.kr##.gb_Xe
 google.com,google.co.kr##.EI48Lc
 google.com,google.co.kr##.ZOyvub
@@ -226,9 +234,11 @@ daum.net###daumFoot
 news.sbs.co.kr##.w_footer
 donga.com###footer_wrap
 m.hani.co.kr##.main
+inven.co.kr##.commu-tail
+instiz.net##.footer_cont
+@@youtube.com###footer
 
 ! Hover 효과
-youtube.com#$#.ytp-caption-segment { background: var(--localnav-background-stuck, rgba(22,22,23,0.8)) !important; -webkit-backdrop-filter: saturate(180%) blur(20px); }
 youtube.com##.ytp-hover-progress
 
 ! Naver -> 우측 로그인 창 지랄발광

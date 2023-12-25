@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.4.8
+! Version: 4.5.5
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -50,6 +50,7 @@ naver.com##.link_search_banner
 ||static-whale.pstatic.net/main/$image,domain=www.naver.com
 naver.com##[class^="TalkLink_-tip"]
 naver.com##[class^="Notice_wrap"]
+naver.com##.type_ad
 game.naver.com##div[class^="styles_Banner"]
 m.naver.com##.id_comp_napp_banner
 m.naver.com##.id_comp_anniversary_banner
@@ -84,6 +85,8 @@ search.daum.net##[div:matches-attr("disp-attr"="0RL")
 search.daum.net##[div:matches-attr("disp-attr"="0SC")
 search.daum.com#$#.g_comp_s {margin-top: 0px !important;}
 
+youtube.com###masthead-ad
+
 !======== 대성마이맥 ========
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
 ||img.mimacstudy.com/admin_sh/images/site/skyBanner/$image
@@ -117,6 +120,14 @@ gall.dcinside.com##.stickyunit
 ruliweb.com##.ad_back_wrapper
 ruliweb.com##.fixed_ad_wrapper
 ruliweb.com##[class^="ad_"]
+inven.co.kr##.ad-header
+inven.co.kr##.comAdNewsBottomAd
+instiz.net##.cate_ad
+instiz.net##.cate_area
+instiz.net##div.container:nth-child(16) > div > div.responsive_main > table > tbody > tr:last-child > td:first-child
+theqoo.net##.lnb
+pann.nate.com##.ad
+pann.nate.com##.view_banner
 ||ruliweb.com/banneriframe
 ||img.ruliweb.com/js/criteo.publishertag.js
 ||image.ruliweb.com/view/view.js?zoneid=
@@ -176,7 +187,9 @@ stackoverflow.com##.js-freemium-cta
 jinhak.com##.action_Floating
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin
-
+mediafire.com##.ezoic_ad_unit
+mediafire.com#$#.center {width: auto !important;}
+mediafire.com#$#.center {height: 480px !important;}
 
 ||ad-mapps.com^
 ||ad4989.co.kr^
