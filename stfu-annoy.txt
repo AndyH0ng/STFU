@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.5
+! Version: 4.5.5.1
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -228,6 +228,7 @@ naver.com##[class^="Footer_inner"]
 m.naver.com##.main_footer
 shopping.naver.com##[class^="footer_footer"]
 shopping.naver.com##[class^="_footer_footer"]
+pay.naver.com##[class^="Footer-module_article"]
 papago.naver.com###footerBanner
 papago.naver.com##.footer___6450E
 daum.net###daumFoot
@@ -268,9 +269,13 @@ daum.net##.link_launch
 ! Google -> Google 정보 + 스토어
 ##.MV3Tnb
 ! Google -> Gmail 이미지
-##.gb_Ad
+##.gb_B
+##.gb_C
+##.gb_D
 ! Google -> 검색 창 옆에 자꾸 뜨는 짜증나는 거
-https://ogs.google.co.kr/widget/callout
+www.google.*$$script[tag-content="consentCookiePayload"]
+www.google.*#%#//scriptlet('abort-current-inline-script', 'document.cookie', 'YES+')
+www.google.*#%#//scriptlet('prevent-addEventListener', 'DOMContentLoaded', CONSENT)
 ! YouTube 좌측 바
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(3)
 youtube.com###sections > ytd-guide-section-renderer.style-scope.ytd-guide-renderer:nth-child(4)
