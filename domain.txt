@@ -5,7 +5,7 @@
 ! Title: STFU DNS 필터
 ! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
 ! Expires: 300 days
-! Version: 4.5.4.1
+! Version: 4.5.6
 
 !======== Problematic ========
 ! Breaks Facebook Auth
@@ -84,6 +84,8 @@
 !======== 광고 호스팅 ========
 ||ad-mapps.com^
 ||ad4989.co.kr^
+||adbro.me^
+||adinc.kr^
 ||adinsight.co.kr^
 ||adinsight.com^
 ||adison.co^
@@ -103,6 +105,7 @@
 ||cauly.co.kr^
 ||cauly.net^
 ||cdn-settings.appsflyersdk.com^
+||cizion.com^
 ||compass.adop.cc^
 ||contentsquare.net^
 ||criteo.com^
@@ -124,6 +127,7 @@
 ||rlcdn.com^
 ||smartadserver.com^
 ||socdm.com^
+||stax.kr^
 ||taboola.com^
 ||targetpush.co.kr^
 ||techhub.co.kr^

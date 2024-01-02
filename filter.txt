@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.5.2
+! Version: 4.5.6
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -50,7 +50,6 @@ naver.com##.link_search_banner
 ||static-whale.pstatic.net/main/$image,domain=www.naver.com
 naver.com##[class^="TalkLink_-tip"]
 naver.com##[class^="Notice_wrap"]
-naver.com##.type_ad
 new-m.pay.naver.com##[class^="PayService_banner"]
 new-m.pay.naver.com##[id^="p_pay_home"]
 game.naver.com##div[class^="styles_Banner"]
@@ -177,6 +176,10 @@ yonhapnewstv.co.kr##[class^="mobonDivBanner"]
 yonhapnewstv.co.kr##.view-ad-fixed
 yonhapnewstv.co.kr##.ad
 yonhapnewstv.co.kr##.view-ad-bott
+kmib.co.kr###left_top_ad
+kmib.co.kr##.m_ad
+newsis.com###shuffle
+newsis.com###quick_banner
 stackoverflow.com##.bg-black-100
 stackoverflow.com##.js-freemium-cta
 ||imgnews.pstatic.net/image/upload/item/2021/01/14/142956425_144518244_%2525B8%2525F0%2525B9%2525D9%2525C0%2525CF%2525B8%2525DE%2525C0%2525CE.png
@@ -186,6 +189,9 @@ stackoverflow.com##.js-freemium-cta
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 
+kyobobook.co.kr##.fly_menu_banner
+kyobobook.co.kr##.event_item
+kyobobook.co.kr##.event_list
 jinhak.com##.action_Floating
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin
@@ -195,9 +201,11 @@ mediafire.com#$#.center {height: 480px !important;}
 
 ||ad-mapps.com^
 ||ad4989.co.kr^
+||adbro.me^
+||adinc.kr^
 ||adinsight.co.kr^
 ||adinsight.com^
-||api-ao-list.adison.co^
+||adison.co^
 ||adlibr.com^
 ||admaru.com^
 ||admaru.net^
@@ -214,6 +222,7 @@ mediafire.com#$#.center {height: 480px !important;}
 ||cauly.co.kr^
 ||cauly.net^
 ||cdn-settings.appsflyersdk.com^
+||cizion.com^
 ||compass.adop.cc^
 ||contentsquare.net^
 ||criteo.com^
@@ -235,6 +244,7 @@ mediafire.com#$#.center {height: 480px !important;}
 ||rlcdn.com^
 ||smartadserver.com^
 ||socdm.com^
+||stax.kr^
 ||taboola.com^
 ||targetpush.co.kr^
 ||techhub.co.kr^

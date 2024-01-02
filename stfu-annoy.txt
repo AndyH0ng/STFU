@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.5.3
+! Version: 4.5.6
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -114,6 +114,9 @@ seoul.co.kr##.snsDiv
 seoul.co.kr##.Sns
 seoul.co.kr##.S20_V_sns
 seoul.co.kr##.S20_sns_R
+kmib.co.kr##.sns_wrap
+newsis.com##.socialArea
+newsis.com##.socialArea2
 ruliweb.com##.col_9
 ruliweb.com##.share_wrapper
 ruliweb.com##.margin_4
@@ -159,6 +162,11 @@ m.khan.co.kr##.btn_fsize
 m.khan.co.kr##.tts
 yonhapnewstv.co.kr##.zoomInBtn
 yonhapnewstv.co.kr##.zoomOutBtn
+kmib.co.kr##.ico
+kmib.co.kr##.mg0
+kmib.co.kr##.print
+kyobobook.co.kr##.btn_go_top
+newsis.com###quick_up
 jinhak.com##.btn_gotop
 
 ! ANNOYANCE_NOTI
@@ -234,6 +242,7 @@ papago.naver.com##.footer___6450E
 daum.net###daumFoot
 news.sbs.co.kr##.w_footer
 donga.com###footer_wrap
+kmib.co.kr##.ftbnr_margin
 m.hani.co.kr##.main
 inven.co.kr##.commu-tail
 instiz.net##.footer_cont
@@ -302,3 +311,9 @@ shopping.naver.com###lnb
 shopping.naver.com##._gnbLogo_live_area_tayLB
 ! NAVER -> 쇼핑 우측 배너 제거
 search.shopping.naver.com##.aside_aside__Dfe4q
+
+! 불필요한 뉴스
+kmib.co.kr###aside_news
+kmib.co.kr##.SideCon
+kmib.co.kr#$#.NwsCon { width: auto !important; }
+newsis.com##.viewBottom
