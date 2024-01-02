@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.6
+! Version: 4.5.6.1
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -150,6 +150,9 @@ news.sbs.co.kr##.control_area
 imnews.imbc.com##.font
 imnews.imbc.com##.voice
 imnews.imbc.com##.print
+yna.co.kr##.btn-scroll-top
+yna.co.kr##.btn-print
+yna.co.kr##.fsize01
 joongang.co.kr##.btn_top
 donga.com##.font_set
 donga.com##.btn_voice
@@ -165,6 +168,7 @@ yonhapnewstv.co.kr##.zoomOutBtn
 kmib.co.kr##.ico
 kmib.co.kr##.mg0
 kmib.co.kr##.print
+newsis.com##.infoBox
 kyobobook.co.kr##.btn_go_top
 newsis.com###quick_up
 jinhak.com##.btn_gotop
@@ -313,7 +317,14 @@ shopping.naver.com##._gnbLogo_live_area_tayLB
 search.shopping.naver.com##.aside_aside__Dfe4q
 
 ! 불필요한 뉴스
+yna.co.kr#$#.content01 { float: none !important; }
+yna.co.kr#$#.content01 { width: auto !important; }
+yna.co.kr##.container::after
 kmib.co.kr###aside_news
 kmib.co.kr##.SideCon
 kmib.co.kr#$#.NwsCon { width: auto !important; }
 newsis.com##.viewBottom
+newsis.com##.aside
+newsis.com#$#.articleView { border-right: none !important; }
+newsis.com#$#.content::after { display: none !important; }
+newsis.com##.subView > #content:after
