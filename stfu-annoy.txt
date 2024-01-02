@@ -5,7 +5,7 @@
 ! Title: STFU Annoyance
 ! Description: Blocks ads, promotions and trackers in Korean website. Aggressive annoyance filtering rule included.
 ! Expires: 300 days
-! Version: 4.5.6.1
+! Version: 4.5.6.2
 
 ! ANNOYANCE_SEARCHBTN
 google.com,google.co.kr##.gNO89b
@@ -132,11 +132,23 @@ pann.nate.com##.social_send
 jinhak.com##.snsList
 
 ! ANNOYANCE_TOTOP|FONTSIZE|PRINT
+##.btn-print
+##.btn_print
+##[class^="btn-top"]
+##[class^="btn_top"]
+##[class^="goTop"]
+##[class^="gotop"]
+##[class^="go-top"]
+##[class^="go_top"]
+##[class$="btn-top"]
+##[class$="btn_top"]
+##[class$="goTop"]
+##[class$="gotop"]
+##[class$="go-top"]
+##[class$="go_top"]
 naver.com##.SettingView-module__type_top___GkN8V
-m.naver.com##.mf_btn_top
 m.naver.com##.mf_tool_font
 m.search.naver.com##.item
-news.naver.com###goTop
 news.naver.com##.media_end_head_tts
 news.naver.com##.media_end_head_fontsize
 news.naver.com##.media_end_head_print
@@ -151,12 +163,9 @@ imnews.imbc.com##.font
 imnews.imbc.com##.voice
 imnews.imbc.com##.print
 yna.co.kr##.btn-scroll-top
-yna.co.kr##.btn-print
 yna.co.kr##.fsize01
-joongang.co.kr##.btn_top
 donga.com##.font_set
 donga.com##.btn_voice
-donga.com##.btn_print
 donga.com##.news_edit
 hani.co.kr##.tool-font
 hani.co.kr##.tool-print
@@ -169,9 +178,7 @@ kmib.co.kr##.ico
 kmib.co.kr##.mg0
 kmib.co.kr##.print
 newsis.com##.infoBox
-kyobobook.co.kr##.btn_go_top
 newsis.com###quick_up
-jinhak.com##.btn_gotop
 
 ! ANNOYANCE_NOTI
 ##.ico_new
@@ -250,6 +257,7 @@ kmib.co.kr##.ftbnr_margin
 m.hani.co.kr##.main
 inven.co.kr##.commu-tail
 instiz.net##.footer_cont
+! YouTube -> 댓글 레이아웃 사라지는 문제 수정
 @@youtube.com###footer
 
 ! Hover 효과
@@ -317,9 +325,6 @@ shopping.naver.com##._gnbLogo_live_area_tayLB
 search.shopping.naver.com##.aside_aside__Dfe4q
 
 ! 불필요한 뉴스
-yna.co.kr#$#.content01 { float: none !important; }
-yna.co.kr#$#.content01 { width: auto !important; }
-yna.co.kr##.container::after
 kmib.co.kr###aside_news
 kmib.co.kr##.SideCon
 kmib.co.kr#$#.NwsCon { width: auto !important; }
