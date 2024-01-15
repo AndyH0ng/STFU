@@ -5,7 +5,7 @@
 ! Title: STFU Cosmetic Ad
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 4.5.6.1
+! Version: 4.5.6.2
 
 !======== 네이버 ========
 ||ace.naver.com^
@@ -16,7 +16,6 @@
 ||ads.moot.us^
 ||inspector-collector.naver.com^
 ||l.m.naver.com^
-||lcs.naver.com^
 ||ma.news.naver.com^
 ||nelo2-col.linecorp.com^
 ||nelo2-col.navercorp.com^
@@ -125,7 +124,6 @@ inven.co.kr##.ad-header
 inven.co.kr##.comAdNewsBottomAd
 instiz.net##.cate_ad
 instiz.net##.cate_area
-instiz.net##div.container:nth-child(16) > div > div.responsive_main > table > tbody > tr:last-child > td:first-child
 theqoo.net##.lnb
 pann.nate.com##.ad
 pann.nate.com##.view_banner
@@ -164,11 +162,11 @@ news.sbs.co.kr##.sn_banner_side_top
 news.sbs.co.kr##.sn_banner_side_bottom
 news.sbs.co.kr##.w_article_ad
 news.sbs.co.kr##.type_bnr_aside
-news.sbs.co.kr#$#.w_box {min-height: 0px !important;}
+news.sbs.co.kr#$#.w_box { min-height: 0px !important; }
 joongang.co.kr##.ad_wrap
 joongang.co.kr##.sticky_recommend_list
 joongang.co.kr##.plotting_banner
-joongang.co.kr#$#.widget--v {margin-top: 0px !important;}
+joongang.co.kr#$#.widget--v { margin-top: 0px !important; }
 donga.com###section_schedule
 donga.com##.subscribe_toast
 donga.com###alarm_msg
@@ -199,8 +197,8 @@ jinhak.com##.action_Floating
 jinhak.com###bn_bot_fixed
 jinhak.com###layerCoin
 mediafire.com##.ezoic_ad_unit
-mediafire.com#$#.center {width: auto !important;}
-mediafire.com#$#.center {height: 480px !important;}
+mediafire.com#$#.center { width: auto !important; }
+mediafire.com#$#.center { height: 480px !important; }
 
 ||ad-mapps.com^
 ||ad4989.co.kr^
