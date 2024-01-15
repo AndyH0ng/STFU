@@ -4,7 +4,7 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0
+! Version: 1.0.1.0
 
 ! TOOLTIP || NEW NOTI
 ##div[class^="tooltip"]
@@ -32,11 +32,14 @@ google.*##.gb_1e
 google.*##.ZOyvub
 youtube.com###tooltip
 microsoft.com##.ms-Tooltip
+dcinside.com##.tip_box1
 dcinside.com##.tip_box2
 dcinside.com##.tip_nomem_nick
 dcinside.com##.pop_tipbox
 dcinside.com##.secret_tip
 dcinside.com##.sp-new
+m.dcinside.com###nft_publish_tipbox
+m.dcinside.com##.tip_box_inbtn
 
 ! COOKIE
 hoyoverse.com##.mihoyo-cookie-tips
@@ -158,6 +161,7 @@ naver.com#$#.gnb_account { margin-bottom: 5px !important; }
 dcinside.com##.power_link
 dcinside.com##.ad_premium
 dcinside.com##.r_only_daum
+dcinside.com##.pc-post-ad-header
 dcinside.com##.pop_bg
 dcinside.com##.closure-lightpop
 dcinside.com##.btn_nftbox
@@ -180,7 +184,11 @@ dcinside.com#$#.main_content { margin: 17px auto 50px !important; }
 gall.dcinside.com##tr.ub-content:first-child
 m.dcinside.com##nav
 m.dcinside.com##.layer-center-popup
-m.dcinside#?#.detail-top-lnk:has(> a[href^="https://event.dcinside.com/survey/vote/"])
+m.dcinside.com##.layer-bottom-popup
+m.dcinside.com##.nft-area
+m.dcinside.com##.md-tit-box
+m.dcinside.com##.outside-search-box
+m.dcinside.com##.reco-icon-lst > li:has(> .sp-share)
 
 ! Google 레이아웃
 google.*##.MV3Tnb
