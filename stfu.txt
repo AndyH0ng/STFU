@@ -4,7 +4,7 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0.1.0
+! Version: 1.0.1.1
 
 ! TOOLTIP || NEW NOTI
 ##div[class^="tooltip"]
@@ -44,16 +44,16 @@ m.dcinside.com##.tip_box_inbtn
 ! COOKIE
 hoyoverse.com##.mihoyo-cookie-tips
 stackoverflow.blog###onetrust-consent-sdk
+studocu.com##._30619133fcd1
 
 ! FOOTER
-##footer
+###footer
 ##div[id="footer"]
-##div[class^="footbar"]
-##div[class$="footbar"]
-##div[class^="footer"]
-##div[class$="footer"]
+##div[class="footbar"]
+##div[class="footer"]
 shopping.naver.com##[class^="_footer_footer_"]
 google.*##div[role="contentinfo"]
+google.*###fbar
 @@youtube.com###footer
 bunjang.co.kr##.sc-RefOD
 kmib.co.kr##.ftbnr_margin
@@ -90,10 +90,8 @@ microsoft.com##.m-back-to-top
 coupang.com##.top
 jinhak.com##.btn_gotop
 
-
-! PROMOTION
-m.cafe.naver.com##.go_app_bottom
-m.cafe.naver.com##.CafeAppBanner
+! SOCIAL MEDIA
+microsoft.com##[class^="socialfollow-"]
 
 ! NAVER 메인 레이아웃
 ||naverpa-phinf.pstatic.net^
@@ -190,10 +188,25 @@ m.dcinside.com##.md-tit-box
 m.dcinside.com##.outside-search-box
 m.dcinside.com##.reco-icon-lst > li:has(> .sp-share)
 
+! 마나토끼 레이아웃
+||xn--h10b2b940bj5h8tjf5m.com/data/banner/
+||xn--h10b2b940bj5h8tjf5m.com/bbs/bannerhit.php
+||manatoki*.net/data/editor/2009/$image
+manatoki321.net###hd_pop
+manatoki321.net###main-banner-view
+manatoki321.net###id_mbv
+manatoki321.net#?#div:has(> .board-tail-banner)
+마나토끼주소.com##.banner_list
+
 ! Google 레이아웃
 google.*##.MV3Tnb
 google.*##.BKRPef
-google.*##button[type="submit"]
+! 모바일 음성
+google.*##.FJoqsb
+! 모바일 기본 설정
+google.*##.KojFAc
+! 모바일 이미지
+google.*##.SBmmZd
 www.google.*#?#div:has(> a[href="https://mail.google.com/mail/&ogbl"])
 www.google.*#?#div:has(> a[href="https://www.google.co.kr/imghp?hl=ko&ogbl"])
 
@@ -250,6 +263,8 @@ youtube.com##.ytp-hover-progress
 [$path=/ca-fe\\/web\\/cafes\\/(appleiphone|12789486)(\\/|\\?)/]m.cafe.naver.com##.banner_add
 [$path=/ca-fe\\/web\\/cafes\\/(suhui|10197921)(\\/|\\?)/]m.cafe.naver.com##.banner_add
 m.naver.com##.layer_promotion_banner
+m.cafe.naver.com##.go_app_bottom
+m.cafe.naver.com##.CafeAppBanner
 talks.naver.com##img[alt="광고"]
 talks.naver.com#?#section[class^="SectionWrapper_wrap_"]:has(a[href="https://naver.me/FpMfk064"])
 map.naver.com##.promotion_wrap
