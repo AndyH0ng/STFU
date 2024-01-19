@@ -1,0 +1,9 @@
+[AdGuard]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: Font Fix
+! Description: Blocks ads, promotions and trackers in Korean website.
+! Expires: 300 days
+! Version: 1.0.1.3
+
+dcinside.com#$##* { font-family: -apple-system !important; }
