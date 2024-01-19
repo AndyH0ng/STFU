@@ -4,7 +4,7 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0.1.1
+! Version: 1.0.1.2
 
 ! TOOLTIP || NEW NOTI
 ##div[class^="tooltip"]
@@ -47,11 +47,13 @@ stackoverflow.blog###onetrust-consent-sdk
 studocu.com##._30619133fcd1
 
 ! FOOTER
+##.footer
 ###footer
 ##div[id="footer"]
 ##div[class="footbar"]
 ##div[class="footer"]
 shopping.naver.com##[class^="_footer_footer_"]
+news.naver.com##._STICKY_FOOTER
 google.*##div[role="contentinfo"]
 google.*###fbar
 @@youtube.com###footer
