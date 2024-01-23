@@ -1,3 +1,11 @@
+[AdGuard]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Filter: https://raw.githubusercontent.com/AndyH0ng/STFU/main/domain.txt
+! Title: STFU DNS 필터
+! Description: Blocks ads, promotions and trackers in Korean website within DNS-level.
+! Expires: 300 days
+! Version: 1.0.1.5
 @@||admin.dable.io^
 ||11h11m.net^
 ||addtoany.com^

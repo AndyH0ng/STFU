@@ -22,6 +22,7 @@ news.jtbc.co.kr##.secondary
 news.jtbc.co.kr##.article_options
 news.jtbc.co.kr#$#.container { background: none !important; }
 news.jtbc.co.kr#$#.article_main { padding: 0 140px 0 140px !important; width: auto !important; }
+news.jtbc.co.kr#$#.play_fixed { right: 20px !important; bottom: 20px !important; }
 
 ! 연합뉴스 레이아웃
 yna.co.kr##.aside-wrap01
@@ -34,6 +35,5 @@ donga.com##.recommend_cont
 donga.com##.bestview_news
 donga.com###aside
 donga.com#$#content { float: none !important; width: 640px !important; }
-donga.com#$#body { width: 640px !important; overflow: visible !important; }
 donga.com#$#.view_read { width: 640px !important; overflow: visible !important; }
 donga.com#$#.view_wrap { width: 640px !important; overflow: visible !important; }

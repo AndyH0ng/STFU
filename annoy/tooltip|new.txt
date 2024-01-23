@@ -33,3 +33,5 @@ dcinside.com##.sp-new
 m.dcinside.com###nft_publish_tipbox
 m.dcinside.com##.tip_box_inbtn
 mimacstudy.com##.xi-new
+||image.jinhak.com/jinhakImages/icon/icon_fixBell.png
+jinhak.com##.action_Floating
