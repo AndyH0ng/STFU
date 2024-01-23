@@ -4,7 +4,7 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0.1.4
+! Version: 1.0.1.5
 
 ! TOOLTIP || NEW NOTI
 ##div[class^="tooltip"]
@@ -49,9 +49,6 @@ studocu.com##._30619133fcd1
 ! FOOTER
 ##.footer
 ###footer
-##div[id="footer"]
-##div[class="footbar"]
-##div[class="footer"]
 shopping.naver.com##[class^="_footer_footer_"]
 news.naver.com##._STICKY_FOOTER
 google.*##div[role="contentinfo"]
@@ -203,21 +200,27 @@ manatoki321.net,manatoli322.net###id_mbv
 manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 마나토끼주소.com##.banner_list
 
+! 대성마이맥 레이아웃
+||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
+||img.mimacstudy.com/admin_sh/images/site/skyBanner/$image
+mimacstudy.com##[id^="mainPop"]
+mimacstudy.com##[id^="mainSubBottomBanner"]
+
 ! Google 레이아웃
 google.*##.MV3Tnb
 google.*##.BKRPef
-! 모바일 음성
 google.*##.FJoqsb
-! 모바일 기본 설정
 google.*##.KojFAc
-google.*##.SBmmZd
-! 모바일 이미지
 google.*##.SBmmZd
 www.google.*#?#div:has(> a[href="https://mail.google.com/mail/&ogbl"])
 www.google.*#?#div:has(> a[href="https://www.google.co.kr/imghp?hl=ko&ogbl"])
 
 ! YouTube 레이아웃
 youtube.com##.ytp-hover-progress
+youtube.com##.ytp-tooltip-text-wrapper
+youtube.com##.ytp-tooltip-text
+youtube.com##.ytp-tooltip-text-no-title
+youtube.com#$#.ytd-watch-next-secondary-results-renderer{ margin-top: -3px !important }
 
 ! 프로모션 및 광고
 ||ace.naver.com^
@@ -250,8 +253,6 @@ youtube.com##.ytp-hover-progress
 ||aem-collector-prod-ytlsojie.kgslb.com^
 ||aem-collector.daumkakao.io^
 ||analytics.daum.net^
-||display.ad.daum.net^
-||kyson.ad.daum.net^
 ||stat.tiara.daum.net^
 ||stat.tiara.kakao.com^
 ||track.tiara.daum.net^
@@ -264,7 +265,7 @@ youtube.com##.ytp-hover-progress
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 ||r.yna.co.kr/global/lib/*/js/nlogger.js
-||rd.yna.co.kr/global/js/yna_stat.js 
+||rd.yna.co.kr/global/js/yna_stat.js
 [$path=/ca-fe\\/web\\/cafes\\/(joonggonara|10050146)(\\/|\\?)/]m.cafe.naver.com##.banner_add
 [$path=/ca-fe\\/web\\/cafes\\/(appleiphone|12789486)(\\/|\\?)/]m.cafe.naver.com##.banner_add
 [$path=/ca-fe\\/web\\/cafes\\/(suhui|10197921)(\\/|\\?)/]m.cafe.naver.com##.banner_add
