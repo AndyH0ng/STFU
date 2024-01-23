@@ -4,7 +4,7 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0.1.8-1
+! Version: 1.0.1.8-2
 
 !#if adguard
 !#include domain/domain.txt
@@ -25,6 +25,21 @@
 !#endif
 
 !#if (adguard && adguard_app_ios)
+!#include domain/domain.txt
+!#include filtering/filter.txt
+!#include filtering/element.txt
+!#include annoy/cookie.txt
+!#include annoy/footer.txt
+!#include annoy/searchkey.txt
+!#include annoy/social.txt
+!#include annoy/tooltip|new.txt
+!#include annoy/totop.txt
+!#include layout/stfu-dcinside.txt
+!#include layout/stfu-google.txt
+!#include layout/stfu-manatoki.txt
+!#include layout/stfu-mimacstudy.txt
+!#include layout/stfu-naver.txt
+!#include layout/stfu-news.txt
 !#include domain/byplatform/domain-ios.txt
 !#endif
 
@@ -35,13 +50,6 @@
 !#if (adguard && adguard_app_mac)
 !#include domain/byplatform/domain-mac.txt
 !#endif
-
-!#safari_cb_affinity(general)
-!#include domain/domain.txt
-!#include filtering/filter.txt
-!#include filtering/element.txt
-!#include annoy/cookie.txt
-!#safari_cb_affinity
 
 !#safari_cb_affinity(general)
 !#include domain/domain.txt
