@@ -1,0 +1,13 @@
+[AdGuard]
+##.footer
+###footer
+shopping.naver.com##[class^="_footer_footer_"]
+news.naver.com##._STICKY_FOOTER
+google.*##div[role="contentinfo"]
+google.*##.fbar
+@@youtube.com###footer
+bunjang.co.kr##.sc-RefOD
+kmib.co.kr##.ftbnr_margin
+m.hani.co.kr##.main
+inven.co.kr##.commu-tail
+instiz.net##.footer_cont

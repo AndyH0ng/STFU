@@ -1,0 +1,12 @@
+[AdGuard]
+[$path=/ca-fe\\/web\\/cafes\\/(joonggonara|10050146)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+[$path=/ca-fe\\/web\\/cafes\\/(appleiphone|12789486)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+[$path=/ca-fe\\/web\\/cafes\\/(suhui|10197921)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+m.naver.com##.layer_promotion_banner
+m.cafe.naver.com##.go_app_bottom
+m.cafe.naver.com##.CafeAppBanner
+talks.naver.com##img[alt="광고"]
+talks.naver.com#?#section[class^="SectionWrapper_wrap_"]:has(a[href="https://naver.me/FpMfk064"])
+map.naver.com##.promotion_wrap
+bunjang.co.kr#?#a:has(> img[alt^="앱다운로드버튼"])
+bunjang.co.kr#?#button:has(> img[alt^="즐겨찾기버튼"])

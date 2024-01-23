@@ -1,0 +1,19 @@
+[AdGuard]
+! TO TOP
+##[class^="icon-top"][href="#"]
+##[class$="icon-top"][href="#"]
+##[class^="icon_top"][href="#"]
+##[class$="icon_top"][href="#"]
+##[class^="btn_top"]
+##[class$="btn_top"]
+##[class^="goTop"]
+##[class$="goTop"]
+#?#a:contains(맨위로)
+#?#button:has(:contains(맨위로))
+talks.naver.com##[class^="TopButton_button_"]
+shopping.naver.com##[class^="_footer_top_button_"]
+help.naver.com##[class^="FloatingButtonContainer_btn_top_move_"]
+microsoft.com#?#div:has(> a[href="#page-top"])
+microsoft.com##.m-back-to-top
+coupang.com##.top
+jinhak.com##.btn_gotop

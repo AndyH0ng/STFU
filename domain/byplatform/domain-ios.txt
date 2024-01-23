@@ -1,0 +1,7 @@
+[AdGuard]
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU
+! Description: 
+! Expires: 300 days
+! Version: 1.0.1.5

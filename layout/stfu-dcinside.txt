@@ -1,0 +1,44 @@
+[AdGuard]
+||addc.dcinside.com^
+||app.dcinside.com/api/_ad_search_link*.php^
+||gall.dcinside.com/_js/ad.js^
+||dcinside.com/_js/ad_keyword_powLink.js^
+||dcinside.com/_js/ad_context_powLink.js^
+||gall.dcinside.com/dc_ad_*_JH.php^
+||json2.dcinside.com/json1/comment_boy_v*.php^$domain=m.dcinside.com
+||json2.dcinside.com/json0/app_ad_setting.php^
+||nstatic.dcinside.com/dgn/gallery/js/panda_tv.js^$domain=dcinside.com
+||wiki.dcinside.com/main_top_realclick_banner.php^$domain=wiki.dcinside.com
+||wstatic.dcinside.com/ad/
+||wstatic.dcinside.com/gallery/top/ad_top/
+dcinside.com##.power_link
+dcinside.com##.ad_premium
+dcinside.com##.r_only_daum
+dcinside.com##.pc-post-ad-header
+dcinside.com##.pop_bg
+dcinside.com##.closure-lightpop
+dcinside.com##.btn_nftbox
+dcinside.com##.btn_snsmore
+dcinside.com#$#.btn_silbechu { width: 145px !important; }
+dcinside.com#$#.btn_report { width: 145px !important; }
+dcinside.com##.btn_dccon_guide
+dcinside.com###top > div > nav > ul > li:nth-child(5)
+dcinside.com###top > div > nav > ul > li:nth-child(6)
+dcinside.com###top > div > nav > ul > li:nth-child(7)
+dcinside.com##.area_links > ul > li:nth-child(4)
+dcinside.com##.area_links > ul > li:nth-child(5)
+dcinside.com##.area_links > ul > li:nth-child(6)
+dcinside.com##.area_links > ul > li:nth-child(7)
+dcinside.com##.area_links > ul > li:nth-child(8)
+dcinside.com##.area_links > ul > li:nth-child(9)
+dcinside.com##.area_links > ul > li:nth-child(10)
+dcinside.com##.btn_depth
+dcinside.com#$#.main_content { margin: 17px auto 50px !important; }
+gall.dcinside.com##tr.ub-content:first-child
+m.dcinside.com##nav
+m.dcinside.com##.layer-center-popup
+m.dcinside.com##.layer-bottom-popup
+m.dcinside.com##.nft-area
+m.dcinside.com##.md-tit-box
+m.dcinside.com##.outside-search-box
+m.dcinside.com##.reco-icon-lst > li:has(> .sp-share)

@@ -1,0 +1,52 @@
+[AdGuard]
+! NAVER 메인 레이아웃
+||naverpa-phinf.pstatic.net^
+||searchad-phinf.pstatic.net^
+||naverwebtoon-phinf.pstatic.net^
+||naver.com/shoppingbox/
+||ssl.pstatic.net/tveta/libs/
+||ssl.pstatic.net/melona/libs/
+||ssl.pstatic.net/static/kin/*/promotion/main/
+||ssl.pstatic.net/static/kin/*/promotion/mobile/
+||ssl.pstatic.net/adimg3.search/*/nx_powerlink.css
+@@||ssl.pstatic.net/tveta/libs/ssp-video/prod/ssp.web.sdk_$script,domain=weverse.io
+@@||ssl.pstatic.net/adimg*.search/adpost/js/ad.js$domain=naver.com
+
+www.naver.com##.link_search_banner
+www.naver.com##div[class^="Layout-module__banner_area_"]
+www.naver.com##span[class^="MyView-module__thumb_setting_"]
+www.naver.com##[class^="Layout-module__type_issue_"]
+www.naver.com##[class^="IssueBanner-module_"]
+www.naver.com###widgetboard
+www.naver.com#$#.DailyBoardView-module__daily_board_area___Q6Jmf { margin-top: 26px !important; }
+www.naver.com#$##topSearchWrap { padding-bottom: 50px !important; }
+www.naver.com#$#div[id="right-content-area"] { position: initial !important; }
+www.naver.com#$#div[class^="Layout-module_"] #newsstand { margin-top: 0px !important; }
+www.naver.com#?#div[class^="Layout-module_"] #feed
+www.naver.com#?#div[class^="Layout-module_"] #shopping
+www.naver.com#?#div[class^="Layout-module__content_area_"]:has(> div[class*="_banner_"])
+www.naver.com#?##root div[class^="Layout-module__content_"]:has(iframe[src^="https://shopsquare.naver.com/"])
+
+! NAVER 뉴스 레이아웃
+news.naver.com##._SUMMARY
+news.naver.com##._TTS_SETTING_BTN
+news.naver.com##._FONT_BUTTON
+news.naver.com##._PRINT_BUTTON
+news.naver.com##.copyright
+news.naver.com##.media_end_categorize
+news.naver.com##.promotion
+news.naver.com##.more_news2
+news.naver.com##.media_end_linked
+news.naver.com##.media_end_linked_more
+news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
+
+! NAVER 서비스 상단 프로필 레이아웃
+naver.com###gnb_name1
+! naver.com##.gnb_talk_li
+naver.com##.gnb_notice_li
+naver.com##.mail_li
+naver.com##.gnb_service_li
+naver.com##.gnb_change
+naver.com#$#.gnb_my_li { margin-top: 2px !important; background: none !important; }
+naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 0 !important; }
+naver.com#$#.gnb_account { margin-bottom: 5px !important; }

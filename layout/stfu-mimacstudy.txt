@@ -1,0 +1,5 @@
+[AdGuard]
+||img.mimacstudy.com/admin_sh/images/site/mainPopup/$image
+||img.mimacstudy.com/admin_sh/images/site/skyBanner/$image
+mimacstudy.com##[id^="mainPop"]
+mimacstudy.com##[id^="mainSubBottomBanner"]

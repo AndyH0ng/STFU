@@ -1,0 +1,10 @@
+[AdGuard]
+naver.com###ke_kbd_btn
+naver.com###nautocomplete
+m.naver.com##.btn_voice
+google.*#?#div:has(> center > input[value="I’m Feeling Lucky"])
+google.*#?#div:has(> span > img[src*="tia.png"])
+youtube.*#?#div:has(> a > span > img[src*="tia.png"])
+youtube.*##.gsst_b
+youtube.*###voice-search-button
+google.*###belowsb
