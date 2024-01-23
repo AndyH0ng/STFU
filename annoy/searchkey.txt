@@ -1,4 +1,3 @@
-[AdGuard]
 naver.com###ke_kbd_btn
 naver.com###nautocomplete
 m.naver.com##.btn_voice

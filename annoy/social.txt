@@ -1,2 +1,11 @@
-[AdGuard]
 microsoft.com##[class^="socialfollow-"]
+news.kbs.co.kr##.sns-link
+sbs.co.kr##.i_y
+sbs.co.kr##.i_f
+sbs.co.kr##.i_x
+sbs.co.kr##.i_insta
+news.jtbc.co.kr##.sns-icon-list
+news.jtbc.co.kr##.export_post
+news.jtbc.co.kr##.share
+news.jtbc.co.kr##.article_footer
+jinhak.com##.snsList

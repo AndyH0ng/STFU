@@ -1,4 +1,3 @@
-[AdGuard]
 ||addc.dcinside.com^
 ||app.dcinside.com/api/_ad_search_link*.php^
 ||gall.dcinside.com/_js/ad.js^

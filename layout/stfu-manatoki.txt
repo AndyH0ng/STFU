@@ -1,4 +1,3 @@
-[AdGuard]
 ||xn--h10b2b940bj5h8tjf5m.com/data/banner/
 ||xn--h10b2b940bj5h8tjf5m.com/bbs/bannerhit.php
 ||manatoki*.net/data/editor/2009/$image

@@ -1,4 +1,3 @@
-[AdGuard]
 hoyoverse.com##.mihoyo-cookie-tips
 stackoverflow.blog###onetrust-consent-sdk
 studocu.com##._30619133fcd1

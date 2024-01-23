@@ -1,4 +1,3 @@
-[AdGuard]
 ! TO TOP
 ##[class^="icon-top"][href="#"]
 ##[class$="icon-top"][href="#"]
@@ -16,4 +15,7 @@ help.naver.com##[class^="FloatingButtonContainer_btn_top_move_"]
 microsoft.com#?#div:has(> a[href="#page-top"])
 microsoft.com##.m-back-to-top
 coupang.com##.top
+yna.co.kr##.btn-scroll-top
 jinhak.com##.btn_gotop
+||img.mimacstudy.com/FRONT/common/bt_go_top.png
+mimacstudy.com##.top_anchor

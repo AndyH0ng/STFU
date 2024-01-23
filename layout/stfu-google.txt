@@ -1,4 +1,3 @@
-[AdGuard]
 ! Google 레이아웃
 google.*##.MV3Tnb
 google.*##.BKRPef

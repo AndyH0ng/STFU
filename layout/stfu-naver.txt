@@ -1,4 +1,3 @@
-[AdGuard]
 ! NAVER 메인 레이아웃
 ||naverpa-phinf.pstatic.net^
 ||searchad-phinf.pstatic.net^
@@ -42,7 +41,6 @@ news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
 
 ! NAVER 서비스 상단 프로필 레이아웃
 naver.com###gnb_name1
-! naver.com##.gnb_talk_li
 naver.com##.gnb_notice_li
 naver.com##.mail_li
 naver.com##.gnb_service_li

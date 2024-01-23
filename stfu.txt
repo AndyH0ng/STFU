@@ -4,17 +4,17 @@
 ! Title: STFU
 ! Description: Blocks ads, promotions and trackers in Korean website.
 ! Expires: 300 days
-! Version: 1.0.1.5-1
+! Version: 1.0.1.6
 
 !#if adguard
 !#include domain/domain.txt
 !#include filtering/filter.txt
 !#include filtering/element.txt
-!#include annoy/btnblabla.txt
 !#include annoy/cookie.txt
 !#include annoy/footer.txt
 !#include annoy/searchkey.txt
 !#include annoy/tooltip|new.txt
+!#include annoy/totop.txt
 !#include layout/stfu-dcinside.txt
 !#include layout/stfu-manatoki.txt
 !#include layout/stfu-mimacstudy.txt

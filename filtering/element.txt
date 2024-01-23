@@ -1,7 +1,7 @@
-[AdGuard]
 ||mapservice-phinf.pstatic.net/*/banner_*.png
 ||img.sbs.co.kr/newimg/news/20201005/201477040_700.jpg
 ||img.khan.co.kr/images/khan/m/bnr_event_newsletter_r2.png
 ||img.seoul.co.kr/img/newsletter/banner_pc.png
 ||r.yna.co.kr/global/lib/*/js/nlogger.js
 ||rd.yna.co.kr/global/js/yna_stat.js
+||img.sbs.co.kr/news/ad/

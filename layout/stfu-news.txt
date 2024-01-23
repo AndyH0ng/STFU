@@ -1,24 +1,39 @@
-[AdGuard]
+##.btn_voice
+##.btn_print
+
 ! KBS 레이아웃
 ||news.kbs.co.kr/data/layer/652/2020/09/20200915_ykDN7O.png
 ||news.kbs.co.kr/data/layer/652/2023/06/20230609_MPfEhJ.png
-news.kbs.co.kr##.sns-link
 news.kbs.co.kr##.tts-btn
 news.kbs.co.kr##.side-banner
 
 ! SBS 레이아웃
-||img.sbs.co.kr/news/ad/
 ||img.sbs.co.kr/newimg/news/20231226/201874665_700.jpg
 ||img.sbs.co.kr/newimg/news/20231228/201875805_1280.jpg
-sbs.co.kr##.i_y
-sbs.co.kr##.i_f
-sbs.co.kr##.i_x
-sbs.co.kr##.i_insta
 sbs.co.kr##.control_area
-news.sbs.co.kr##.ad_area
 news.sbs.co.kr##.page_promotion_banner
 news.sbs.co.kr##.w_article_side
 news.sbs.co.kr#$#.w_article_left { padding-right: 0px !important; }
 news.sbs.co.kr#$#.w_inner { padding: 0 55px 0 55px !important; }
 news.sbs.co.kr#$#.w_article_cont { min-height: auto !important; }
-sbs.co.kr##.w_footer
+
+! JTBC 레이아웃
+news.jtbc.co.kr##.secondary
+news.jtbc.co.kr##.article_options
+news.jtbc.co.kr#$#.container { background: none !important; }
+news.jtbc.co.kr#$#.article_main { padding: 0 140px 0 140px !important; width: auto !important; }
+
+! 연합뉴스 레이아웃
+yna.co.kr##.aside-wrap01
+yna.co.kr##.aside-wrap02
+
+! 동아일보 레이아웃
+donga.com##.font_set
+donga.com##.news_edit
+donga.com##.recommend_cont
+donga.com##.bestview_news
+donga.com###aside
+donga.com#$#content { float: none !important; width: 640px !important; }
+donga.com#$#body { width: 640px !important; overflow: visible !important; }
+donga.com#$#.view_read { width: 640px !important; overflow: visible !important; }
+donga.com#$#.view_wrap { width: 640px !important; overflow: visible !important; }
