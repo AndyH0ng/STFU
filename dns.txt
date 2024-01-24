@@ -1,5 +1,33 @@
+!                                                                                 
+!  .----------------.  .----------------.  .----------------.  .----------------. 
+! | .--------------. || .--------------. || .--------------. || .--------------. |
+! | |    _______   | || |  _________   | || |  _________   | || | _____  _____ | |
+! | |   /  ___  |  | || | |  _   _  |  | || | |_   ___  |  | || ||_   _||_   _|| |
+! | |  |  (__ \_|  | || | |_/ | | \_|  | || |   | |_  \_|  | || |  | |    | |  | |
+! | |   '.___`-.   | || |     | |      | || |   |  _|      | || |  | '    ' |  | |
+! | |  |`\____) |  | || |    _| |_     | || |  _| |_       | || |   \ `--' /   | |
+! | |  |_______.'  | || |   |_____|    | || | |_____|      | || |    `.__.'    | |
+! | |              | || |              | || |              | || |              | |
+! | '--------------' || '--------------' || '--------------' || '--------------' |
+!  '----------------'  '----------------'  '----------------'  '----------------' 
+!      _  
+!   __| |_ __  ___ 
+!  / _` | '_ \/ __|
+! | (_| | | | \__ \
+!  \__,_|_| |_|___/ 
+!
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU DNS
+! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
+! Version: 1
+!
+[AdGuard]
 @@||admin.dable.io^
 ||11h11m.net^
+||ad.daum.net^
+||ad4989.co.kr^
+||addc.dcinside.com^
 ||addtoany.com^
 ||adinsight.co.kr^
 ||admob-app-id-*.firebaseio.com^
@@ -7,6 +35,7 @@
 ||ads-dmp-collect.kr.karrotmarket.com^
 ||adservice.google.co.*
 ||adservice.google.com
+||adsrvr.org^
 ||adtelligent.com^
 ||aem-collector.daumkakao.io^
 ||aem-kakao-collector.onkakao.net^
@@ -23,9 +52,10 @@
 ||buzzvil.com^
 ||cauly.co.kr^
 ||cdn.signalfx.com^
+||clickmon.co.kr
 ||collect-perf.51.la^
 ||collect-v*.51.la^
-||collect.kr.karrotmarket.com^
+||collect.*.karrotmarket.com^
 ||collector.sports.naver.com^
 ||cologger.shopping.naver.com^
 ||contentsfeed.com^
@@ -43,6 +73,7 @@
 ||esp*.aptrinsic.com^
 ||events.backtrace.io^
 ||events.split.io^
+||external-api.impression-neo.naver.com^
 ||firebaselogging-pa.googleapis.com^
 ||google-analytics.com^
 ||hottracks.kyobobook.co.kr^
@@ -50,6 +81,7 @@
 ||in.appcenter.ms^
 ||inspector-collector.naver.com^
 ||jennifersoft.com^
+||krxd.net^
 ||log-upload-os.hoyolab.com^
 ||log.data.musinsa.com^
 ||log.mmstat.com^
@@ -61,42 +93,54 @@
 ||logger.eigene.io^
 ||lr-ingest.com^
 ||mediacategory.com^
+||mediago.io^
 ||megadata.co.kr^
+||ml314.com^
 ||mobile.events.data.microsoft.com^
+||mobon.net
+||mobwithad.com
 ||montelena-rcv.*.co.kr^
+||mookie1.com^
 ||mypopads.com^
 ||mypopups.com^
 ||notify.bugsnag.com^
 ||nsm-corp.com^
 ||ntracker-collector.naver.com^
 ||opentelemetry.io^
+||openx.net^
+||pixel.rubiconproject.com^
+||postrelease.com^
 ||prd-analytics.lotteon.com^
 ||pubmatic.com^
 ||rainbownine.net^
 ||raygun.io^
-||rubiconproject.com^
+||rlcdn.com^
+||rum.beusable.net^
+||script.hotjar.com^
 ||sdk.51.la^
 ||sdk.airbridge.io^
 ||sdk.iad-*.braze.com^
 ||securiti.ai^
+||sentry-cdn.com^
 ||sentry-cdn.io^
 ||sentry.io^
 ||sentry.tossinvest.com^
 ||sessions.bugsnag.com^
 ||settings.crashlytics.com^
+||skplanet.com^
 ||smartadserver.com^
 ||sny.monosnap.com^
 ||stat.kbs.co.kr^
-||stat.tiara.daum.net^
-||stat.tiara.kakao.com^
-||stat.tiara.tistory.com^
+||stat.tiara.*.net^
+||stat.tiara.*.com^
 ||taboola.com^
 ||techhub.co.kr^
+||tend-table.com
 ||tnkfactory.com^
-||track.tiara.daum.net^
-||track.tiara.kakao.com^
-||track.tiara.tistory.com^
+||track.tiara.*.net^
+||track.tiara.*.com^
 ||trk.tand.kr^
+||trkpzz.dcinside.com^
 ||users.51.la^
 ||web1.51.la^
 ||weblog.coupang.com^
@@ -104,3 +148,4 @@
 ||whatap-browser-agent.io^
 ||widerplanet.com^
 ||www.datadoghq-browser-agent.com^
+||zeotap.com^

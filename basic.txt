@@ -1,0 +1,250 @@
+!                                                                                 
+!  .----------------.  .----------------.  .----------------.  .----------------. 
+! | .--------------. || .--------------. || .--------------. || .--------------. |
+! | |    _______   | || |  _________   | || |  _________   | || | _____  _____ | |
+! | |   /  ___  |  | || | |  _   _  |  | || | |_   ___  |  | || ||_   _||_   _|| |
+! | |  |  (__ \_|  | || | |_/ | | \_|  | || |   | |_  \_|  | || |  | |    | |  | |
+! | |   '.___`-.   | || |     | |      | || |   |  _|      | || |  | '    ' |  | |
+! | |  |`\____) |  | || |    _| |_     | || |  _| |_       | || |   \ `--' /   | |
+! | |  |_______.'  | || |   |_____|    | || | |_____|      | || |    `.__.'    | |
+! | |              | || |              | || |              | || |              | |
+! | '--------------' || '--------------' || '--------------' || '--------------' |
+!  '----------------'  '----------------'  '----------------'  '----------------' 
+!   _               _      
+!  | |__   __ _ ___(_) ___ 
+!  | '_ \ / _` / __| |/ __|
+!  | |_) | (_| \__ \ | (__ 
+!  |_.__/ \__,_|___/_|\___|
+!                        
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU Basic
+! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
+! Version: 1
+!
+[AdGuard]
+! NAVER > 광고 배너
+||ssl.pstatic.net/tveta/
+||ssl.pstatic.net/melona/
+||ssl.pstatic.net/static/www/m-new/uit/img/
+||ssl.pstatic.net/static/kin/*/promotion/main/
+||ssl.pstatic.net/static/kin/*/promotion/mobile/
+! Naver 메인 > 검색창 옆 광고 →
+www.naver.com##img[src^="https://s.pstatic.net/static/www/mobile/edit/"][width="162"][height="40"]
+! NAVER 모바일 > 광고 배너
+m.naver.com##.id_comp_banner
+m.naver.com##.MM_DO_NOT_AD_POSITION
+! NAVER 모바일 > Na. > 인증서 발급 프로모션 배너 ↓
+m.naver.com###nadot-promotion-banner
+! NAVER 모바일 메인 > 네이버 앱 프로모션 배너
+m.naver.com##.id_comp_napp_banner
+! NAVER > 네이버톡 > 광고
+talks.naver.com##img[alt="광고"]
+! NAVER > 네이버톡 > '네이버톡 제대로 활용하는 법'
+talks.naver.com#?#section[class^="SectionWrapper_wrap_"]:has(a[href="https://naver.me/FpMfk064"])
+! NAVER > 네이버 카페 > 광고 배너
+[$path=/ca-fe\\/web\\/cafes\\/(joonggonara|10050146)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+[$path=/ca-fe\\/web\\/cafes\\/(appleiphone|12789486)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+[$path=/ca-fe\\/web\\/cafes\\/(suhui|10197921)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+! NAVER > 네이버 지도 > 광고 배너 ↘
+map.naver.com##.promotion_wrap
+! KBS News > 프로모션 배너 →
+||news.kbs.co.kr/data/layer/652/2020/09/20200915_ykDN7O.png
+||news.kbs.co.kr/data/layer/652/2023/06/20230609_MPfEhJ.png
+news.kbs.co.kr##.side-banner
+! SBS News > 광고 배너
+||img.sbs.co.kr/news/ad/
+news.sbs.co.kr##.ad_area
+! SBS News > 프로모션 배너
+news.sbs.co.kr##.page_promotion_banner
+! JTBC News > 광고 배너
+news.jtbc.co.kr##.ad_item
+news.jtbc.co.kr##.tv_right_ad
+! YNA > YouTube 플레이백 광고
+yna.co.kr##iframe[id="marketingPlayer"][src^="https://youtube.com/embed/"]
+! Gmarket > 광고 배너
+||ad-img.gmarket.com/ADS/Contents_/
+! Gmarket > 폰트 프로모션 배너
+gmarket.co.kr##.section__main-fontguide
+! Musinsa > 광고 배너
+||musinsa.com/app/api/banner/
+! 번개장터 > 상단 '앱 다운로드 즐겨찾기'
+bunjang.co.kr#?#a:has(> img[alt^="앱다운로드버튼"])
+bunjang.co.kr#?#button:has(> img[alt^="즐겨찾기버튼"])
+! 메가스터디 > 광고 배너
+||megastudy.net/scroll/banner/
+||img.megastudy.net/main/banner/
+megastudy.net##.main_banner_floating
+megastudy.net##.main_floatings
+megastudy.net##.top_bnr_wrap
+! 메가스터디 > 광고 배너 ↓
+||img.megastudy.net/Main/banner/
+megastudy.net##.footerFixedBanner_tec
+! 메가스터디 > 현우진 광고 배너 ↙
+||img.megastudy.net/main/2023/f_231221_hwj1.png
+megastudy.net##.ly_megaP
+! 메가스터디 > 러셀 광고 배너
+||img.megastudy.net/russel/banner/
+||img.megastudy.net//russel/banner/
+! 대성마이맥 > 광고 배너 ↘ | →
+||mimacstudy.com/common/getMainPopupListAjax.ds
+||img.mimacstudy.com/admin_sh/images/site/mainPopup/
+! 대성마이맥 > 트래커
+||mimacstudy.com/js/sphereAnalytics.min.js
+! DCinside > 광고 배너
+||dcinside.com/_js/ad.js
+||dcinside.com/_js/ad_context_powLink.js
+||dcinside.com/_js/ad_keyword_powLink.js
+||nstatic.dcinside.com/ad/
+||nstatic.dcinside.com/dgn/gallery/js/panda_tv.js$domain=dcinside.com
+dcinside.com##[class^="rightbanner"]
+dcinside.com##.pc-post-ad-header
+! DCinside > 트래커
+||dcinside.com/_js/click_log.js
+! DCinside > 앱 프로모션 배너
+m.dcinside.com##.layer-center-popup
+m.dcinside.com##.layer-bottom-popup
+! 마나토끼 > 팝업 배너
+||manatoki*.net/data/editor/2009/$image
+manatoki321.net,manatoli322.net###hd_pop
+! 마나토끼 > 광고 배너
+manatoki321.net,manatoli322.net###id_mbv
+manatoki321.net,manatoli322.net###main-banner-view
+manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
+! 마나토끼주소.com > 광고 배너
+||xn--h10b2b940bj5h8tjf5m.com/data/banner/
+마나토끼주소.com##.banner_list
+
+!
+!  ██████   ██████  ███    ███  █████  ██ ███    ██ 
+!  ██   ██ ██    ██ ████  ████ ██   ██ ██ ████   ██ 
+!  ██   ██ ██    ██ ██ ████ ██ ███████ ██ ██ ██  ██ 
+!  ██   ██ ██    ██ ██  ██  ██ ██   ██ ██ ██  ██ ██ 
+!  ██████   ██████  ██      ██ ██   ██ ██ ██   ████ 
+!
+@@||admin.dable.io^
+||11h11m.net^
+||ad.daum.net^
+||ad4989.co.kr^
+||addc.dcinside.com^
+||addtoany.com^
+||adinsight.co.kr^
+||admob-app-id-*.firebaseio.com^
+||adpies.com^
+||ads-dmp-collect.kr.karrotmarket.com^
+||adservice.google.co.*
+||adservice.google.com
+||adsrvr.org^
+||adtelligent.com^
+||aem-collector.daumkakao.io^
+||aem-kakao-collector.onkakao.net^
+||api.loganalytics.io^
+||appier.net^
+||applicationinsights.azure.com^
+||applicationinsights.io^
+||applovin.com^
+||apptrace.com^
+||browser-intake-*-datadoghq.com^
+||browser-intake-datadoghq.com^
+||bugly.qcloud.com^
+||buzzni.com^
+||buzzvil.com^
+||cauly.co.kr^
+||cdn.signalfx.com^
+||clickmon.co.kr
+||collect-perf.51.la^
+||collect-v*.51.la^
+||collect.*.karrotmarket.com^
+||collector.sports.naver.com^
+||cologger.shopping.naver.com^
+||contentsfeed.com^
+||core.airbridge.io^
+||crash-reports.browser.yandex.net^
+||crashlytics2.l.google.com^
+||crashlyticsreports-pa.googleapis.com^
+||creativecdn.com^
+||cubot.eigene.io^
+||dable.io^
+||displayvertising.com^
+||doubleclick.net^ 
+||e.crashlytics.com^
+||emforce.co.kr^
+||esp*.aptrinsic.com^
+||events.backtrace.io^
+||events.split.io^
+||external-api.impression-neo.naver.com^
+||firebaselogging-pa.googleapis.com^
+||google-analytics.com^
+||hottracks.kyobobook.co.kr^
+||ia.51.la^
+||in.appcenter.ms^
+||inspector-collector.naver.com^
+||jennifersoft.com^
+||krxd.net^
+||log-upload-os.hoyolab.com^
+||log.data.musinsa.com^
+||log.mmstat.com^
+||log.sports.naver.com^
+||log.tossinvest.com^
+||log.wemakeprice.com^
+||logapi.tv.naver.com^
+||logcol.kyobobook.co.kr^
+||logger.eigene.io^
+||lr-ingest.com^
+||mediacategory.com^
+||mediago.io^
+||megadata.co.kr^
+||ml314.com^
+||mobile.events.data.microsoft.com^
+||mobon.net
+||mobwithad.com
+||montelena-rcv.*.co.kr^
+||mookie1.com^
+||mypopads.com^
+||mypopups.com^
+||notify.bugsnag.com^
+||nsm-corp.com^
+||ntracker-collector.naver.com^
+||opentelemetry.io^
+||openx.net^
+||pixel.rubiconproject.com^
+||postrelease.com^
+||prd-analytics.lotteon.com^
+||pubmatic.com^
+||rainbownine.net^
+||raygun.io^
+||rlcdn.com^
+||rum.beusable.net^
+||script.hotjar.com^
+||sdk.51.la^
+||sdk.airbridge.io^
+||sdk.iad-*.braze.com^
+||securiti.ai^
+||sentry-cdn.com^
+||sentry-cdn.io^
+||sentry.io^
+||sentry.tossinvest.com^
+||sessions.bugsnag.com^
+||settings.crashlytics.com^
+||skplanet.com^
+||smartadserver.com^
+||sny.monosnap.com^
+||stat.kbs.co.kr^
+||stat.tiara.*.net^
+||stat.tiara.*.com^
+||taboola.com^
+||techhub.co.kr^
+||tend-table.com
+||tnkfactory.com^
+||track.tiara.*.net^
+||track.tiara.*.com^
+||trk.tand.kr^
+||trkpzz.dcinside.com^
+||users.51.la^
+||web1.51.la^
+||weblog.coupang.com^
+||weblog.hankookilbo.com^
+||whatap-browser-agent.io^
+||widerplanet.com^
+||www.datadoghq-browser-agent.com^
+||zeotap.com^

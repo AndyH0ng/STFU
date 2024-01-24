@@ -1,0 +1,308 @@
+!                                                                                 
+!  .----------------.  .----------------.  .----------------.  .----------------. 
+! | .--------------. || .--------------. || .--------------. || .--------------. |
+! | |    _______   | || |  _________   | || |  _________   | || | _____  _____ | |
+! | |   /  ___  |  | || | |  _   _  |  | || | |_   ___  |  | || ||_   _||_   _|| |
+! | |  |  (__ \_|  | || | |_/ | | \_|  | || |   | |_  \_|  | || |  | |    | |  | |
+! | |   '.___`-.   | || |     | |      | || |   |  _|      | || |  | '    ' |  | |
+! | |  |`\____) |  | || |    _| |_     | || |  _| |_       | || |   \ `--' /   | |
+! | |  |_______.'  | || |   |_____|    | || | |_____|      | || |    `.__.'    | |
+! | |              | || |              | || |              | || |              | |
+! | '--------------' || '--------------' || '--------------' || '--------------' |
+!  '----------------'  '----------------'  '----------------'  '----------------' 
+!                   _                          
+!   _ __ ___   __ _| | _____       _   _ _ __  
+!  | '_ ` _ \ / _` | |/ / _ \_____| | | | '_ \ 
+!  | | | | | | (_| |   <  __/_____| |_| | |_) |
+!  |_| |_| |_|\__,_|_|\_\___|      \__,_| .__/ 
+!                                       |_|
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU Make-Up
+! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
+! Version: 1
+!
+[AdGuard]
+!
+!   ██████   ██████   ██████   ██████  ██      ███████ 
+!  ██       ██    ██ ██    ██ ██       ██      ██      
+!  ██   ███ ██    ██ ██    ██ ██   ███ ██      █████   
+!  ██    ██ ██    ██ ██    ██ ██    ██ ██      ██      
+!   ██████   ██████   ██████   ██████  ███████ ███████
+!
+! Google 메인 > 'Google 정보' + '스토어'
+www.google.*##.MV3Tnb
+! Google 메인 > 'Gmail'
+www.google.*#?#div:has(> a[href="https://mail.google.com/mail/&ogbl"])
+! Google 메인 > '이미지'
+www.google.*#?#div:has(> a[href="https://www.google.co.kr/imghp?hl=ko&ogbl"])
+! Google 메인 > 'Google 검색' + "I'm Feeling Lucky"
+www.google.*#?#div:has(> center > input[value="I’m Feeling Lucky"])
+! Google 검색 > 입력 도구
+www.google.*#?#div:has(> span > img[src*="tia.png"])
+! Google 검색 > 검색
+google.*###belowsb
+! Google * > $TOOLTIP
+google.*##.gb_1e
+google.*##.ZOyvub
+! Google * > $FOOTER
+www.google.*##div[role="contentinfo"]
+! YouTube 검색 > 음성 검색
+youtube.*###voice-search-button
+! YouTube 검색 > 입력 도구
+youtube.*##.gsst_b
+youtube.*#?#div:has(> a > span > img[src*="tia.png"])
+! YouTube 시청 > 우측 레이아웃 줄 맞춤
+youtube.com#$#.ytd-watch-next-secondary-results-renderer{ margin-top: -3px !important }
+! YouTube 시청 > '댓글' + '취소' 차단 해제
+@@youtube.com###footer
+! YouTube > $HOVERING
+youtube.com##.ytp-hover-progress
+! YouTube > $TOOLTIP
+youtube.com###tooltip
+youtube.com##.ytp-tooltip-text
+youtube.com##.ytp-tooltip-text-wrapper
+youtube.com##.ytp-tooltip-text-no-title
+
+!#if (adguard_app_android || adguard_app_ios || adguard_ext_safari)
+! Google 메인 > '전체' + '이미지'
+google.*###SBmmZd
+! Google 검색 > '검색 설정' (≡)
+google.*##div[aria-label="검색 설정"]
+! Google 검색 > 음성 검색
+google.*##.FJoqsb
+! Google * > $FOOTER
+google.*##.fbar
+google.*###footer
+!#endif
+
+!
+! ███    ██  █████  ██    ██ ███████ ██████  
+! ████   ██ ██   ██ ██    ██ ██      ██   ██ 
+! ██ ██  ██ ███████ ██    ██ █████   ██████  
+! ██  ██ ██ ██   ██  ██  ██  ██      ██   ██ 
+! ██   ████ ██   ██   ████   ███████ ██   ██ 
+!
+! Naver 메인 > 음성 검색
+m.naver.com##.btn_voice
+! Naver 메인 > 입력 도구
+naver.com###ke_kbd_btn
+! Naver 메인 > 자동 완성 화살표
+naver.com###nautocomplete
+! NAVER 메인 > 하단 피드
+www.naver.com#?#div[class^="Layout-module_"] #feed
+www.naver.com#?#div[class^="Layout-module_"] #shopping
+! Naver 메인 > '위젯 보드'
+www.naver.com###widgetboard
+! NAVER 뉴스 레이아웃
+news.naver.com##._SUMMARY
+news.naver.com##._TTS_SETTING_BTN
+news.naver.com##._FONT_BUTTON
+news.naver.com##._PRINT_BUTTON
+news.naver.com##.copyright
+news.naver.com##.media_end_categorize
+news.naver.com##.promotion
+news.naver.com##.more_news2
+news.naver.com##.media_end_linked
+news.naver.com##.media_end_linked_more
+news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
+! NAVER * > 상단 프로필 레이아웃
+naver.com###gnb_name1
+naver.com##.gnb_notice_li
+naver.com##.mail_li
+naver.com##.gnb_service_li
+naver.com##.gnb_change
+naver.com#$#.gnb_my_li { margin-top: 2px !important; background: none !important; }
+naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 0 !important; }
+naver.com#$#.gnb_account { margin-bottom: 5px !important; }
+! Naver * > $GOTOP
+naver.com##[class^="SettingView-module__type_top___"]
+notify.naver.com##.comp_btn_top
+talks.naver.com##div[class^="TopButton_button__"]
+shopping.naver.com##[class^="_footer_top_button_"]
+news.naver.com###goTop
+! Naver * > $TOOLTIP
+naver.com##[class^="Tooltip_wrap"]
+m.naver.com##.MM_TOOLTIP
+m.naver.com##.nav_tooltip
+m.naver.com##.chf_feed_tooltip
+m.naver.com##.ctn_ly_setting
+notify.naver.com##.ico_benefit_wrap
+blog.naver.com##.register_layer
+comic.naver.com##[class^="GlobalNavigationBar__icon_new"]
+dict.naver.com##span[class="update"]
+dict.naver.com##span[class="_id_more_up"]
+*.dict.naver.com##.aside_banner
+help.naver.com##[class^="GNB_gnb_more_tooltip__"]
+! Naver * > $FOOTER
+naver.com###footer
+m.naver.com##.main_footer
+news.naver.com##._STICKY_FOOTER
+shopping.naver.com##[class^="_footer_footer_"]
+
+!
+! ███    ██ ███████ ██     ██ ███████ 
+! ████   ██ ██      ██     ██ ██      
+! ██ ██  ██ █████   ██  █  ██ ███████ 
+! ██  ██ ██ ██      ██ ███ ██      ██ 
+! ██   ████ ███████  ███ ███  ███████ 
+!                                    
+! KBS News > $DISTRACTION
+news.kbs.co.kr##.tts-btn
+! KBS News > $SOCIAL
+news.kbs.co.kr##.sns-link
+
+! SBS News > 추천 기사 목록 →
+news.sbs.co.kr##.w_article_side
+news.sbs.co.kr#$#.w_article_left { padding-right: 0px !important; }
+news.sbs.co.kr#$#.w_inner { padding: 0 55px 0 55px !important; }
+news.sbs.co.kr#$#.w_article_cont { min-height: auto !important; }
+! SBS News > $DISTRACTION
+sbs.co.kr##.control_area
+! SBS News > $SOCIAL
+sbs.co.kr##.i_y
+sbs.co.kr##.i_f
+sbs.co.kr##.i_x
+sbs.co.kr##.i_insta
+! SBS News > $GOTOP
+news.sbs.co.kr##.w_btn_top
+! SBS > $FOOTER
+sbs.co.kr##.w_footer
+
+! JTBC News > 추천 기사 목록 →
+news.jtbc.co.kr##.secondary
+news.jtbc.co.kr#$#.container { background: none !important; }
+news.jtbc.co.kr#$#.article_main { padding: 0 140px 0 140px !important; width: auto !important; }
+! JTBC News > 고정 플레이어 레이아웃 ↘
+news.jtbc.co.kr#$#.play_fixed { right: 20px !important; bottom: 20px !important; }
+! JTBC News > $DISTRACTION
+||images.jtbc.co.kr/ui_jtbc/news/article/article.png
+||images.jtbc.co.kr/ui_jtbc/news/article/article_v3.png
+news.jtbc.co.kr##.article_options
+! JTBC News > $SOCIAL
+||images.jtbc.co.kr/ui_jtbc/news_2023/design/20x20@2x.png
+||images.jtbc.co.kr/ui_jtbc/news_2023/gnbsticky/ico_url_on.png
+||images.jtbc.co.kr/ui_jtbc/news_2023/gnbsticky/ico_url_off.png
+||images.jtbc.co.kr/ui_jtbc/news/gnbsticky/ico_url_off.gif
+||images.jtbc.co.kr/ui_jtbc/news/article/sns_subscribe/btn_move.png
+news.jtbc.co.kr##.article_footer
+news.jtbc.co.kr##.export_post
+news.jtbc.co.kr##.sns_wrap
+
+! 동아일보 > 추천 기사 목록 →
+donga.com##.recommend_cont
+! 동아일보 > '당신이 좋아할 만한 콘텐츠'
+donga.com##.bestview_news
+donga.com###aside
+donga.com#$#content { float: none !important; width: 640px !important; }
+donga.com#$#.view_read { width: 640px !important; overflow: visible !important; }
+donga.com#$#.view_wrap { width: 640px !important; overflow: visible !important; }
+! 동아일보 > $DISTRACTION
+||image.donga.com/pc/2022/images/common/read01_*.png
+||image.donga.com/pc/2022/images/common/icon_voice.gif
+donga.com##.font_set
+donga.com##.news_edit
+! 동아일보 > $SOCIAL
+||image.donga.com/pc/2022/images/common/txt_share.png
+||image.donga.com/pc/2022/images/common/icon_share02.png
+! 동아일보 > $FOOTER
+donga.com###footer_wrap
+
+!
+!  ██████  ██████  ███    ███ ███    ███ ██    ██ ███    ██ ██ ████████ ██    ██ 
+! ██      ██    ██ ████  ████ ████  ████ ██    ██ ████   ██ ██    ██     ██  ██  
+! ██      ██    ██ ██ ████ ██ ██ ████ ██ ██    ██ ██ ██  ██ ██    ██      ████   
+! ██      ██    ██ ██  ██  ██ ██  ██  ██ ██    ██ ██  ██ ██ ██    ██       ██    
+!  ██████  ██████  ██      ██ ██      ██  ██████  ██   ████ ██    ██       ██    
+!
+! DCinside > 폰트를 System Font로 통일
+||fonts.gstatic.com^$domain=dcinside.com
+dcinside.com#$##* { font-family: -apple-system !important; }
+! DCinside > 갤러리 > 무한 스크롤 수정
+gall.dcinside.com##.stickyunit
+! DCinside > 게시글 > 'NFT 발행하기'
+dcinside.com##.btn_nftbox
+m.dcinside.com##.nft-area
+! DCinside > 설문
+||gall.dcinside.com/_js/survey.js
+||dcinside.com/ajax/survey_ajax/vote
+! DCinside > 게시글 > '실베추 공유 신고'에서 '공유' 지운 후 레이아웃 맞춤
+dcinside.com##.btn_snsmore
+dcinside.com#$#.btn_silbechu { width: 145px !important; }
+dcinside.com#$#.btn_report { width: 145px !important; }
+m.dcinside.com##.reco-icon-lst > li:has(> .sp-share)
+! DCinside > 댓글 창 > '디시콘' 옆 도움말
+dcinside.com##.btn_dccon_guide
+! DCinside > '갤러리 마이너갤 미니갤 뉴스 NFT 디시픽' 네비바
+m.dcinside.com##nav
+! DCinside > 다음 검색창
+m.dcinside.com##.md-tit-box
+m.dcinside.com##.outside-search-box
+! DCinside > $TOOLTIP
+dcinside.com##.tip_box1
+dcinside.com##.tip_box2
+dcinside.com##.tip_nomem_nick
+dcinside.com##.pop_tipbox
+dcinside.com##.secret_tip
+dcinside.com##.sp-new
+m.dcinside.com###nft_publish_tipbox
+m.dcinside.com##.tip_box_inbtn
+! DCinside > $FOOTER
+dcinside.com##.dcfoot
+m.dcinside.com##.footer
+
+
+! $TOOLTIP
+##div[class^="tooltip"]
+##div[class$="tooltip"]
+##[role="tooltip"]
+microsoft.com##.ms-Tooltip
+gmarket.co.kr##.box__tooltip
+
+! $DISTRACTION
+||img.megastudy.net/main/2015/ic_new2.gif
+||image.jinhak.com/jinhakImages/icon/icon_fixBell.png
+##.btn_voice
+##.btn_print
+##.icon-new
+##.icon_new
+##[class^="ico-new"]
+##[class$="ico-new"]
+##[class^="ico_new"]
+##[class$="ico_new"]
+mimacstudy.com##.xi-new
+jinhak.com##.action_Floating
+
+! $SOCIAL
+||img.megastudy.net/main/2018_v2/bg_sns.gif
+microsoft.com##[class^="socialfollow-"]
+megastudy.net##.commonGnb--loginArea--sns
+jinhak.com##.snsList
+
+! $GOTOP
+||img.mimacstudy.com/FRONT/common/bt_go_top.png
+##[class^="icon-top"]
+##[class$="icon-top"]
+##[class^="icon_top"]
+##[class$="icon_top"]
+##[class^="btn_top"]
+##[class$="btn_top"]
+##[class^="goTop"]
+##[class$="goTop"]
+#?#a:contains(맨위로)
+#?#button:has(:contains(맨위로))
+microsoft.com##.m-back-to-top
+microsoft.com#?#div:has(> a[href="#page-top"])
+gmarket.co.kr##.box__top
+auction.co.kr###btnSkipTop
+coupang.com##.top
+megastudy.net##.common_quckMenu--top
+megastudy.net##.common_quckMenu--down
+jinhak.com##.btn_gotop
+
+! $FOOTER
+###footer
+auction.co.kr##.footer
+megastudy.net##.section_footer
+mimacstudy.com##.dsm_bottomarea
+
