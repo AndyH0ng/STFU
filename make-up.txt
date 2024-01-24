@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1
+! Version: 1.0.1
 !
 [AdGuard]
 !
@@ -94,6 +94,8 @@ www.naver.com#?#div[class^="Layout-module_"] #feed
 www.naver.com#?#div[class^="Layout-module_"] #shopping
 ! Naver 메인 > '위젯 보드'
 www.naver.com###widgetboard
+! Naver 메인 > 우측 레이아웃 고정
+www.naver.com#$#[class^="DailyBoardView-module__daily_board_area_"] { margin-top: 26px !important; }
 ! NAVER 뉴스 레이아웃
 news.naver.com##._SUMMARY
 news.naver.com##._TTS_SETTING_BTN
@@ -116,7 +118,7 @@ naver.com#$#.gnb_my_li { margin-top: 2px !important; background: none !important
 naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 0 !important; }
 naver.com#$#.gnb_account { margin-bottom: 5px !important; }
 ! Naver * > $GOTOP
-naver.com##[class^="SettingView-module__type_top___"]
+naver.com##[class^="SettingView-module__type_top_"]
 notify.naver.com##.comp_btn_top
 talks.naver.com##div[class^="TopButton_button__"]
 shopping.naver.com##[class^="_footer_top_button_"]
@@ -133,7 +135,7 @@ comic.naver.com##[class^="GlobalNavigationBar__icon_new"]
 dict.naver.com##span[class="update"]
 dict.naver.com##span[class="_id_more_up"]
 *.dict.naver.com##.aside_banner
-help.naver.com##[class^="GNB_gnb_more_tooltip__"]
+help.naver.com##[class^="GNB_gnb_more_tooltip_"]
 ! Naver * > $FOOTER
 naver.com###footer
 m.naver.com##.main_footer
