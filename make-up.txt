@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.1
+! Version: 1.0.1.1-A
 !
 [AdGuard]
 !
@@ -111,8 +111,8 @@ news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
 ! NAVER * > 상단 프로필 레이아웃 > 프로필 이미지 우측 화살표 아이콘 숨김 | 레이아웃 맞춤
 naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 3px 0 0 0 !important; }
 ! NAVER * > 상단 프로필 레이아웃 > 일부 사이트 내 프로필 이미지 숨김 → 표시
-www.blog.naver.com, www.cafe.naver.com#$#span[id="gnb_profile_filter_mask"] { display: inline-block !important; }
-www.blog.naver.com, www.cafe.naver.com#$#img[id="gnb_profile_img"] { display: block !important; content: none !important; }
+blog.naver.com, cafe.naver.com#$#span[id="gnb_profile_filter_mask"] { display: inline-block !important; }
+blog.naver.com, cafe.naver.com#$#img[id="gnb_profile_img"] { display: block !important; content: none !important; }
 ! NAVER * > 상단 프로필 레이아웃 > 프로필 이미지 우측 이름
 naver.com##.gnb_my_namebox > a > .gnb_name
 ! NAVER * > 상단 프로필 레이아웃 > 프로필 정보 상단 말풍선 효과
@@ -122,9 +122,9 @@ naver.com##.gnb_lst > .gnb_talk_li
 naver.com##.gnb_lst > .mail_li
 naver.com##.gnb_lst > .gnb_service_li
 ! NAVER > 네이버 블로그 > 상단 프로필 레이아웃 > 레이아웃 맞춤
-www.blog.naver.com#$#.blog_gnb_wrap { padding-top: 1px !important; }
-www.blog.naver.com#$#.blog_gnb_wrap { padding-right: 0 !important; }
-www.blog.naver.com#$#.gnb_my { padding-right: 0 !important; }
+blog.naver.com#$#.blog_gnb_wrap { padding-top: 1px !important; }
+blog.naver.com#$#.blog_gnb_wrap { padding-right: 0 !important; }
+blog.naver.com#$#.gnb_my { padding-right: 0 !important; }
 ! NAVER * > $GOTOP
 naver.com##[class^="SettingView-module__type_top_"]
 notify.naver.com##.comp_btn_top
