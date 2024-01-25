@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1
+! Version: 1.0.1.1
 !
 [AdGuard]
 !
@@ -83,18 +83,18 @@ google.*###footer
 ! ██  ██ ██ ██   ██  ██  ██  ██      ██   ██ 
 ! ██   ████ ██   ██   ████   ███████ ██   ██ 
 !
-! Naver 메인 > 음성 검색
+! NAVER 메인 > 음성 검색
 m.naver.com##.btn_voice
-! Naver 메인 > 입력 도구
+! NAVER 메인 > 입력 도구
 naver.com###ke_kbd_btn
-! Naver 메인 > 자동 완성 화살표
+! NaNAVERver 메인 > 자동 완성 화살표
 naver.com###nautocomplete
 ! NAVER 메인 > 하단 피드
 www.naver.com#?#div[class^="Layout-module_"] #feed
 www.naver.com#?#div[class^="Layout-module_"] #shopping
-! Naver 메인 > '위젯 보드'
+! NAVER 메인 > '위젯 보드'
 www.naver.com###widgetboard
-! Naver 메인 > 우측 레이아웃 고정
+! NAVER 메인 > 우측 레이아웃 고정
 www.naver.com#$#[class^="DailyBoardView-module__daily_board_area_"] { margin-top: 26px !important; }
 ! NAVER 뉴스 레이아웃
 news.naver.com##._SUMMARY
@@ -108,22 +108,30 @@ news.naver.com##.more_news2
 news.naver.com##.media_end_linked
 news.naver.com##.media_end_linked_more
 news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
-! NAVER * > 상단 프로필 레이아웃
-naver.com###gnb_name1
-naver.com##.gnb_notice_li
-naver.com##.mail_li
-naver.com##.gnb_service_li
-naver.com##.gnb_change
-naver.com#$#.gnb_my_li { margin-top: 2px !important; background: none !important; }
-naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 0 !important; }
-naver.com#$#.gnb_account { margin-bottom: 5px !important; }
-! Naver * > $GOTOP
+! NAVER * > 상단 프로필 레이아웃 > 프로필 이미지 우측 화살표 아이콘 숨김 | 레이아웃 맞춤
+naver.com#$#.gnb_my_namebox { background-image: none !important; padding: 3px 0 0 0 !important; }
+! NAVER * > 상단 프로필 레이아웃 > 일부 사이트 내 프로필 이미지 숨김 → 표시
+www.blog.naver.com, www.cafe.naver.com#$#span[id="gnb_profile_filter_mask"] { display: inline-block !important; }
+www.blog.naver.com, www.cafe.naver.com#$#img[id="gnb_profile_img"] { display: block !important; content: none !important; }
+! NAVER * > 상단 프로필 레이아웃 > 프로필 이미지 우측 이름
+naver.com##.gnb_my_namebox > a > .gnb_name
+! NAVER * > 상단 프로필 레이아웃 > 프로필 정보 상단 말풍선 효과
+naver.com##.gnb_my_namebox > a > .ico_arrow
+! NAVER * > 상단 프로필 레이아웃 > 톡 | 메일 | 서비스 아이콘
+naver.com##.gnb_lst > .gnb_talk_li
+naver.com##.gnb_lst > .mail_li
+naver.com##.gnb_lst > .gnb_service_li
+! NAVER > 네이버 블로그 > 상단 프로필 레이아웃 > 레이아웃 맞춤
+www.blog.naver.com#$#.blog_gnb_wrap { padding-top: 1px !important; }
+www.blog.naver.com#$#.blog_gnb_wrap { padding-right: 0 !important; }
+www.blog.naver.com#$#.gnb_my { padding-right: 0 !important; }
+! NAVER * > $GOTOP
 naver.com##[class^="SettingView-module__type_top_"]
 notify.naver.com##.comp_btn_top
 talks.naver.com##div[class^="TopButton_button__"]
 shopping.naver.com##[class^="_footer_top_button_"]
 news.naver.com###goTop
-! Naver * > $TOOLTIP
+! NAVER * > $TOOLTIP
 naver.com##[class^="Tooltip_wrap"]
 m.naver.com##.MM_TOOLTIP
 m.naver.com##.nav_tooltip
@@ -131,14 +139,30 @@ m.naver.com##.chf_feed_tooltip
 m.naver.com##.ctn_ly_setting
 notify.naver.com##.ico_benefit_wrap
 blog.naver.com##.register_layer
+cafe.naver.com##.coach_mark up
 comic.naver.com##[class^="GlobalNavigationBar__icon_new"]
 dict.naver.com##span[class="update"]
 dict.naver.com##span[class="_id_more_up"]
 *.dict.naver.com##.aside_banner
 help.naver.com##[class^="GNB_gnb_more_tooltip_"]
-! Naver * > $FOOTER
+! NAVER * > $DISTRACTION
+||ssl.pstatic.net/static/cafe/cafe_pc/icon_board_new.png
+||blogimgs.pstatic.net/nblog/ico_new.gif
+||blogimgs.pstatic.net/imgs/ico_n.gif
+www.naver.com##.ico_recommend
+cafe.naver.com##svg[aria-label="New"]
+cafe.naver.com##svg[class^="ico_post_new"]
+cafe.naver.com##.new_chatting
+cafe.naver.com##.list-i-new
+m.cafe.naver.com##span[aria-label="new"]
+m.cafe.naver.com##.icon_badge
+m.cafe.naver.com##.red_dot
+m.cafe.naver.com##.ic_new
+! NAVER * > $FOOTER
 naver.com###footer
+naver.com###footer[role="contentinfo"]
 m.naver.com##.main_footer
+cafe.naver.com##.footer
 news.naver.com##._STICKY_FOOTER
 shopping.naver.com##[class^="_footer_footer_"]
 
@@ -225,14 +249,13 @@ gall.dcinside.com##.stickyunit
 ! DCinside > 게시글 > 'NFT 발행하기'
 dcinside.com##.btn_nftbox
 m.dcinside.com##.nft-area
-! DCinside > 설문
-||gall.dcinside.com/_js/survey.js
-||dcinside.com/ajax/survey_ajax/vote
 ! DCinside > 게시글 > '실베추 공유 신고'에서 '공유' 지운 후 레이아웃 맞춤
 dcinside.com##.btn_snsmore
 dcinside.com#$#.btn_silbechu { width: 145px !important; }
 dcinside.com#$#.btn_report { width: 145px !important; }
 m.dcinside.com##.reco-icon-lst > li:has(> .sp-share)
+! DCinside 모바일 > 게시글 > 하단 '실베 개념 뉴스 디시미디어 디시이슈'
+m.dcinside.com##.view-btm-con
 ! DCinside > 댓글 창 > '디시콘' 옆 도움말
 dcinside.com##.btn_dccon_guide
 ! DCinside > '갤러리 마이너갤 미니갤 뉴스 NFT 디시픽' 네비바
@@ -246,13 +269,23 @@ dcinside.com##.tip_box2
 dcinside.com##.tip_nomem_nick
 dcinside.com##.pop_tipbox
 dcinside.com##.secret_tip
-dcinside.com##.sp-new
 m.dcinside.com###nft_publish_tipbox
 m.dcinside.com##.tip_box_inbtn
+! DCinside > $DISTRACTION
+dcinside.com##.sp-new
 ! DCinside > $FOOTER
 dcinside.com##.dcfoot
 m.dcinside.com##.footer
-
+! RuliWeb > 폰트를 System Font로 통일
+||ruliweb.com/assets/font/$font
+! RuliWeb > 광고
+||ruliweb.com/banneriframe
+! Instiz > 광고
+instiz.net##div.responsive_main > table > tbody > tr:last-child > td:first-child
+! Instiz > $GOTOP
+instiz.net##.btn_bottom
+! Instiz > $FOOTER
+instiz.net##.footer_cont
 
 ! $TOOLTIP
 ##div[class^="tooltip"]
@@ -263,6 +296,7 @@ gmarket.co.kr##.box__tooltip
 
 ! $DISTRACTION
 ||img.megastudy.net/main/2015/ic_new2.gif
+||img.megastudy.net/lecmain/mains/ic_new.gif
 ||image.jinhak.com/jinhakImages/icon/icon_fixBell.png
 ##.btn_voice
 ##.btn_print

@@ -19,8 +19,8 @@
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS pico
-! Description: 광고 및 트래커를 차단합니다. List-KR과 병행함을 전제로 만들어졌습니다.
-! Version: 1
+! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행함을 전제로 만들어졌습니다.
+! Version: 1.0.1.1
 !
 [AdGuard]
 ||11h11m.net^
@@ -44,6 +44,7 @@
 ||esp*.aptrinsic.com^
 ||events.backtrace.io^
 ||events.split.io^
+||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||hottracks.kyobobook.co.kr^
 ||hottracks.kyobobook.co.kr^

@@ -20,16 +20,22 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1
+! Version: 1.0.1.1
 !
 [AdGuard]
-! NAVER > 광고 배너
+! NAVER * > 광고 배너
 ||ssl.pstatic.net/tveta/
 ||ssl.pstatic.net/melona/
 ||ssl.pstatic.net/static/www/m-new/uit/img/
 ||ssl.pstatic.net/static/kin/*/promotion/main/
 ||ssl.pstatic.net/static/kin/*/promotion/mobile/
-! Naver 메인 > 검색창 옆 광고 →
+! NAVER * > 트래커
+||apis.naver.com/mcollector/
+||wcs.naver.net/wcslog.js
+||cafe.naver.com/static/js/mycafe/javascript/lcslog-*.js
+||scv-blog.io.naver.com/jackpotlog/*/logs
+||scv-cafe.io.naver.com/jackpotlog/*/logs
+! NAVER 메인 > 검색창 옆 광고 →
 www.naver.com##img[src^="https://s.pstatic.net/static/www/mobile/edit/"][width="162"][height="40"]
 ! NAVER 모바일 > 광고 배너
 m.naver.com##.id_comp_banner
@@ -38,14 +44,21 @@ m.naver.com##.MM_DO_NOT_AD_POSITION
 m.naver.com###nadot-promotion-banner
 ! NAVER 모바일 메인 > 네이버 앱 프로모션 배너
 m.naver.com##.id_comp_napp_banner
-! NAVER > 네이버톡 > 광고
+! NAVER > 네이버톡 > 광고 배너
 talks.naver.com##img[alt="광고"]
-! NAVER > 네이버톡 > '네이버톡 제대로 활용하는 법'
-talks.naver.com#?#section[class^="SectionWrapper_wrap_"]:has(a[href="https://naver.me/FpMfk064"])
-! NAVER > 네이버 카페 > 광고 배너
-[$path=/ca-fe\\/web\\/cafes\\/(joonggonara|10050146)(\\/|\\?)/]m.cafe.naver.com##.banner_add
-[$path=/ca-fe\\/web\\/cafes\\/(appleiphone|12789486)(\\/|\\?)/]m.cafe.naver.com##.banner_add
-[$path=/ca-fe\\/web\\/cafes\\/(suhui|10197921)(\\/|\\?)/]m.cafe.naver.com##.banner_add
+! NAVER > 네이버 카페 > 파워링크 레이아웃
+cafe.naver.com##.AdvertArea
+! NAVER > 네이버 카페 모바일 > 광고 배너
+! 네이버 카페 > 아사모
+[$path=/(&|\\.|\\?)clubid=12789486($|&)/]~m.cafe.naver.com,cafe.naver.com##img[src][alt="매니저 등록 배너"]
+! 네이버 카페 > 수만휘
+[$path=/(&|\\.|\\?)clubid=10197921($|&)/]~m.cafe.naver.com,cafe.naver.com##img[src][alt="매니저 등록 배너"]
+! NAVER > 네이버 카페 모바일 > 게시글 목록 > 프로모션 배너
+m.cafe.naver.com##ul.noti_area > li.info
+! NAVER > 네이버 카페 모바일 > 게시글 > 하단 앱 프로모션 배너
+m.cafe.naver.com#$#.go_app_bottom { background: none !important; }
+m.cafe.naver.com##.go_app_bottom > .btn_area
+m.cafe.naver.com##.go_app_bottom > .txt
 ! NAVER > 네이버 지도 > 광고 배너 ↘
 map.naver.com##.promotion_wrap
 ! KBS News > 프로모션 배너 →
@@ -91,6 +104,9 @@ megastudy.net##.ly_megaP
 ||img.mimacstudy.com/admin_sh/images/site/mainPopup/
 ! 대성마이맥 > 트래커
 ||mimacstudy.com/js/sphereAnalytics.min.js
+! Forten > 트래커
+||forten.ac/js/site_log.js
+||forten.ac/js/naver_log.js
 ! DCinside > 광고 배너
 ||dcinside.com/_js/ad.js
 ||dcinside.com/_js/ad_context_powLink.js
@@ -102,7 +118,6 @@ dcinside.com##.pc-post-ad-header
 ! DCinside > 트래커
 ||dcinside.com/_js/click_log.js
 ! DCinside > 앱 프로모션 배너
-m.dcinside.com##.layer-center-popup
 m.dcinside.com##.layer-bottom-popup
 ! 마나토끼 > 팝업 배너
 ||manatoki*.net/data/editor/2009/$image
@@ -114,6 +129,8 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ! 마나토끼주소.com > 광고 배너
 ||xn--h10b2b940bj5h8tjf5m.com/data/banner/
 마나토끼주소.com##.banner_list
+! Afreeca TV > 트래커
+||afreecatv.com/script/statistics/
 
 !
 !  ██████   ██████  ███    ███  █████  ██ ███    ██ 
@@ -138,6 +155,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||adtelligent.com^
 ||aem-collector.daumkakao.io^
 ||aem-kakao-collector.onkakao.net^
+||analysis.afreecatv.com^
 ||api.loganalytics.io^
 ||appier.net^
 ||applicationinsights.azure.com^
@@ -159,7 +177,6 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||cologger.shopping.naver.com^
 ||contentsfeed.com^
 ||core.airbridge.io^
-||crash-reports.browser.yandex.net^
 ||crashlytics2.l.google.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||creativecdn.com^
@@ -173,15 +190,20 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||events.backtrace.io^
 ||events.split.io^
 ||external-api.impression-neo.naver.com^
+||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||google-analytics.com^
 ||hottracks.kyobobook.co.kr^
 ||ia.51.la^
 ||in.appcenter.ms^
+||innity.net^
+||insights-collector.newrelic.com^
 ||inspector-collector.naver.com^
 ||jennifersoft.com^
+||js-agent.newrelic.com^
 ||krxd.net^
 ||log-upload-os.hoyolab.com^
+||log.bunjang.co.kr^
 ||log.data.musinsa.com^
 ||log.mmstat.com^
 ||log.sports.naver.com^
@@ -196,8 +218,8 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||megadata.co.kr^
 ||ml314.com^
 ||mobile.events.data.microsoft.com^
-||mobon.net
-||mobwithad.com
+||mobon.net^
+||mobwithad.com^
 ||montelena-rcv.*.co.kr^
 ||mookie1.com^
 ||mypopads.com^
@@ -230,14 +252,14 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||smartadserver.com^
 ||sny.monosnap.com^
 ||stat.kbs.co.kr^
-||stat.tiara.*.net^
 ||stat.tiara.*.com^
+||stat.tiara.*.net^
 ||taboola.com^
 ||techhub.co.kr^
 ||tend-table.com
 ||tnkfactory.com^
-||track.tiara.*.net^
 ||track.tiara.*.com^
+||track.tiara.*.net^
 ||trk.tand.kr^
 ||trkpzz.dcinside.com^
 ||users.51.la^

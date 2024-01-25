@@ -19,8 +19,8 @@
 ! Homepage: https://github.com/AndyH0ng/STFU
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS
-! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1
+! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행을 권장합니다.
+! Version: 1.0.1.1
 !
 [AdGuard]
 @@||admin.dable.io^
@@ -39,6 +39,7 @@
 ||adtelligent.com^
 ||aem-collector.daumkakao.io^
 ||aem-kakao-collector.onkakao.net^
+||analysis.afreecatv.com^
 ||api.loganalytics.io^
 ||appier.net^
 ||applicationinsights.azure.com^
@@ -60,7 +61,6 @@
 ||cologger.shopping.naver.com^
 ||contentsfeed.com^
 ||core.airbridge.io^
-||crash-reports.browser.yandex.net^
 ||crashlytics2.l.google.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||creativecdn.com^
@@ -74,15 +74,20 @@
 ||events.backtrace.io^
 ||events.split.io^
 ||external-api.impression-neo.naver.com^
+||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||google-analytics.com^
 ||hottracks.kyobobook.co.kr^
 ||ia.51.la^
 ||in.appcenter.ms^
+||innity.net^
+||insights-collector.newrelic.com^
 ||inspector-collector.naver.com^
 ||jennifersoft.com^
+||js-agent.newrelic.com^
 ||krxd.net^
 ||log-upload-os.hoyolab.com^
+||log.bunjang.co.kr^
 ||log.data.musinsa.com^
 ||log.mmstat.com^
 ||log.sports.naver.com^
@@ -97,8 +102,8 @@
 ||megadata.co.kr^
 ||ml314.com^
 ||mobile.events.data.microsoft.com^
-||mobon.net
-||mobwithad.com
+||mobon.net^
+||mobwithad.com^
 ||montelena-rcv.*.co.kr^
 ||mookie1.com^
 ||mypopads.com^
@@ -131,14 +136,14 @@
 ||smartadserver.com^
 ||sny.monosnap.com^
 ||stat.kbs.co.kr^
-||stat.tiara.*.net^
 ||stat.tiara.*.com^
+||stat.tiara.*.net^
 ||taboola.com^
 ||techhub.co.kr^
 ||tend-table.com
 ||tnkfactory.com^
-||track.tiara.*.net^
 ||track.tiara.*.com^
+||track.tiara.*.net^
 ||trk.tand.kr^
 ||trkpzz.dcinside.com^
 ||users.51.la^
