@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.1-A
+! Version: 1.0.1.1-B
 !
 [AdGuard]
 !
@@ -276,10 +276,11 @@ dcinside.com##.sp-new
 ! DCinside > $FOOTER
 dcinside.com##.dcfoot
 m.dcinside.com##.footer
-! RuliWeb > 폰트를 System Font로 통일
-||ruliweb.com/assets/font/$font
 ! RuliWeb > 광고
 ||ruliweb.com/banneriframe
+m.ruliweb.com##.fixed_ad
+! Ruliweb 모바일 > $SOCIAL
+m.ruliweb.com##.share_wrapper
 ! Instiz > 광고
 instiz.net##div.responsive_main > table > tbody > tr:last-child > td:first-child
 ! Instiz > $GOTOP
@@ -308,6 +309,7 @@ gmarket.co.kr##.box__tooltip
 ##[class$="ico_new"]
 mimacstudy.com##.xi-new
 jinhak.com##.action_Floating
+m.jinhak.com##.btn_fixed
 
 ! $SOCIAL
 ||img.megastudy.net/main/2018_v2/bg_sns.gif
@@ -317,6 +319,7 @@ jinhak.com##.snsList
 
 ! $GOTOP
 ||img.mimacstudy.com/FRONT/common/bt_go_top.png
+||imgorg.jinhak.com/renewal2009/virtualapply/report/btn_top.png
 ##[class^="icon-top"]
 ##[class$="icon-top"]
 ##[class^="icon_top"]
@@ -341,4 +344,4 @@ jinhak.com##.btn_gotop
 auction.co.kr##.footer
 megastudy.net##.section_footer
 mimacstudy.com##.dsm_bottomarea
-
+m.jinhak.com###rFooter
