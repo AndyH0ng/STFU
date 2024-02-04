@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.1
+! Version: 1.0.1.1-A
 !
 [AdGuard]
 ! NAVER * > 광고 배너
@@ -105,8 +105,7 @@ megastudy.net##.ly_megaP
 ! 대성마이맥 > 트래커
 ||mimacstudy.com/js/sphereAnalytics.min.js
 ! Forten > 트래커
-||forten.ac/js/site_log.js
-||forten.ac/js/naver_log.js
+||forten.ac/js/*_log.js
 ! DCinside > 광고 배너
 ||dcinside.com/_js/ad.js
 ||dcinside.com/_js/ad_context_powLink.js

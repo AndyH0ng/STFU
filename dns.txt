@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS
 ! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행을 권장합니다.
-! Version: 1.0.1.1
+! Version: 1.0.1.1-A
 !
 [AdGuard]
 @@||admin.dable.io^
@@ -61,6 +61,7 @@
 ||cologger.shopping.naver.com^
 ||contentsfeed.com^
 ||core.airbridge.io^
+||crashlytics.com^
 ||crashlytics2.l.google.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||creativecdn.com^
@@ -68,13 +69,11 @@
 ||dable.io^
 ||displayvertising.com^
 ||doubleclick.net^ 
-||e.crashlytics.com^
 ||emforce.co.kr^
 ||esp*.aptrinsic.com^
 ||events.backtrace.io^
 ||events.split.io^
 ||external-api.impression-neo.naver.com^
-||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||google-analytics.com^
 ||hottracks.kyobobook.co.kr^
@@ -96,6 +95,7 @@
 ||logapi.tv.naver.com^
 ||logcol.kyobobook.co.kr^
 ||logger.eigene.io^
+||logx.optimizely.com^
 ||lr-ingest.com^
 ||mediacategory.com^
 ||mediago.io^
@@ -131,7 +131,6 @@
 ||sentry.io^
 ||sentry.tossinvest.com^
 ||sessions.bugsnag.com^
-||settings.crashlytics.com^
 ||skplanet.com^
 ||smartadserver.com^
 ||sny.monosnap.com^
