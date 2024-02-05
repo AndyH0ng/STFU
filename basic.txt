@@ -168,7 +168,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||buzzvil.com^
 ||cauly.co.kr^
 ||cdn.signalfx.com^
-||clickmon.co.kr
+||clickmon.co.kr^
 ||collect-perf.51.la^
 ||collect-v*.51.la^
 ||collect.*.karrotmarket.com^
@@ -176,6 +176,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||cologger.shopping.naver.com^
 ||contentsfeed.com^
 ||core.airbridge.io^
+||crashlytics.com^
 ||crashlytics2.l.google.com^
 ||crashlyticsreports-pa.googleapis.com^
 ||creativecdn.com^
@@ -183,13 +184,11 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||dable.io^
 ||displayvertising.com^
 ||doubleclick.net^ 
-||e.crashlytics.com^
 ||emforce.co.kr^
 ||esp*.aptrinsic.com^
 ||events.backtrace.io^
 ||events.split.io^
 ||external-api.impression-neo.naver.com^
-||firebase-settings.crashlytics.com^
 ||firebaselogging-pa.googleapis.com^
 ||google-analytics.com^
 ||hottracks.kyobobook.co.kr^
@@ -211,6 +210,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||logapi.tv.naver.com^
 ||logcol.kyobobook.co.kr^
 ||logger.eigene.io^
+||logx.optimizely.com^
 ||lr-ingest.com^
 ||mediacategory.com^
 ||mediago.io^
@@ -246,7 +246,6 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||sentry.io^
 ||sentry.tossinvest.com^
 ||sessions.bugsnag.com^
-||settings.crashlytics.com^
 ||skplanet.com^
 ||smartadserver.com^
 ||sny.monosnap.com^
