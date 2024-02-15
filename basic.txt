@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.3
+! Version: 1.0.1.3-A
 !
 [AdGuard]
 ! NAVER * > 광고 배너
@@ -144,6 +144,8 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||afreecatv.com/script/statistics/
 ! Nexon > 트래커
 ||nexon.com/s1/livewebjs/GnxVisitorTracking.min.js
+! Yes24 > 트래커
+||image.yes24.com/sysimage/Contents/Scripts/p/logging/
 
 !
 !  ██████   ██████  ███    ███  █████  ██ ███    ██ 
@@ -153,11 +155,12 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 !  ██████   ██████  ██      ██ ██   ██ ██ ██   ████ 
 !
 @@||admin.dable.io^
-||*.iadsdk.apple.com^
+||*-col-ext.nelo.navercorp.com^
 ||11h11m.net^
 ||3gl.net^
 ||ad.adinc.kr^
 ||ad.daum.net^
+||ad.everytime.kr^
 ||ad.khan.co.kr^
 ||ad2.jinhak.com^
 ||ad2.jinhakapply.com^
@@ -168,14 +171,17 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||adex.ednplus.com^
 ||adinsight.co.kr^
 ||admob-app-id-*.firebaseio.com^
+||adnamepr.com^
+||adoffice.11st.co.kr^
 ||adpies.com^
 ||adpnut.com^
 ||ads-dmp-collect.kr.karrotmarket.com^
 ||ads.kmib.co.kr^
 ||adservice.google.co.*
-||adservice.google.com
+||adservice.google.com^
 ||adsrvr.org^
 ||adtelligent.com^
+||adtilt.com^
 ||adv.khan.co.kr^
 ||advimg.khan.co.kr^
 ||aem-collector.daumkakao.io^
@@ -184,12 +190,18 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||affiliazioniads.snai.it^
 ||analysis.afreecatv.com^
 ||analytics-alv.google.com^
+||analytics.g.nexon.com^
 ||analytics.githubassets.com^
 ||analytics.google.com^
+||analytics.nexon.com^
 ||analytics.routinehub.co^
+||analytics.tiktok.com^
 ||analytics.twitter.com^
 ||api.loganalytics.io^
+||apm-log-upload-os.hoyoverse.com^
 ||app.adjust.com^$important
+||app.adjust.net.in^
+||app.adjust.world^
 ||appier.net^
 ||applicationinsights.azure.com^
 ||applicationinsights.io^
@@ -205,6 +217,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||cdn.signalfx.com^
 ||chartbeat.com^
 ||clickmon.co.kr^
+||client-sdk.hackle.io^
 ||collect-perf.51.la^
 ||collect-v*.51.la^
 ||collect.*.karrotmarket.com^
@@ -223,6 +236,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||doubleclick.net^ 
 ||emforce.co.kr^
 ||esp*.aptrinsic.com^
+||event.hackle.io^
 ||events.backtrace.io^
 ||events.split.io^
 ||external-api.impression-neo.naver.com^
@@ -262,15 +276,21 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||metrics-collector.prod.sketch.com^
 ||metrics.apple.com^
 ||metrics.icloud.com^
+||minor-api-os.hoyoverse.com^
 ||ml314.com^
 ||mobile.events.data.microsoft.com^
 ||mobon.net^
 ||mobwithad.com^
+||monitoring-pgw.g.kakaopay.com^
+||monitoring-pgw.kakaopay.com^
+||monitoring.hackle.io^
 ||montelena-rcv.*.co.kr^
 ||montelena.*.co.kr^
 ||mookie1.com^
 ||mypopads.com^
 ||mypopups.com^
+||nelo2-col.navercorp.com^
+||neoid-sentry.naver.com^
 ||nlog.naver.com^
 ||notify.bugsnag.com^
 ||nsm-corp.com^
@@ -283,6 +303,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||prd-analytics.lotteon.com^
 ||pubmatic.com^
 ||rainbownine.net^
+||rake.11st.co.kr^
 ||raygun.io^
 ||rlcdn.com^
 ||sbs-log.cloud.sbs.co.kr^
@@ -297,6 +318,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||sentry-cdn.com^
 ||sentry-cdn.io^
 ||sentry-fin.naver.com^
+||sentry.eks.hoyoverse.com^
 ||sentry.io^$important
 ||sentry.tossinvest.com^
 ||sessions.bugsnag.com^
@@ -305,6 +327,7 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||smartadserver.com^
 ||smartmediarep.com^
 ||sny.monosnap.com^
+||stat-tiara-*.kgslb.com^
 ||stat.kbs.co.kr^
 ||stat.tiara.*.com^
 ||stat.tiara.*.net^
@@ -312,16 +335,19 @@ manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
 ||taboola.com^
 ||techhub.co.kr^
 ||tend-table.com^
+||tenping.kr^
 ||tnkfactory.com^
 ||track.tiara.*.com^
 ||track.tiara.*.net^
 ||tracker.digitalcamp.co.kr^
 ||trafficgate.net^
+||trk.alba.co.kr^
 ||trk.tand.kr^
 ||trkpzz.dcinside.com^
 ||uac.etnews.com^
 ||uac.khan.co.kr^
 ||users.51.la^
+||weather-analytics-events.apple.com^
 ||web1.51.la^
 ||weblog.coupang.com^
 ||weblog.hankookilbo.com^

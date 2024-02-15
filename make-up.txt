@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.3
+! Version: 1.0.1.3-A
 !
 [AdGuard]
 !
@@ -36,6 +36,7 @@ www.google.*##.MV3Tnb
 www.google.*#?#div:has(> a[href="https://mail.google.com/mail/&ogbl"])
 ! Google 메인 > '이미지'
 www.google.*#?#div:has(> a[href="https://www.google.com/imghp?hl=ko&ogbl"])
+www.google.*#?#div:has(> a[href="https://www.google.co.kr/imghp?hl=ko&ogbl"])
 ! Google 메인 > 'Google 검색' + "I'm Feeling Lucky"
 www.google.*#?#div:has(> center > input[value="I’m Feeling Lucky"])
 ! Google 검색 > 입력 도구
