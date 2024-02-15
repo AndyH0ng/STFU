@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.1-C
+! Version: 1.0.1.3
 !
 [AdGuard]
 !
@@ -35,13 +35,13 @@ www.google.*##.MV3Tnb
 ! Google 메인 > 'Gmail'
 www.google.*#?#div:has(> a[href="https://mail.google.com/mail/&ogbl"])
 ! Google 메인 > '이미지'
-www.google.*#?#div:has(> a[href="https://www.google.co.kr/imghp?hl=ko&ogbl"])
+www.google.*#?#div:has(> a[href="https://www.google.com/imghp?hl=ko&ogbl"])
 ! Google 메인 > 'Google 검색' + "I'm Feeling Lucky"
 www.google.*#?#div:has(> center > input[value="I’m Feeling Lucky"])
 ! Google 검색 > 입력 도구
 www.google.*#?#div:has(> span > img[src*="tia.png"])
-! Google 검색 > 검색
-google.*###belowsb
+! Google 검색 > 지우기
+www.google.*#?#div:has(> div[aria-label="지우기"])
 ! Google * > $TOOLTIP
 google.*##.gb_1e
 google.*##.gb_2e
@@ -88,24 +88,26 @@ google.*###footer
 m.naver.com##.btn_voice
 ! NAVER 메인 > 입력 도구
 naver.com###ke_kbd_btn
-! NaNAVERver 메인 > 자동 완성 화살표
+! NAVER 메인 > 자동 완성 화살표
 naver.com###nautocomplete
 ! NAVER 메인 > 하단 피드
 www.naver.com#?#div[class^="Layout-module_"] #feed
 www.naver.com#?#div[class^="Layout-module_"] #shopping
 ! NAVER 메인 > '위젯 보드'
 www.naver.com###widgetboard
+! NAVER 메인 > '증시'
+www.naver.com##div[class^="Layout-module__content_area_"][aria-label="증시"]
 ! NAVER 메인 > 우측 레이아웃 고정
 www.naver.com#$#[class^="DailyBoardView-module__daily_board_area_"] { margin-top: 26px !important; }
-! NAVER 뉴스 레이아웃
-news.naver.com##._SUMMARY
-news.naver.com##._TTS_SETTING_BTN
-news.naver.com##._FONT_BUTTON
-news.naver.com##._PRINT_BUTTON
+! NAVER 메인 > 프로필 이미지 옆 설정 아이콘
+www.naver.com##[class^="MyView-module__thumb_setting_"]
+! NAVER 뉴스 > 레이아웃
+news.naver.com##.media_end_head_info_variety_right
 news.naver.com##.copyright
 news.naver.com##.media_end_categorize
 news.naver.com##.promotion
 news.naver.com##.more_news2
+news.naver.com##.ends_addition
 news.naver.com##.media_end_linked
 news.naver.com##.media_end_linked_more
 news.naver.com##.rankingnews[data-persist="premium_next_airs_recommend"]
@@ -116,6 +118,8 @@ blog.naver.com, cafe.naver.com#$#span[id="gnb_profile_filter_mask"] { display: i
 blog.naver.com, cafe.naver.com#$#img[id="gnb_profile_img"] { display: block !important; content: none !important; }
 ! NAVER * > 상단 프로필 레이아웃 > 프로필 이미지 우측 이름
 naver.com##.gnb_my_namebox > a > .gnb_name
+! NAVER * > 상단 프로필 레이아웃 > 알림 아이콘
+naver.com##.gnb_notice_li
 ! NAVER * > 상단 프로필 레이아웃 > 프로필 정보 상단 말풍선 효과
 naver.com##.gnb_my_namebox > a > .ico_arrow
 ! NAVER * > 상단 프로필 레이아웃 > 톡 | 메일 | 서비스 아이콘
@@ -127,12 +131,13 @@ blog.naver.com#$#.blog_gnb_wrap { padding-top: 1px !important; }
 blog.naver.com#$#.blog_gnb_wrap { padding-right: 0 !important; }
 blog.naver.com#$#.gnb_my { padding-right: 0 !important; }
 ! NAVER * > $GOTOP
-naver.com##[class^="SettingView-module__type_top_"]
+www.naver.com##.SettingView-module__type_top___GkN8V
 notify.naver.com##.comp_btn_top
 talks.naver.com##div[class^="TopButton_button__"]
 shopping.naver.com##[class^="_footer_top_button_"]
 news.naver.com###goTop
 ! NAVER * > $TOOLTIP
+||pstatic.net/dicimg/tip/tip_pc.js
 naver.com##[class^="Tooltip_wrap"]
 m.naver.com##.MM_TOOLTIP
 m.naver.com##.nav_tooltip
@@ -165,6 +170,7 @@ naver.com###footer[role="contentinfo"]
 m.naver.com##.main_footer
 cafe.naver.com##.footer
 news.naver.com##._STICKY_FOOTER
+news.naver.com##.mp_footer
 shopping.naver.com##[class^="_footer_footer_"]
 
 !
@@ -187,10 +193,7 @@ news.sbs.co.kr#$#.w_article_cont { min-height: auto !important; }
 ! SBS News > $DISTRACTION
 sbs.co.kr##.control_area
 ! SBS News > $SOCIAL
-sbs.co.kr##.i_y
-sbs.co.kr##.i_f
-sbs.co.kr##.i_x
-sbs.co.kr##.i_insta
+sbs.co.kr##.sns_list
 ! SBS News > $GOTOP
 news.sbs.co.kr##.w_btn_top
 ! SBS > $FOOTER
@@ -346,3 +349,4 @@ auction.co.kr##.footer
 megastudy.net##.section_footer
 mimacstudy.com##.dsm_bottomarea
 m.jinhak.com###rFooter
+itworld.co.kr##.bottom

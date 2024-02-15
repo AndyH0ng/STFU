@@ -20,10 +20,9 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS pico
 ! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행함을 전제로 만들어졌습니다.
-! Version: 1.0.1.2
+! Version: 1.0.1.3
 !
 [AdGuard]
-||*.iadsdk.apple.com^
 ||11h11m.net^
 ||ad2.jinhak.com^
 ||ad2.jinhakapply.com^

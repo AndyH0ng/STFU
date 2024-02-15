@@ -20,15 +20,17 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS
 ! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행을 권장합니다.
-! Version: 1.0.1.2
+! Version: 1.0.1.3
 !
 [AdGuard]
-@@||admin.dable.io^
-||*.iadsdk.apple.com^
+||nelo2-col.navercorp.com^
+||*-col-ext.nelo.navercorp.com^
+||neoid-sentry.naver.com^
 ||11h11m.net^
 ||3gl.net^
 ||ad.adinc.kr^
 ||ad.daum.net^
+||ad.everytime.kr^
 ||ad.khan.co.kr^
 ||ad2.jinhak.com^
 ||ad2.jinhakapply.com^
@@ -39,6 +41,8 @@
 ||adex.ednplus.com^
 ||adinsight.co.kr^
 ||admob-app-id-*.firebaseio.com^
+||adnamepr.com^
+||adoffice.11st.co.kr^
 ||adpies.com^
 ||adpnut.com^
 ||ads-dmp-collect.kr.karrotmarket.com^
@@ -47,6 +51,7 @@
 ||adservice.google.com
 ||adsrvr.org^
 ||adtelligent.com^
+||adtilt.com^
 ||adv.khan.co.kr^
 ||advimg.khan.co.kr^
 ||aem-collector.daumkakao.io^
@@ -158,6 +163,7 @@
 ||prd-analytics.lotteon.com^
 ||pubmatic.com^
 ||rainbownine.net^
+||rake.11st.co.kr^
 ||raygun.io^
 ||rlcdn.com^
 ||sbs-log.cloud.sbs.co.kr^
@@ -181,6 +187,7 @@
 ||smartadserver.com^
 ||smartmediarep.com^
 ||sny.monosnap.com^
+||stat-tiara-*.kgslb.com^
 ||stat.kbs.co.kr^
 ||stat.tiara.*.com^
 ||stat.tiara.*.net^
