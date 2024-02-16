@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS
 ! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행을 권장합니다.
-! Version: 1.0.1.3-A
+! Version: 1.0.1.3-B
 !
 [AdGuard]
 ||*-col-ext.nelo.navercorp.com^
@@ -51,6 +51,7 @@
 ||adtelligent.com^
 ||adtilt.com^
 ||adv.khan.co.kr^
+||adv.zdnet.co.kr^
 ||advimg.khan.co.kr^
 ||aem-collector.daumkakao.io^
 ||aem-finance-collector.onkakao.net^
@@ -132,6 +133,7 @@
 ||log.sports.naver.com^
 ||log.tossinvest.com^
 ||log.wemakeprice.com^
+||log.zdnet.co.kr^
 ||log1.toup.net^
 ||logapi.tv.naver.com^
 ||logcol.kyobobook.co.kr^
@@ -215,10 +217,13 @@
 ||uac.etnews.com^
 ||uac.khan.co.kr^
 ||users.51.la^
+||wcs.naver.com^
+||wcs.naver.net^
 ||weather-analytics-events.apple.com^
 ||web1.51.la^
 ||weblog.coupang.com^
 ||weblog.hankookilbo.com^
+||weblog.zdnet.co.kr^
 ||whatap-browser-agent.io^
 ||widerplanet.com^
 ||www.datadoghq-browser-agent.com^

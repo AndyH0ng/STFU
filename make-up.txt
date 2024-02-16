@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.3-A
+! Version: 1.0.1.3-B
 !
 [AdGuard]
 !
@@ -238,6 +238,9 @@ donga.com##.news_edit
 ||image.donga.com/pc/2022/images/common/icon_share02.png
 ! 동아일보 > $FOOTER
 donga.com###footer_wrap
+
+! ZDNET > $SOCIAL $DISTRACTION
+zdnet.co.kr##.reporter_btn
 
 !
 !  ██████  ██████  ███    ███ ███    ███ ██    ██ ███    ██ ██ ████████ ██    ██ 

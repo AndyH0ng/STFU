@@ -24,6 +24,7 @@ adsrvr.org
 adtelligent.com
 adtilt.com
 adv.khan.co.kr
+adv.zdnet.co.kr
 advimg.khan.co.kr
 aem-collector.daumkakao.io
 aem-finance-collector.onkakao.net
@@ -105,6 +106,7 @@ log.mmstat.com
 log.sports.naver.com
 log.tossinvest.com
 log.wemakeprice.com
+log.zdnet.co.kr
 log1.toup.net
 logapi.tv.naver.com
 logcol.kyobobook.co.kr
@@ -196,9 +198,12 @@ trkpzz.dcinside.com
 uac.etnews.com
 uac.khan.co.kr
 users.51.la
+wcs.naer.net
+wcs.naver.com
 web1.51.la
 weblog.coupang.com
 weblog.hankookilbo.com
+weblog.zdnet.co.kr
 whatap-browser-agent.io
 widerplanet.com
 www.datadoghq-browser-agent.com
