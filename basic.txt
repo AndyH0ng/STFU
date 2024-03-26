@@ -32,6 +32,7 @@
 ! NAVER * > 트래커
 ||apis.naver.com/mcollector/
 ||wcs.naver.net/wcslog.js
+||ntm.pstatic.net/ex/nlog.js
 ||cafe.naver.com/static/js/mycafe/javascript/lcslog-*.js
 ||scv-blog.io.naver.com/jackpotlog/*/logs
 ||scv-cafe.io.naver.com/jackpotlog/*/logs
@@ -143,16 +144,6 @@ dcinside.com##.pc-post-ad-header
 ||dcinside.com/_js/click_log.js
 ! DCinside > 앱 프로모션 배너
 m.dcinside.com##.layer-bottom-popup
-! 마나토끼 > 팝업 배너
-||manatoki*.net/data/editor/2009/$image
-manatoki321.net,manatoli322.net###hd_pop
-! 마나토끼 > 광고 배너
-manatoki321.net,manatoli322.net###id_mbv
-manatoki321.net,manatoli322.net###main-banner-view
-manatoki321.net,manatoli322.net#?#div:has(> .board-tail-banner)
-! 마나토끼주소.com > 광고 배너
-||xn--h10b2b940bj5h8tjf5m.com/data/banner/
-마나토끼주소.com##.banner_list
 ! Afreeca TV > 트래커
 ||afreecatv.com/script/statistics/
 ! Nexon > 트래커

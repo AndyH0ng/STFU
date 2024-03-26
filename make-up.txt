@@ -295,6 +295,8 @@ instiz.net##div.responsive_main > table > tbody > tr:last-child > td:first-child
 instiz.net##.btn_bottom
 ! Instiz > $FOOTER
 instiz.net##.footer_cont
+! Clien > $FOOTER
+clien.net##.footer_wrap
 
 ! $TOOLTIP
 ##div[class^="tooltip"]

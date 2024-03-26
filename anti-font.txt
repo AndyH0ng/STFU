@@ -1,0 +1,2 @@
+||namu.wiki^$font
+||daumcdn.net^$font
