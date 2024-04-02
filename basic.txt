@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.3-B
+! Version: 1.0.1.4
 !
 [AdGuard]
 ! NAVER * > 광고 배너
