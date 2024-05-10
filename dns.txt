@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU DNS
 ! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행을 권장합니다.
-! Version: 1.0.1.3-B
+! Version: 1.0.1.6
 !
 [AdGuard]
 ||*-col-ext.nelo.navercorp.com^
@@ -210,6 +210,7 @@
 ||track.tiara.*.com^
 ||track.tiara.*.net^
 ||tracker.digitalcamp.co.kr^
+||tracking.tving.com^
 ||trafficgate.net^
 ||trk.alba.co.kr^
 ||trk.tand.kr^

@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.5
+! Version: 1.0.1.6
 !
 [AdGuard]
 ! NAVER * > 광고 배너
@@ -131,25 +131,12 @@ megastudy.net##.ly_megaP
 jinhak.com###bn_bot_fixed
 ! Forten > 트래커
 ||forten.ac/js/*_log.js
-! DCinside > 광고 배너
-||dcinside.com/_js/ad.js
-||dcinside.com/_js/ad_context_powLink.js
-||dcinside.com/_js/ad_keyword_powLink.js
-||nstatic.dcinside.com/ad/
-||nstatic.dcinside.com/dgn/gallery/js/panda_tv.js$domain=dcinside.com
-dcinside.com##[class^="rightbanner"]
-dcinside.com##.pc-post-ad-header
-! DCinside > 트래커
-||dcinside.com/_js/click_log.js
-! DCinside > 앱 프로모션 배너
-m.dcinside.com##.layer-bottom-popup
 ! Afreeca TV > 트래커
 ||afreecatv.com/script/statistics/
 ! Nexon > 트래커
 ||nexon.com/s1/livewebjs/GnxVisitorTracking.min.js
 ! Yes24 > 트래커
 ||image.yes24.com/sysimage/Contents/Scripts/p/logging/
-
 ! Google 서비스 > 트래커
 ||play.googleapis.com/log/
 
@@ -348,6 +335,7 @@ m.dcinside.com##.layer-bottom-popup
 ||track.tiara.*.com^
 ||track.tiara.*.net^
 ||tracker.digitalcamp.co.kr^
+||tracking.tving.com^
 ||trafficgate.net^
 ||trk.alba.co.kr^
 ||trk.tand.kr^

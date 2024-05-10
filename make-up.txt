@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Make-Up
 ! Description: 사이트 내 광고를 제외한 불필요한 요소들을 제거합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.5
+! Version: 1.0.1.6
 !
 [AdGuard]
 !
@@ -243,13 +243,6 @@ donga.com###footer_wrap
 ! ZDNET > $SOCIAL $DISTRACTION
 zdnet.co.kr##.reporter_btn
 
-!
-!  ██████  ██████  ███    ███ ███    ███ ██    ██ ███    ██ ██ ████████ ██    ██ 
-! ██      ██    ██ ████  ████ ████  ████ ██    ██ ████   ██ ██    ██     ██  ██  
-! ██      ██    ██ ██ ████ ██ ██ ████ ██ ██    ██ ██ ██  ██ ██    ██      ████   
-! ██      ██    ██ ██  ██  ██ ██  ██  ██ ██    ██ ██  ██ ██ ██    ██       ██    
-!  ██████  ██████  ██      ██ ██      ██  ██████  ██   ████ ██    ██       ██    
-!
 ! DCinside > 폰트를 System Font로 통일
 ||fonts.gstatic.com^$domain=dcinside.com
 dcinside.com#$##* { font-family: -apple-system !important; }
@@ -285,11 +278,13 @@ dcinside.com##.sp-new
 ! DCinside > $FOOTER
 dcinside.com##.dcfoot
 m.dcinside.com##.footer
+
 ! RuliWeb > 광고
 ||ruliweb.com/banneriframe
 m.ruliweb.com##.fixed_ad
 ! Ruliweb 모바일 > $SOCIAL
 m.ruliweb.com##.share_wrapper
+
 ! Instiz > 광고
 instiz.net##div.responsive_main > table > tbody > tr:last-child > td:first-child
 ! Instiz > $GOTOP
@@ -352,6 +347,7 @@ jinhak.com##.btn_gotop
 
 ! $FOOTER
 ###footer
+@@learn.microsoft.com###footer
 auction.co.kr##.footer
 megastudy.net##.section_footer
 mimacstudy.com##.dsm_bottomarea
