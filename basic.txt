@@ -20,7 +20,7 @@
 ! License: https://github.com/AndyH0ng/STFU
 ! Title: STFU Basic
 ! Description: 광고 및 트래커를 차단합니다. List-KR과 병행을 권장합니다.
-! Version: 1.0.1.6
+! Version: 1.0.1.7
 !
 [AdGuard]
 ! NAVER * > 광고 배너
@@ -37,6 +37,7 @@
 ||scv-cafe.io.naver.com/jackpotlog/*/logs
 ! NAVER 메인 > 검색창 옆 광고 →
 www.naver.com##img[src^="https://s.pstatic.net/static/www/mobile/edit/"][width="162"][height="40"]
+naver.com##div[id^="search-right-"]
 ! NAVER 모바일 > 광고 배너
 m.naver.com##.id_comp_banner
 m.naver.com##.MM_DO_NOT_AD_POSITION
