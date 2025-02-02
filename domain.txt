@@ -1,0 +1,64 @@
+!                                                                                 
+!  .----------------.  .----------------.  .----------------.  .----------------. 
+! | .--------------. || .--------------. || .--------------. || .--------------. |
+! | |    _______   | || |  _________   | || |  _________   | || | _____  _____ | |
+! | |   /  ___  |  | || | |  _   _  |  | || | |_   ___  |  | || ||_   _||_   _|| |
+! | |  |  (__ \_|  | || | |_/ | | \_|  | || |   | |_  \_|  | || |  | |    | |  | |
+! | |   '.___`-.   | || |     | |      | || |   |  _|      | || |  | '    ' |  | |
+! | |  |`\____) |  | || |    _| |_     | || |  _| |_       | || |   \ `--' /   | |
+! | |  |_______.'  | || |   |_____|    | || | |_____|      | || |    `.__.'    | |
+! | |              | || |              | || |              | || |              | |
+! | '--------------' || '--------------' || '--------------' || '--------------' |
+!  '----------------'  '----------------'  '----------------'  '----------------' 
+!      _        
+!   __| |_ __  ___ 
+!  / _` | '_ \/ __|
+! | (_| | | | \__ \
+!  \__,_|_| |_|___/ 
+!
+! Homepage: https://github.com/AndyH0ng/STFU
+! License: https://github.com/AndyH0ng/STFU
+! Title: STFU DNS
+! Description: 광고 및 트래커를 차단합니다. AdGuard DNS 필터, List-KR DNS 필터와 병행함을 전제로 만들어졌습니다.
+! Version: 2.0
+!
+! Apple Telemetry
+||metrics.apple.com^
+||metrics.icloud.com^
+||metrics.mzstatic.com^
+! Google Telemetry
+||crashlytics.com^
+||feedback-pa.googleapis.com^
+||feedback-pa.clients6.google.com^
+! VS Code Telemetry
+||mobile.events.data.microsoft.com^
+! Google Analytics
+||analytics.google.com^
+||google-analytics.com^
+! TikTok Analytics
+||analytics.tiktok.com^
+! X Analytics
+||analytics.twitter.com^
+! Naver Analytics
+||nlog.naver.com^
+||analytics.naver.com^
+! GitHub Analytics
+||collector.github.com^
+! Sentry
+||ingest.sentry.io^
+! InMobi
+||inmobi.com^
+! ReqIQ
+||rev.iq^
+
+||adfoc.us^
+||splunkcloud.com^
+||wpadmngr.com^
+||i2ad.jp^
+||carbonads.com^
+||ad.daum.net^
+||track.hubspot.com^
+||error-tracking.reddit.com^
+||hs-analytics.net^
+||analytics.edgekey.net^
+||hexagon-analytics.com^
